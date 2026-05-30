@@ -17,17 +17,8 @@
       justify-content: center;
       padding: 2rem;
     }
-    h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-      color: #f8fafc;
-    }
-    .subtitle {
-      color: #94a3b8;
-      margin-bottom: 2.5rem;
-      font-size: 1rem;
-    }
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; color: #f8fafc; }
+    .subtitle { color: #94a3b8; margin-bottom: 2.5rem; font-size: 1rem; }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -53,6 +44,7 @@
     }
     .card .icon { font-size: 2rem; margin-bottom: 0.5rem; }
     .card .label { font-size: 1rem; font-weight: 600; }
+    .loading { color: #64748b; font-size: 0.9rem; }
     .manager-link {
       margin-top: 2rem;
       color: #64748b;
@@ -65,30 +57,49 @@
 <body>
   <h1>📚 Zentax Quiz</h1>
   <p class="subtitle">選擇題組開始練習</p>
+  <div class="grid" id="grid"><span class="loading">載入中…</span></div>
+  <a class="manager-link" id="mgr-link" style="display:none" href="題庫管理器.html">⚙️ 題庫管理器</a>
 
-  <div class="grid">
-    <a class="card" href="set-01.html">
-      <div class="icon">📝</div>
-      <div class="label">題組 01</div>
-    </a>
-    <a class="card" href="set-02.html">
-      <div class="icon">📝</div>
-      <div class="label">題組 02</div>
-    </a>
-    <a class="card" href="set-03.html">
-      <div class="icon">📝</div>
-      <div class="label">題組 03</div>
-    </a>
-    <a class="card" href="set-04.html">
-      <div class="icon">📝</div>
-      <div class="label">題組 04</div>
-    </a>
-    <a class="card" href="set-05.html">
-      <div class="icon">📝</div>
-      <div class="label">題組 05</div>
-    </a>
-  </div>
+  <script>
+    async function exists(url) {
+      try {
+        const r = await fetch(url, { method: 'HEAD' });
+        return r.ok;
+      } catch { return false; }
+    }
 
-  <a class="manager-link" href="題庫管理器.html">⚙️ 題庫管理器</a>
+    async function init() {
+      const grid = document.getElementById('grid');
+      grid.innerHTML = '';
+      let found = 0;
+
+      for (let i = 1; i <= 99; i++) {
+        const num = String(i).padStart(2, '0');
+        const file = `set-${num}.html`;
+        const ok = await exists(file);
+        if (!ok) {
+          if (i > 5) break; // 連續找不到就停止（允許前5組空缺）
+          continue;
+        }
+        found++;
+        const a = document.createElement('a');
+        a.className = 'card';
+        a.href = file;
+        a.innerHTML = `<div class="icon">📝</div><div class="label">題組 ${num}</div>`;
+        grid.appendChild(a);
+      }
+
+      if (found === 0) {
+        grid.innerHTML = '<span class="loading">尚無題組</span>';
+      }
+
+      // 偵測題庫管理器
+      if (await exists('題庫管理器.html')) {
+        document.getElementById('mgr-link').style.display = '';
+      }
+    }
+
+    init();
+  </script>
 </body>
 </html>
