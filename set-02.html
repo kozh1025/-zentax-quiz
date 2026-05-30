@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>商務英語練習 · 自選題組 · 第 02 組</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0f1c3f;--navy2:#1a2e5a;--gold:#c9922a;--gold2:#f0b940;--cream:#fdf9f2;--cream2:#f5efe3;--green:#1e6b45;--green-bg:#e8f5ed;--red:#b03030;--red-bg:#fdf0f0;--amber:#a05c10;--amber-bg:#fef8ee;--text:#1a1a2e;--sub:#5a607a;--border:#ddd8ce;--shadow:0 4px 24px rgba(15,28,63,.10)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans TC',sans-serif;background:var(--cream);color:var(--text);font-size:15px;line-height:1.75;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse 80% 50% at 10% 0%,rgba(201,146,42,.08) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 90% 100%,rgba(15,28,63,.06) 0%,transparent 60%),var(--cream)}
+.wrap{max-width:720px;margin:0 auto;padding:24px 16px 60px}
+.hd{background:var(--navy);border-radius:18px;padding:28px 28px 24px;margin-bottom:20px;position:relative;overflow:hidden}
+.hd::after{content:'ZENTAX';position:absolute;right:-8px;top:50%;transform:translateY(-50%);font-family:'DM Serif Display',serif;font-size:6.5em;color:rgba(255,255,255,.04);pointer-events:none;white-space:nowrap;letter-spacing:.08em}
+.hd-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(201,146,42,.18);border:1px solid rgba(201,146,42,.4);color:var(--gold2);border-radius:20px;padding:3px 12px;font-size:.78em;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px}
+.hd-title{font-family:'DM Serif Display',serif;font-size:1.55em;color:#fff;line-height:1.25;margin-bottom:6px}
+.hd-sub{color:rgba(255,255,255,.5);font-size:.84em}
+.prog-wrap{margin-top:18px}
+.prog-label{display:flex;justify-content:space-between;font-size:.78em;color:rgba(255,255,255,.45);margin-bottom:6px}
+.prog-bar{height:4px;background:rgba(255,255,255,.12);border-radius:2px;overflow:hidden}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:2px;transition:width .4s ease;width:0%}
+.zh-toggle-wrap{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.zh-toggle-btn{display:flex;align-items:center;gap:7px;background:#fff;border:1.5px solid var(--border);border-radius:20px;padding:5px 14px;font-size:.82em;color:var(--sub);cursor:pointer;font-family:inherit;transition:all .18s;font-weight:500}
+.zh-toggle-btn:hover{border-color:var(--navy);color:var(--navy)}
+.zh-toggle-btn .dot{width:8px;height:8px;border-radius:50%;background:var(--border);transition:background .2s}
+.zh-toggle-btn.on .dot{background:var(--gold)}
+.zh-toggle-btn.on{border-color:var(--gold);color:var(--amber)}
+.sc{background:var(--navy);border-radius:18px;padding:30px 24px;margin-bottom:20px;text-align:center;display:none;animation:fadeSlide .5s ease}
+@keyframes fadeSlide{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+.sc-ring{width:96px;height:96px;border-radius:50%;border:4px solid rgba(201,146,42,.3);background:rgba(201,146,42,.1);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 14px}
+.sc-num{font-size:2.2em;font-weight:700;color:var(--gold2);line-height:1}
+.sc-den{font-size:.78em;color:rgba(255,255,255,.4)}
+.sc-msg{font-size:1em;font-weight:600;color:#fff;margin-bottom:4px}
+.sc-rate{font-size:.84em;color:rgba(255,255,255,.45)}
+.sc-bar-wrap{margin-top:18px}
+.sc-bar{height:6px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
+.sc-bar-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:3px;transition:width 1s cubic-bezier(.4,0,.2,1) .3s;width:0%}
+.sec-hdr{font-size:.8em;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:8px 4px;margin:24px 0 12px;border-bottom:2px solid;display:flex;align-items:center;gap:8px}
+.sec-p5{color:var(--navy);border-color:var(--gold)}
+.sec-p34{color:#6a1b9a;border-color:#9c4dcc}
+.sec-p6{color:var(--green);border-color:#4caf7a}
+.sec-p7{color:#7c2d12;border-color:#c2410c}
+.qc{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:16px;overflow:hidden;transition:box-shadow .2s}
+.qc:hover{box-shadow:0 6px 32px rgba(15,28,63,.13)}
+.qc-sub{border-radius:10px;margin-bottom:10px;box-shadow:none;border:1.5px solid #e8e4dc}
+.qh{padding:18px 20px 14px;border-bottom:1px solid #f0ece4;display:flex;gap:12px;align-items:flex-start}
+.qn{background:var(--navy);color:var(--gold2);padding:4px 0;width:36px;text-align:center;border-radius:8px;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.82em;flex-shrink:0;margin-top:2px;letter-spacing:.02em}
+.qt{flex:1}
+.qe{font-size:.97em;color:var(--text);font-weight:500;line-height:1.7}
+.qz{font-size:.84em;color:var(--sub);margin-top:7px;padding-top:7px;border-top:1px dashed #e0dbd0;display:none;line-height:1.65}
+.bk{display:inline-block;color:var(--gold);font-weight:700;border-bottom:2px solid var(--gold);padding:0 3px;min-width:40px;text-align:center}
+.qh-right{display:flex;align-items:flex-start}
+.status-dot{width:8px;height:8px;border-radius:50%;background:#ddd;margin-top:10px;transition:background .2s;flex-shrink:0}
+.status-dot.answered{background:var(--gold2)}
+.status-dot.correct{background:#3aaa6a}
+.status-dot.wrong{background:var(--red)}
+.opts{padding:12px 16px 16px;display:flex;flex-direction:column;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;padding:11px 14px;border:1.5px solid #e8e4dc;border-radius:10px;cursor:pointer;transition:border-color .15s,background .15s,transform .1s;background:#fdfcfa;user-select:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.opt:hover:not(.disabled){border-color:var(--navy2);background:#f5f3ef;transform:translateX(2px)}
+.opt.selected{border-color:var(--navy);background:#f0f3fa}
+.opt-lbl{width:28px;height:28px;border-radius:7px;border:1.5px solid #d0ccc2;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.82em;color:#888;flex-shrink:0;transition:all .15s}
+.opt.selected .opt-lbl{border-color:var(--navy);background:var(--navy);color:var(--gold2)}
+.opt.correct .opt-lbl{border-color:var(--green);background:var(--green);color:#fff}
+.opt.wrong .opt-lbl{border-color:var(--red);background:var(--red);color:#fff}
+.opt.correct{border-color:#6dc492;background:var(--green-bg);cursor:default}
+.opt.wrong{border-color:#e08080;background:var(--red-bg);cursor:default}
+.opt.disabled{cursor:default}
+.opt-body{flex:1}
+.opt-word{font-size:.93em;font-weight:600;color:var(--text)}
+.opt.correct .opt-word{color:var(--green)}
+.opt.wrong .opt-word{color:var(--red)}
+.opt-pos{display:inline-block;font-size:.72em;font-family:'JetBrains Mono',monospace;color:#aaa;background:#f0ece4;border-radius:4px;padding:1px 6px;margin-left:7px;font-weight:400;vertical-align:middle}
+.opt.correct .opt-pos{color:#5a9a70;background:#d6f0e0}
+.opt.wrong .opt-pos{color:#c08080;background:#fde8e8}
+.opt-zh{font-size:.8em;color:var(--sub);display:block;margin-top:2px}
+.analysis{display:none;padding:0 16px 4px}
+.ana-block{border-radius:10px;padding:11px 14px;margin-bottom:8px;font-size:.875em;line-height:1.7}
+.ana-label{font-size:.75em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;display:flex;align-items:center;gap:6px;margin-bottom:5px}
+.ana-key{background:var(--green-bg);border:1px solid #b0d8be}
+.ana-key .ana-label{color:var(--green)}
+.ana-trap{background:var(--amber-bg);border:1px solid #e8c880}
+.ana-trap .ana-label{color:var(--amber)}
+.ana-gram{background:#f0f3fa;border:1px solid #c8cfea}
+.ana-gram .ana-label{color:var(--navy2)}
+.ana-icon{width:16px;height:16px}
+.dt{display:none;padding:0 16px 8px}
+.dt-btn{width:100%;background:#faf8f4;border:1px solid #e0dbd0;border-radius:8px;padding:8px 14px;font-size:.81em;color:var(--sub);cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:6px;transition:all .15s;font-weight:500}
+.dt-btn:hover{background:var(--cream2);color:var(--navy);border-color:#c8c0b0}
+.dw{display:none;padding:0 16px 16px}
+.ot{width:100%;border-collapse:collapse;font-size:.82em;table-layout:fixed;border-radius:10px;overflow:hidden}
+.ot thead tr{background:var(--navy)}
+.ot th{color:rgba(255,255,255,.7);padding:8px 10px;text-align:left;font-size:.78em;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.ot td{padding:8px 10px;border-bottom:1px solid #f0ece4;vertical-align:top;word-break:break-word}
+.ot tr.cor td{background:#edf7f1;color:var(--green);font-weight:600}
+.ot tr:not(.cor):hover td{background:#faf8f4}
+.ipa{font-family:'JetBrains Mono',monospace;color:var(--navy2);font-size:.95em;letter-spacing:.01em}
+.ot tr.cor .ipa{color:var(--green)}
+.fam-title{font-size:.78em;font-weight:700;color:var(--sub);letter-spacing:.06em;text-transform:uppercase;margin:12px 0 7px}
+.wg{display:flex;flex-wrap:wrap;gap:7px}
+.wc{border:1px solid #e0dbd0;background:#fdfcfa;border-radius:8px;padding:7px 11px;min-width:110px}
+.ww{font-weight:700;font-size:.88em;color:var(--navy);font-family:'JetBrains Mono',monospace}
+.wz{font-size:.78em;color:var(--sub);margin-top:2px}
+.conv-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:20px;overflow:hidden}
+.conv-hdr{background:var(--navy);padding:16px 20px}
+.conv-topic{font-family:'DM Serif Display',serif;color:var(--gold2);font-size:1.05em}
+.conv-sub{font-size:.8em;color:rgba(255,255,255,.45);margin-top:2px}
+.conv-script{padding:14px 20px;background:#faf8f4;border-bottom:1px solid #eee8de}
+.conv-line{display:flex;gap:10px;padding:4px 0;font-size:.9em;line-height:1.7}
+.conv-role{font-weight:700;min-width:28px;flex-shrink:0}
+.role-W{color:#c94070}.role-M{color:#1a5ea0}.role-ANR{color:#6a1b9a}
+.conv-qs{padding:14px 16px}
+.pass-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:20px;overflow:hidden}
+.pass-hdr{background:linear-gradient(135deg,#1e6b45,#2e8b57);padding:16px 20px}
+.pass-topic{font-family:'DM Serif Display',serif;color:#fff;font-size:1.05em}
+.pass-sub{font-size:.8em;color:rgba(255,255,255,.5);margin-top:2px}
+.pass-text{padding:16px 20px;font-size:.91em;line-height:2;border-bottom:1px solid #eee8de;white-space:pre-wrap}
+.pass-blank{display:inline-block;border:1.5px solid var(--green);border-radius:4px;padding:0 8px;min-width:36px;text-align:center;color:var(--green);font-weight:700}
+.pass-qs{padding:14px 16px}
+.read-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:20px;overflow:hidden}
+.read-hdr{background:linear-gradient(135deg,#7c2d12,#9a3412);padding:16px 20px}
+.read-topic{font-family:'DM Serif Display',serif;color:#fff;font-size:1.05em}
+.read-sub{font-size:.8em;color:rgba(255,255,255,.5);margin-top:2px}
+.read-text{padding:16px 20px;font-size:.91em;line-height:2;border-bottom:1px solid #eee8de}
+.read-multi{padding:0;display:flex;flex-direction:column;gap:0}
+.read-passage{padding:14px 20px;border-bottom:1px solid #eee8de;font-size:.91em;line-height:2}
+.read-passage-lbl{font-size:.72em;font-weight:700;color:#7c2d12;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.read-passage-body{color:var(--text)}
+.read-qs{padding:14px 16px}
+.tone-cue{font-size:.78em;padding:4px 16px 0;color:#a05c10;font-style:italic}
+.sub-wrap{text-align:center;padding:10px 0 28px}
+.sub-btn{background:var(--navy);color:#fff;border:none;border-radius:30px;padding:14px 50px;font-size:1em;font-weight:700;cursor:pointer;font-family:inherit;letter-spacing:.06em;position:relative;overflow:hidden;transition:opacity .2s,transform .15s}
+.sub-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--gold),var(--gold2));opacity:0;transition:opacity .2s}
+.sub-btn:hover:not(:disabled)::before{opacity:1}
+.sub-btn:hover:not(:disabled){transform:translateY(-1px)}
+.sub-btn span{position:relative}
+.sub-btn:disabled{background:#c8c4bc;cursor:default;transform:none}
+.sub-btn:disabled::before{display:none}
+.sub-hint{font-size:.8em;color:#b0a898;margin-top:8px}
+@media(max-width:580px){.ot{table-layout:auto}.ot thead{display:none}.ot tr{display:block;margin-bottom:8px;border:1px solid #e8e4dc;border-radius:8px;overflow:hidden}.ot td{display:block;padding:7px 11px;border-bottom:1px solid #f0ece4}.ot td::before{content:attr(data-l);font-weight:700;color:var(--navy);display:block;font-size:.72em;letter-spacing:.05em;text-transform:uppercase;margin-bottom:2px}.hd-title{font-size:1.25em}.hd::after{font-size:4em}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="sc" id="scoreCard"></div>
+<div class="hd">
+  <div class="hd-title">商務英語練習 · 自選題組 · 第 02 組</div>
+  <div class="hd-sub">共 4 題 · 完成後統一提交查看結果</div>
+  <div class="prog-wrap">
+    <div class="prog-label"><span id="progText">已作答 0 / 4 題</span><span id="progPct">0%</span></div>
+    <div class="prog-bar"><div class="prog-fill" id="progFill"></div></div>
+  </div>
+</div>
+<div class="sec-hdr sec-p5">✦ 介系詞片語</div>
+<div class="qc" id="qc_P5_E_R06_Q006"><div class="qh"><div class="qn">Q1</div><div class="qt"><div class="qe">Ms. Harper will be <span class="bk">＿＿</span> the overseas expansion project while the director is on leave next month.</div><div class="qz" id="zh_P5_E_R06_Q006">【中譯】下個月主管請假期間，Harper女士將負責監管海外擴張專案。</div></div><div class="qh-right"><div class="status-dot" id="dot_P5_E_R06_Q006"></div></div></div><div class="opts" id="opts_P5_E_R06_Q006"><div class="opt" id="opt_P5_E_R06_Q006_0" ontouchstart="" onclick="pickOpt('P5_E_R06_Q006',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">in charge of</span></div></div><div class="opt" id="opt_P5_E_R06_Q006_1" ontouchstart="" onclick="pickOpt('P5_E_R06_Q006',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">responsible for</span></div></div><div class="opt" id="opt_P5_E_R06_Q006_2" ontouchstart="" onclick="pickOpt('P5_E_R06_Q006',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">accountable to</span></div></div><div class="opt" id="opt_P5_E_R06_Q006_3" ontouchstart="" onclick="pickOpt('P5_E_R06_Q006',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">in lieu of</span></div></div></div><div class="analysis" id="ana_P5_E_R06_Q006"><div class="ana-block ana-key"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1e6b45" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#1e6b45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>解題關鍵</div>空格後接 the overseas expansion project（受詞為事物），且語境強調 Ms. Harper「主導管理」該專案。in charge of 表示「負責管理某事或某項目」，後接事物，語意最為貼切。responsible for 雖同樣後接事物，但偏向「對結果承擔責任」，語氣較消極；in charge of 強調「有指揮權」。accountable to 後接「人」（向某人匯報）；in lieu of 意為「代替」，語意不符。</div><div class="ana-block ana-trap"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 13H2L8 2z" stroke="#a05c10" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6v3M8 11v.5" stroke="#a05c10" stroke-width="1.5" stroke-linecap="round"/></svg>陷阱提示</div>in charge of 與 responsible for 的語意非常接近，是高頻混淆點：in charge of 強調「有主導權、指揮權」；responsible for 強調「對某結果或行為承擔責任」。兩者後接受詞皆為事物，但語用情境有差異。</div><div class="ana-block ana-gram"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="#1a2e5a" stroke-width="1.5"/><path d="M5 6h6M5 8.5h4M5 11h5" stroke="#1a2e5a" stroke-width="1.5" stroke-linecap="round"/></svg>文法補充</div>介系詞片語搭配規則：in charge of + 事物（負責管理）；responsible for + 事物/行為（對…負責）；accountable to + 人（向…負責/交代）；in lieu of + 名詞（取代）。注意 accountable to 後接人而非事物，這是區辨關鍵。</div></div><div class="dt" id="dt_P5_E_R06_Q006"><button class="dt-btn" onclick="toggleDetail('P5_E_R06_Q006')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析</button></div><div class="dw" id="dw_P5_E_R06_Q006"><table class="ot"><thead><tr><th>單字/片語</th><th>詞性</th><th>音標</th><th>主要意思</th><th>搭配用法</th></tr></thead><tbody><tr class="cor"><td data-l="單字"><strong>in charge of</strong></td><td data-l="詞性">prep. phr.</td><td data-l="音標"><span class="ipa">/ɪn tʃɑːrdʒ əv/</span></td><td data-l="意思">負責；主管</td><td data-l="搭配">be in charge of + 事物（負責管理某事）</td></tr><tr><td data-l="單字">responsible for</td><td data-l="詞性">prep. phr.</td><td data-l="音標"><span class="ipa">/rɪˈspɒnsɪbl fɔːr/</span></td><td data-l="意思">對…負責</td><td data-l="搭配">be responsible for + 事物/行為（承擔責任）</td></tr><tr><td data-l="單字">accountable to</td><td data-l="詞性">prep. phr.</td><td data-l="音標"><span class="ipa">/əˈkaʊntəbl tuː/</span></td><td data-l="意思">向…負責；向…交代</td><td data-l="搭配">be accountable to + 人（向某人匯報交代）</td></tr><tr><td data-l="單字">in lieu of</td><td data-l="詞性">prep. phr.</td><td data-l="音標"><span class="ipa">/ɪn luː əv/</span></td><td data-l="意思">代替；取代</td><td data-l="搭配">in lieu of + 名詞（作為…的替代）</td></tr></tbody></table></div></div><div class="qc" id="qc_P5_E_R28_Q003"><div class="qh"><div class="qn">Q2</div><div class="qt"><div class="qe"><span class="bk">＿＿</span> receiving several complaints from clients, the operations manager refused to revise the existing procedure.</div><div class="qz" id="zh_P5_E_R28_Q003">【中譯】儘管收到客戶的多項投訴，營運經理仍拒絕修改現有流程。</div></div><div class="qh-right"><div class="status-dot" id="dot_P5_E_R28_Q003"></div></div></div><div class="opts" id="opts_P5_E_R28_Q003"><div class="opt" id="opt_P5_E_R28_Q003_0" ontouchstart="" onclick="pickOpt('P5_E_R28_Q003',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">Despite</span></div></div><div class="opt" id="opt_P5_E_R28_Q003_1" ontouchstart="" onclick="pickOpt('P5_E_R28_Q003',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">Even though</span></div></div><div class="opt" id="opt_P5_E_R28_Q003_2" ontouchstart="" onclick="pickOpt('P5_E_R28_Q003',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">Although</span></div></div><div class="opt" id="opt_P5_E_R28_Q003_3" ontouchstart="" onclick="pickOpt('P5_E_R28_Q003',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">In spite that</span></div></div></div><div class="analysis" id="ana_P5_E_R28_Q003"><div class="ana-block ana-key"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1e6b45" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#1e6b45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>解題關鍵</div>despite 為介詞，後接名詞或動名詞（V-ing），不接子句；空格後 receiving 為動名詞 → 選介詞 despite；even though / although 為連接詞，後需接完整子句（含主語+動詞）；in spite that 為非標準錯誤用法（正確為 in spite of）。</div><div class="ana-block ana-trap"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 13H2L8 2z" stroke="#a05c10" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6v3M8 11v.5" stroke="#a05c10" stroke-width="1.5" stroke-linecap="round"/></svg>陷阱提示</div>despite / in spite of + 名詞/V-ing（介詞，不接子句）vs. even though / although + 完整子句（連接詞）：空格後緊接動名詞 receiving，確認需用介詞 → despite。</div><div class="ana-block ana-gram"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="#1a2e5a" stroke-width="1.5"/><path d="M5 6h6M5 8.5h4M5 11h5" stroke="#1a2e5a" stroke-width="1.5" stroke-linecap="round"/></svg>文法補充</div>讓步表達：(1) despite / in spite of + N/V-ing；(2) even though / although / though + S + V；兩者語義相同但句型不同</div></div><div class="dt" id="dt_P5_E_R28_Q003"><button class="dt-btn" onclick="toggleDetail('P5_E_R28_Q003')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析</button></div><div class="dw" id="dw_P5_E_R28_Q003"><table class="ot"><thead><tr><th>單字/片語</th><th>詞性</th><th>音標</th><th>主要意思</th><th>搭配用法</th></tr></thead><tbody><tr class="cor"><td data-l="單字"><strong>Despite</strong></td><td data-l="詞性">prep</td><td data-l="音標"><span class="ipa">/dɪˈspaɪt/</span></td><td data-l="意思">儘管（後接名詞/V-ing）</td><td data-l="搭配">Despite receiving... ✓</td></tr><tr><td data-l="單字">Even though</td><td data-l="詞性">conj</td><td data-l="音標"><span class="ipa">/ˈiːvən ðoʊ/</span></td><td data-l="意思">儘管（後接完整子句）</td><td data-l="搭配">Even though she received...</td></tr><tr><td data-l="單字">Although</td><td data-l="詞性">conj</td><td data-l="音標"><span class="ipa">/ɔːlˈðoʊ/</span></td><td data-l="意思">雖然（後接完整子句）</td><td data-l="搭配">Although the manager received...</td></tr><tr><td data-l="單字">In spite that</td><td data-l="詞性">ph</td><td data-l="音標"><span class="ipa">/ɪn spaɪt/</span></td><td data-l="意思">×（非標準用法）</td><td data-l="搭配">應為 in spite of + N/V-ing</td></tr></tbody></table></div></div><div class="qc" id="qc_P5_E_R23_Q003"><div class="qh"><div class="qn">Q3</div><div class="qt"><div class="qe"><span class="bk">＿＿</span> the system upgrade is complete, all users will be required to reset their passwords.</div><div class="qz" id="zh_P5_E_R23_Q003">【中譯】一旦系統升級__完成，所有使用者都必須重設密碼。</div></div><div class="qh-right"><div class="status-dot" id="dot_P5_E_R23_Q003"></div></div></div><div class="opts" id="opts_P5_E_R23_Q003"><div class="opt" id="opt_P5_E_R23_Q003_0" ontouchstart="" onclick="pickOpt('P5_E_R23_Q003',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">Until</span></div></div><div class="opt" id="opt_P5_E_R23_Q003_1" ontouchstart="" onclick="pickOpt('P5_E_R23_Q003',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">Once</span></div></div><div class="opt" id="opt_P5_E_R23_Q003_2" ontouchstart="" onclick="pickOpt('P5_E_R23_Q003',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">Although</span></div></div><div class="opt" id="opt_P5_E_R23_Q003_3" ontouchstart="" onclick="pickOpt('P5_E_R23_Q003',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">Provided</span></div></div></div><div class="analysis" id="ana_P5_E_R23_Q003"><div class="ana-block ana-key"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1e6b45" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#1e6b45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>解題關鍵</div>後句要求「系統升級完成後立即觸發」密碼重設，需用 'once'（一旦…就）引導時間條件子句。</div><div class="ana-block ana-trap"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 13H2L8 2z" stroke="#a05c10" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6v3M8 11v.5" stroke="#a05c10" stroke-width="1.5" stroke-linecap="round"/></svg>陷阱提示</div>until 表「持續到某點為止」，與本句語意（完成後觸發）不符；provided 強調條件假設，非時間觸發。</div><div class="ana-block ana-gram"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="#1a2e5a" stroke-width="1.5"/><path d="M5 6h6M5 8.5h4M5 11h5" stroke="#1a2e5a" stroke-width="1.5" stroke-linecap="round"/></svg>文法補充</div>Once 引導時間副詞子句，主句用未來式時，子句用現在式（is complete）代替未來式。</div></div><div class="dt" id="dt_P5_E_R23_Q003"><button class="dt-btn" onclick="toggleDetail('P5_E_R23_Q003')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析</button></div><div class="dw" id="dw_P5_E_R23_Q003"><table class="ot"><thead><tr><th>單字/片語</th><th>詞性</th><th>音標</th><th>主要意思</th><th>搭配用法</th></tr></thead><tbody><tr><td data-l="單字">Until</td><td data-l="詞性">conj</td><td data-l="音標"><span class="ipa">/ʌnˈtɪl/</span></td><td data-l="意思">直到…為止</td><td data-l="搭配">until + 持續狀態（強調動作持續到某點）</td></tr><tr class="cor"><td data-l="單字"><strong>Once</strong></td><td data-l="詞性">conj</td><td data-l="音標"><span class="ipa">/wʌns/</span></td><td data-l="意思">一旦…就</td><td data-l="搭配">once + 事件發生後觸發後句 ✓</td></tr><tr><td data-l="單字">Although</td><td data-l="詞性">conj</td><td data-l="音標"><span class="ipa">/ɔːlˈðoʊ/</span></td><td data-l="意思">儘管</td><td data-l="搭配">although + 讓步子句（邏輯相反）</td></tr><tr><td data-l="單字">Provided</td><td data-l="詞性">conj</td><td data-l="音標"><span class="ipa">/prəˈvaɪdɪd/</span></td><td data-l="意思">條件是…</td><td data-l="搭配">provided (that) + 條件（強調前提條件）</td></tr></tbody></table></div></div><div class="qc" id="qc_P5_E_R20_Q004"><div class="qh"><div class="qn">Q4</div><div class="qt"><div class="qe"><span class="bk">＿＿</span> the vendor lowers the unit price, we will not be able to stay within the approved budget.</div><div class="qz" id="zh_P5_E_R20_Q004">【中譯】__供應商降低單價，我們將無法維持在已核准的預算範圍內。</div></div><div class="qh-right"><div class="status-dot" id="dot_P5_E_R20_Q004"></div></div></div><div class="opts" id="opts_P5_E_R20_Q004"><div class="opt" id="opt_P5_E_R20_Q004_0" ontouchstart="" onclick="pickOpt('P5_E_R20_Q004',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">Unless</span></div></div><div class="opt" id="opt_P5_E_R20_Q004_1" ontouchstart="" onclick="pickOpt('P5_E_R20_Q004',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">Although</span></div></div><div class="opt" id="opt_P5_E_R20_Q004_2" ontouchstart="" onclick="pickOpt('P5_E_R20_Q004',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">Whereas</span></div></div><div class="opt" id="opt_P5_E_R20_Q004_3" ontouchstart="" onclick="pickOpt('P5_E_R20_Q004',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">Provided</span></div></div></div><div class="analysis" id="ana_P5_E_R20_Q004"><div class="ana-block ana-key"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1e6b45" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#1e6b45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>解題關鍵</div>主句為否定結果（will not be able to…），需要「除非」引導條件：Unless the vendor lowers = If the vendor does NOT lower。Provided 表正面條件，語義相反。</div><div class="ana-block ana-trap"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 13H2L8 2z" stroke="#a05c10" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6v3M8 11v.5" stroke="#a05c10" stroke-width="1.5" stroke-linecap="round"/></svg>陷阱提示</div>Unless 與 Provided 均為條件連接詞，但方向相反：Unless = 否定條件；Provided = 肯定條件。依主句語意（否定結果）選 Unless。</div><div class="ana-block ana-gram"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="#1a2e5a" stroke-width="1.5"/><path d="M5 6h6M5 8.5h4M5 11h5" stroke="#1a2e5a" stroke-width="1.5" stroke-linecap="round"/></svg>文法補充</div>Unless + S + V（肯定形式）= If + S + do not + V；兩種寫法語義等同，但 unless 子句內不加 not。</div></div><div class="dt" id="dt_P5_E_R20_Q004"><button class="dt-btn" onclick="toggleDetail('P5_E_R20_Q004')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析</button></div><div class="dw" id="dw_P5_E_R20_Q004"><table class="ot"><thead><tr><th>單字/片語</th><th>詞性</th><th>音標</th><th>主要意思</th><th>搭配用法</th></tr></thead><tbody><tr class="cor"><td data-l="單字"><strong>Unless</strong></td><td data-l="詞性">conj</td><td data-l="音標"><span class="ipa">/ənˈlɛs/</span></td><td data-l="意思">除非（= if … not）</td><td data-l="搭配">Unless + 肯定子句 = 否定條件 ✓</td></tr><tr><td data-l="單字">Although</td><td data-l="詞性">conj</td><td data-l="音標"><span class="ipa">/ɔːlˈðoʊ/</span></td><td data-l="意思">雖然（讓步）</td><td data-l="搭配">Although it rained, we went out.</td></tr><tr><td data-l="單字">Whereas</td><td data-l="詞性">conj</td><td data-l="音標"><span class="ipa">/wɛrˈæz/</span></td><td data-l="意思">然而、對比（對等子句）</td><td data-l="搭配">She is outgoing, whereas he is shy.</td></tr><tr><td data-l="單字">Provided</td><td data-l="詞性">conj</td><td data-l="音標"><span class="ipa">/prəˈvaɪdɪd/</span></td><td data-l="意思">只要（= as long as，肯定條件）</td><td data-l="搭配">Provided you pay, you may enter.</td></tr></tbody></table></div></div>
+
+
+
+
+
+
+<div class="sub-wrap">
+  <button class="sub-btn" id="submitBtn" onclick="submitAll()"><span>提交所有答案</span></button>
+  <div class="sub-hint" id="subHint">請完成所有 4 題後提交</div>
+</div>
+
+
+<div style="margin-top:32px;padding:18px 20px;border-top:1px solid #e8e4dc;text-align:center;font-size:.75em;color:#b0a898;line-height:1.8">
+  <div style="font-weight:700;color:#8a9ab0;letter-spacing:.08em;margin-bottom:4px">ZENTAX</div>
+  本題組為 Zentax 原創自製練習教材，內容均為獨立創作。<br>
+  與 ETS 或任何官方測驗機構無任何關聯。<br>
+  TOEIC® 為 ETS 之註冊商標，本品牌不隸屬於 ETS。<br>
+  適合欲加強商務英語能力之學習者使用。
+</div>
+</div>
+<script>
+var Q=[{"id":"P5_E_R06_Q006","exam":"TOEIC","part":5,"type":"grammar","topic":"介系詞片語","difficulty":"B2","level":null,"genre":null,"focus":"grammar","ctx":"Ms. Harper will be __ the overseas expansion project while the director is on leave next month.","zh":"下個月主管請假期間，Harper女士將負責監管海外擴張專案。","ans":0,"opts":[["in charge of","prep. phr.","/ɪn tʃɑːrdʒ əv/","負責；主管","be in charge of + 事物（負責管理某事）"],["responsible for","prep. phr.","/rɪˈspɒnsɪbl fɔːr/","對…負責","be responsible for + 事物/行為（承擔責任）"],["accountable to","prep. phr.","/əˈkaʊntəbl tuː/","向…負責；向…交代","be accountable to + 人（向某人匯報交代）"],["in lieu of","prep. phr.","/ɪn luː əv/","代替；取代","in lieu of + 名詞（作為…的替代）"]],"key":"空格後接 the overseas expansion project（受詞為事物），且語境強調 Ms. Harper「主導管理」該專案。in charge of 表示「負責管理某事或某項目」，後接事物，語意最為貼切。responsible for 雖同樣後接事物，但偏向「對結果承擔責任」，語氣較消極；in charge of 強調「有指揮權」。accountable to 後接「人」（向某人匯報）；in lieu of 意為「代替」，語意不符。","trap":"in charge of 與 responsible for 的語意非常接近，是高頻混淆點：in charge of 強調「有主導權、指揮權」；responsible for 強調「對某結果或行為承擔責任」。兩者後接受詞皆為事物，但語用情境有差異。","gram":"介系詞片語搭配規則：in charge of + 事物（負責管理）；responsible for + 事物/行為（對…負責）；accountable to + 人（向…負責/交代）；in lieu of + 名詞（取代）。注意 accountable to 後接人而非事物，這是區辨關鍵。","tone_cue":[],"fam":[],"tags":["介系詞片語","in charge of","grammar","B2"],"createdAt":"2026-05-29"},{"id":"P5_E_R28_Q003","exam":"TOEIC","part":5,"type":"grammar","topic":"讓步介詞 despite vs. 連接詞 even though","difficulty":"B2","level":null,"genre":null,"focus":"grammar","ctx":"__ receiving several complaints from clients, the operations manager refused to revise the existing procedure.","zh":"儘管收到客戶的多項投訴，營運經理仍拒絕修改現有流程。","ans":0,"opts":[["Despite","prep","/dɪˈspaɪt/","儘管（後接名詞/V-ing）","Despite receiving... ✓"],["Even though","conj","/ˈiːvən ðoʊ/","儘管（後接完整子句）","Even though she received..."],["Although","conj","/ɔːlˈðoʊ/","雖然（後接完整子句）","Although the manager received..."],["In spite that","ph","/ɪn spaɪt/","×（非標準用法）","應為 in spite of + N/V-ing"]],"key":"despite 為介詞，後接名詞或動名詞（V-ing），不接子句；空格後 receiving 為動名詞 → 選介詞 despite；even though / although 為連接詞，後需接完整子句（含主語+動詞）；in spite that 為非標準錯誤用法（正確為 in spite of）。","trap":"despite / in spite of + 名詞/V-ing（介詞，不接子句）vs. even though / although + 完整子句（連接詞）：空格後緊接動名詞 receiving，確認需用介詞 → despite。","gram":"讓步表達：(1) despite / in spite of + N/V-ing；(2) even though / although / though + S + V；兩者語義相同但句型不同","tone_cue":[],"fam":[],"tags":[],"createdAt":"2026-05-30"},{"id":"P5_E_R23_Q003","exam":"TOEIC","part":5,"type":"grammar","topic":"職場通訊","difficulty":"B2","level":null,"genre":null,"focus":"grammar","ctx":"__ the system upgrade is complete, all users will be required to reset their passwords.","zh":"一旦系統升級__完成，所有使用者都必須重設密碼。","ans":1,"opts":[["Until","conj","/ʌnˈtɪl/","直到…為止","until + 持續狀態（強調動作持續到某點）"],["Once","conj","/wʌns/","一旦…就","once + 事件發生後觸發後句 ✓"],["Although","conj","/ɔːlˈðoʊ/","儘管","although + 讓步子句（邏輯相反）"],["Provided","conj","/prəˈvaɪdɪd/","條件是…","provided (that) + 條件（強調前提條件）"]],"key":"後句要求「系統升級完成後立即觸發」密碼重設，需用 'once'（一旦…就）引導時間條件子句。","trap":"until 表「持續到某點為止」，與本句語意（完成後觸發）不符；provided 強調條件假設，非時間觸發。","gram":"Once 引導時間副詞子句，主句用未來式時，子句用現在式（is complete）代替未來式。","tone_cue":[],"fam":[],"tags":[],"createdAt":"2026-05-29"},{"id":"P5_E_R20_Q004","exam":"TOEIC","part":5,"type":"grammar","topic":"連接詞與子句","difficulty":"B2","level":null,"genre":null,"focus":"grammar","ctx":"__ the vendor lowers the unit price, we will not be able to stay within the approved budget.","zh":"__供應商降低單價，我們將無法維持在已核准的預算範圍內。","ans":0,"opts":[["Unless","conj","/ənˈlɛs/","除非（= if … not）","Unless + 肯定子句 = 否定條件 ✓"],["Although","conj","/ɔːlˈðoʊ/","雖然（讓步）","Although it rained, we went out."],["Whereas","conj","/wɛrˈæz/","然而、對比（對等子句）","She is outgoing, whereas he is shy."],["Provided","conj","/prəˈvaɪdɪd/","只要（= as long as，肯定條件）","Provided you pay, you may enter."]],"key":"主句為否定結果（will not be able to…），需要「除非」引導條件：Unless the vendor lowers = If the vendor does NOT lower。Provided 表正面條件，語義相反。","trap":"Unless 與 Provided 均為條件連接詞，但方向相反：Unless = 否定條件；Provided = 肯定條件。依主句語意（否定結果）選 Unless。","gram":"Unless + S + V（肯定形式）= If + S + do not + V；兩種寫法語義等同，但 unless 子句內不加 not。","tone_cue":[],"fam":[],"tags":[],"createdAt":"2026-05-29"}];
+var CONV=[];
+var PASS=[];
+var READ=[];
+var immediate=false;
+var totalQ=4;
+var userAns={},submitted=false,showZh=false;
+function allQids(){
+  var ids=[];
+  Q.forEach(function(q){ids.push(q.id);});
+  CONV.forEach(function(g){(g.qs||[]).forEach(function(_,i){ids.push('P34_'+g.id+'_'+i);});});
+  PASS.forEach(function(p){(p.qs||[]).forEach(function(_,i){ids.push('P6_'+p.id+'_'+i);});});
+  READ.forEach(function(r){(r.qs||[]).forEach(function(_,i){ids.push('P7_'+r.id+'_'+i);});});
+  return ids;
+}
+function getAns(qid){
+  var r=Q.find(function(q){return q.id===qid;}); if(r) return r.ans;
+  for(var gi=0;gi<CONV.length;gi++){var g=CONV[gi];for(var qi=0;qi<(g.qs||[]).length;qi++){if('P34_'+g.id+'_'+qi===qid)return g.qs[qi].ans;}}
+  for(var pi=0;pi<PASS.length;pi++){var pg=PASS[pi];for(var qi=0;qi<(pg.qs||[]).length;qi++){if('P6_'+pg.id+'_'+qi===qid)return pg.qs[qi].ans;}}
+  for(var ri=0;ri<READ.length;ri++){var rp=READ[ri];for(var qi=0;qi<(rp.qs||[]).length;qi++){if('P7_'+rp.id+'_'+qi===qid)return rp.qs[qi].ans;}}
+  return -1;
+}
+function updateProgress(){
+  var done=Object.keys(userAns).length,pct=totalQ?Math.round(done/totalQ*100):0;
+  var pt=document.getElementById('progText'),pp=document.getElementById('progPct'),pf=document.getElementById('progFill');
+  if(pt)pt.textContent='已作答 '+done+' / '+totalQ+' 題';
+  if(pp)pp.textContent=pct+'%';
+  if(pf)pf.style.width=pct+'%';
+  var h=document.getElementById('subHint');
+  if(h)h.textContent=done<totalQ?'請完成所有 '+totalQ+' 題後提交':'所有題目已作答，可以提交';
+}
+function toggleZh(){
+  showZh=!showZh;
+  var btn=document.getElementById('zhToggle');
+  if(btn){btn.classList.toggle('on',showZh);btn.innerHTML='<span class="dot"></span>'+(showZh?'隱藏中文翻譯':'顯示中文翻譯');}
+  allQids().forEach(function(qid){var el=document.getElementById('zh_'+qid);if(el&&!submitted)el.style.display=showZh?'block':'none';});
+}
+function pickOpt(qid,i){
+  if(submitted)return;
+  userAns[qid]=i;
+  for(var j=0;j<4;j++){var el=document.getElementById('opt_'+qid+'_'+j);if(el)el.classList.toggle('selected',j===i);}
+  var dot=document.getElementById('dot_'+qid);
+  if(dot){dot.classList.remove('wrong','correct');dot.classList.add('answered');}
+  if(immediate){
+    var ans=getAns(qid);
+    for(var k=0;k<4;k++){var e2=document.getElementById('opt_'+qid+'_'+k);if(!e2)continue;e2.classList.remove('selected');e2.classList.add('disabled');if(k===ans)e2.classList.add('correct');else if(k===i)e2.classList.add('wrong');}
+    var zh=document.getElementById('zh_'+qid),ana=document.getElementById('ana_'+qid),dt=document.getElementById('dt_'+qid);
+    if(zh)zh.style.display='block';if(ana)ana.style.display='block';if(dt)dt.style.display='block';
+    if(dot){dot.classList.remove('answered');dot.classList.add(i===ans?'correct':'wrong');}
+  }
+  updateProgress();
+}
+function submitAll(){
+  if(submitted)return;
+  var all=allQids(),unanswered=all.filter(function(id){return userAns[id]===undefined;});
+  if(unanswered.length){if(!confirm('還有 '+unanswered.length+' 題未作答，確定提交？'))return;}
+  submitted=true;
+  var correct=0;
+  all.forEach(function(qid){
+    var ans=getAns(qid),ua=userAns[qid];
+    if(ua===ans)correct++;
+    for(var i=0;i<4;i++){var el=document.getElementById('opt_'+qid+'_'+i);if(!el)continue;el.classList.remove('selected');el.classList.add('disabled');if(i===ans)el.classList.add('correct');else if(i===ua)el.classList.add('wrong');}
+    var zh=document.getElementById('zh_'+qid),ana=document.getElementById('ana_'+qid),dt=document.getElementById('dt_'+qid);
+    if(zh)zh.style.display='block';if(ana)ana.style.display='block';if(dt)dt.style.display='block';
+    var dot=document.getElementById('dot_'+qid);
+    if(dot){dot.classList.remove('answered');dot.classList.add(ua===ans?'correct':'wrong');}
+  });
+  var pct=Math.round(correct/all.length*100);
+  var msg=pct>=80?'🎉 表現優異！':pct>=60?'👍 答得不錯！':'💪 繼續加油！';
+  var sc=document.getElementById('scoreCard');
+  sc.innerHTML='<div class="sc-ring"><div class="sc-num">'+correct+'</div><div class="sc-den">/ '+all.length+'</div></div>'
+    +'<div class="sc-msg">'+msg+'</div><div class="sc-rate">正確率 '+pct+'%</div>'
+    +'<div class="sc-bar-wrap"><div class="sc-bar"><div class="sc-bar-fill" id="scBarFill"></div></div></div>';
+  sc.style.display='block';
+  setTimeout(function(){var f=document.getElementById('scBarFill');if(f)f.style.width=pct+'%';},100);
+  var btn=document.getElementById('submitBtn');
+  if(btn){btn.disabled=true;var sp=btn.querySelector('span');if(sp)sp.textContent='已提交';}
+  var h=document.getElementById('subHint');if(h)h.textContent='共答對 '+correct+' 題，正確率 '+pct+'%';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function toggleDetail(qid){
+  var dw=document.getElementById('dw_'+qid),dt=document.getElementById('dt_'+qid);
+  if(!dw||!dt)return;
+  var btn=dt.querySelector('.dt-btn'),open=dw.style.display==='block';
+  dw.style.display=open?'none':'block';
+  if(btn)btn.innerHTML=open
+    ?'<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析'
+    :'<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>收起分析';
+}
+updateProgress();
+</script>
+</body></html>

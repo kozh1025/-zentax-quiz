@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>商務英語練習 · 自選題組 · 第 05 組</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0f1c3f;--navy2:#1a2e5a;--gold:#c9922a;--gold2:#f0b940;--cream:#fdf9f2;--cream2:#f5efe3;--green:#1e6b45;--green-bg:#e8f5ed;--red:#b03030;--red-bg:#fdf0f0;--amber:#a05c10;--amber-bg:#fef8ee;--text:#1a1a2e;--sub:#5a607a;--border:#ddd8ce;--shadow:0 4px 24px rgba(15,28,63,.10)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans TC',sans-serif;background:var(--cream);color:var(--text);font-size:15px;line-height:1.75;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse 80% 50% at 10% 0%,rgba(201,146,42,.08) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 90% 100%,rgba(15,28,63,.06) 0%,transparent 60%),var(--cream)}
+.wrap{max-width:720px;margin:0 auto;padding:24px 16px 60px}
+.hd{background:var(--navy);border-radius:18px;padding:28px 28px 24px;margin-bottom:20px;position:relative;overflow:hidden}
+.hd::after{content:'ZENTAX';position:absolute;right:-8px;top:50%;transform:translateY(-50%);font-family:'DM Serif Display',serif;font-size:6.5em;color:rgba(255,255,255,.04);pointer-events:none;white-space:nowrap;letter-spacing:.08em}
+.hd-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(201,146,42,.18);border:1px solid rgba(201,146,42,.4);color:var(--gold2);border-radius:20px;padding:3px 12px;font-size:.78em;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px}
+.hd-title{font-family:'DM Serif Display',serif;font-size:1.55em;color:#fff;line-height:1.25;margin-bottom:6px}
+.hd-sub{color:rgba(255,255,255,.5);font-size:.84em}
+.prog-wrap{margin-top:18px}
+.prog-label{display:flex;justify-content:space-between;font-size:.78em;color:rgba(255,255,255,.45);margin-bottom:6px}
+.prog-bar{height:4px;background:rgba(255,255,255,.12);border-radius:2px;overflow:hidden}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:2px;transition:width .4s ease;width:0%}
+.zh-toggle-wrap{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.zh-toggle-btn{display:flex;align-items:center;gap:7px;background:#fff;border:1.5px solid var(--border);border-radius:20px;padding:5px 14px;font-size:.82em;color:var(--sub);cursor:pointer;font-family:inherit;transition:all .18s;font-weight:500}
+.zh-toggle-btn:hover{border-color:var(--navy);color:var(--navy)}
+.zh-toggle-btn .dot{width:8px;height:8px;border-radius:50%;background:var(--border);transition:background .2s}
+.zh-toggle-btn.on .dot{background:var(--gold)}
+.zh-toggle-btn.on{border-color:var(--gold);color:var(--amber)}
+.sc{background:var(--navy);border-radius:18px;padding:30px 24px;margin-bottom:20px;text-align:center;display:none;animation:fadeSlide .5s ease}
+@keyframes fadeSlide{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+.sc-ring{width:96px;height:96px;border-radius:50%;border:4px solid rgba(201,146,42,.3);background:rgba(201,146,42,.1);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 14px}
+.sc-num{font-size:2.2em;font-weight:700;color:var(--gold2);line-height:1}
+.sc-den{font-size:.78em;color:rgba(255,255,255,.4)}
+.sc-msg{font-size:1em;font-weight:600;color:#fff;margin-bottom:4px}
+.sc-rate{font-size:.84em;color:rgba(255,255,255,.45)}
+.sc-bar-wrap{margin-top:18px}
+.sc-bar{height:6px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
+.sc-bar-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:3px;transition:width 1s cubic-bezier(.4,0,.2,1) .3s;width:0%}
+.sec-hdr{font-size:.8em;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:8px 4px;margin:24px 0 12px;border-bottom:2px solid;display:flex;align-items:center;gap:8px}
+.sec-p5{color:var(--navy);border-color:var(--gold)}
+.sec-p34{color:#6a1b9a;border-color:#9c4dcc}
+.sec-p6{color:var(--green);border-color:#4caf7a}
+.sec-p7{color:#7c2d12;border-color:#c2410c}
+.qc{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:16px;overflow:hidden;transition:box-shadow .2s}
+.qc:hover{box-shadow:0 6px 32px rgba(15,28,63,.13)}
+.qc-sub{border-radius:10px;margin-bottom:10px;box-shadow:none;border:1.5px solid #e8e4dc}
+.qh{padding:18px 20px 14px;border-bottom:1px solid #f0ece4;display:flex;gap:12px;align-items:flex-start}
+.qn{background:var(--navy);color:var(--gold2);padding:4px 0;width:36px;text-align:center;border-radius:8px;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.82em;flex-shrink:0;margin-top:2px;letter-spacing:.02em}
+.qt{flex:1}
+.qe{font-size:.97em;color:var(--text);font-weight:500;line-height:1.7}
+.qz{font-size:.84em;color:var(--sub);margin-top:7px;padding-top:7px;border-top:1px dashed #e0dbd0;display:none;line-height:1.65}
+.bk{display:inline-block;color:var(--gold);font-weight:700;border-bottom:2px solid var(--gold);padding:0 3px;min-width:40px;text-align:center}
+.qh-right{display:flex;align-items:flex-start}
+.status-dot{width:8px;height:8px;border-radius:50%;background:#ddd;margin-top:10px;transition:background .2s;flex-shrink:0}
+.status-dot.answered{background:var(--gold2)}
+.status-dot.correct{background:#3aaa6a}
+.status-dot.wrong{background:var(--red)}
+.opts{padding:12px 16px 16px;display:flex;flex-direction:column;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;padding:11px 14px;border:1.5px solid #e8e4dc;border-radius:10px;cursor:pointer;transition:border-color .15s,background .15s,transform .1s;background:#fdfcfa;user-select:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.opt:hover:not(.disabled){border-color:var(--navy2);background:#f5f3ef;transform:translateX(2px)}
+.opt.selected{border-color:var(--navy);background:#f0f3fa}
+.opt-lbl{width:28px;height:28px;border-radius:7px;border:1.5px solid #d0ccc2;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.82em;color:#888;flex-shrink:0;transition:all .15s}
+.opt.selected .opt-lbl{border-color:var(--navy);background:var(--navy);color:var(--gold2)}
+.opt.correct .opt-lbl{border-color:var(--green);background:var(--green);color:#fff}
+.opt.wrong .opt-lbl{border-color:var(--red);background:var(--red);color:#fff}
+.opt.correct{border-color:#6dc492;background:var(--green-bg);cursor:default}
+.opt.wrong{border-color:#e08080;background:var(--red-bg);cursor:default}
+.opt.disabled{cursor:default}
+.opt-body{flex:1}
+.opt-word{font-size:.93em;font-weight:600;color:var(--text)}
+.opt.correct .opt-word{color:var(--green)}
+.opt.wrong .opt-word{color:var(--red)}
+.opt-pos{display:inline-block;font-size:.72em;font-family:'JetBrains Mono',monospace;color:#aaa;background:#f0ece4;border-radius:4px;padding:1px 6px;margin-left:7px;font-weight:400;vertical-align:middle}
+.opt.correct .opt-pos{color:#5a9a70;background:#d6f0e0}
+.opt.wrong .opt-pos{color:#c08080;background:#fde8e8}
+.opt-zh{font-size:.8em;color:var(--sub);display:block;margin-top:2px}
+.analysis{display:none;padding:0 16px 4px}
+.ana-block{border-radius:10px;padding:11px 14px;margin-bottom:8px;font-size:.875em;line-height:1.7}
+.ana-label{font-size:.75em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;display:flex;align-items:center;gap:6px;margin-bottom:5px}
+.ana-key{background:var(--green-bg);border:1px solid #b0d8be}
+.ana-key .ana-label{color:var(--green)}
+.ana-trap{background:var(--amber-bg);border:1px solid #e8c880}
+.ana-trap .ana-label{color:var(--amber)}
+.ana-gram{background:#f0f3fa;border:1px solid #c8cfea}
+.ana-gram .ana-label{color:var(--navy2)}
+.ana-icon{width:16px;height:16px}
+.dt{display:none;padding:0 16px 8px}
+.dt-btn{width:100%;background:#faf8f4;border:1px solid #e0dbd0;border-radius:8px;padding:8px 14px;font-size:.81em;color:var(--sub);cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:6px;transition:all .15s;font-weight:500}
+.dt-btn:hover{background:var(--cream2);color:var(--navy);border-color:#c8c0b0}
+.dw{display:none;padding:0 16px 16px}
+.ot{width:100%;border-collapse:collapse;font-size:.82em;table-layout:fixed;border-radius:10px;overflow:hidden}
+.ot thead tr{background:var(--navy)}
+.ot th{color:rgba(255,255,255,.7);padding:8px 10px;text-align:left;font-size:.78em;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.ot td{padding:8px 10px;border-bottom:1px solid #f0ece4;vertical-align:top;word-break:break-word}
+.ot tr.cor td{background:#edf7f1;color:var(--green);font-weight:600}
+.ot tr:not(.cor):hover td{background:#faf8f4}
+.ipa{font-family:'JetBrains Mono',monospace;color:var(--navy2);font-size:.95em;letter-spacing:.01em}
+.ot tr.cor .ipa{color:var(--green)}
+.fam-title{font-size:.78em;font-weight:700;color:var(--sub);letter-spacing:.06em;text-transform:uppercase;margin:12px 0 7px}
+.wg{display:flex;flex-wrap:wrap;gap:7px}
+.wc{border:1px solid #e0dbd0;background:#fdfcfa;border-radius:8px;padding:7px 11px;min-width:110px}
+.ww{font-weight:700;font-size:.88em;color:var(--navy);font-family:'JetBrains Mono',monospace}
+.wz{font-size:.78em;color:var(--sub);margin-top:2px}
+.conv-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:20px;overflow:hidden}
+.conv-hdr{background:var(--navy);padding:16px 20px}
+.conv-topic{font-family:'DM Serif Display',serif;color:var(--gold2);font-size:1.05em}
+.conv-sub{font-size:.8em;color:rgba(255,255,255,.45);margin-top:2px}
+.conv-script{padding:14px 20px;background:#faf8f4;border-bottom:1px solid #eee8de}
+.conv-line{display:flex;gap:10px;padding:4px 0;font-size:.9em;line-height:1.7}
+.conv-role{font-weight:700;min-width:28px;flex-shrink:0}
+.role-W{color:#c94070}.role-M{color:#1a5ea0}.role-ANR{color:#6a1b9a}
+.conv-qs{padding:14px 16px}
+.pass-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:20px;overflow:hidden}
+.pass-hdr{background:linear-gradient(135deg,#1e6b45,#2e8b57);padding:16px 20px}
+.pass-topic{font-family:'DM Serif Display',serif;color:#fff;font-size:1.05em}
+.pass-sub{font-size:.8em;color:rgba(255,255,255,.5);margin-top:2px}
+.pass-text{padding:16px 20px;font-size:.91em;line-height:2;border-bottom:1px solid #eee8de;white-space:pre-wrap}
+.pass-blank{display:inline-block;border:1.5px solid var(--green);border-radius:4px;padding:0 8px;min-width:36px;text-align:center;color:var(--green);font-weight:700}
+.pass-qs{padding:14px 16px}
+.read-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:20px;overflow:hidden}
+.read-hdr{background:linear-gradient(135deg,#7c2d12,#9a3412);padding:16px 20px}
+.read-topic{font-family:'DM Serif Display',serif;color:#fff;font-size:1.05em}
+.read-sub{font-size:.8em;color:rgba(255,255,255,.5);margin-top:2px}
+.read-text{padding:16px 20px;font-size:.91em;line-height:2;border-bottom:1px solid #eee8de}
+.read-multi{padding:0;display:flex;flex-direction:column;gap:0}
+.read-passage{padding:14px 20px;border-bottom:1px solid #eee8de;font-size:.91em;line-height:2}
+.read-passage-lbl{font-size:.72em;font-weight:700;color:#7c2d12;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.read-passage-body{color:var(--text)}
+.read-qs{padding:14px 16px}
+.tone-cue{font-size:.78em;padding:4px 16px 0;color:#a05c10;font-style:italic}
+.sub-wrap{text-align:center;padding:10px 0 28px}
+.sub-btn{background:var(--navy);color:#fff;border:none;border-radius:30px;padding:14px 50px;font-size:1em;font-weight:700;cursor:pointer;font-family:inherit;letter-spacing:.06em;position:relative;overflow:hidden;transition:opacity .2s,transform .15s}
+.sub-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--gold),var(--gold2));opacity:0;transition:opacity .2s}
+.sub-btn:hover:not(:disabled)::before{opacity:1}
+.sub-btn:hover:not(:disabled){transform:translateY(-1px)}
+.sub-btn span{position:relative}
+.sub-btn:disabled{background:#c8c4bc;cursor:default;transform:none}
+.sub-btn:disabled::before{display:none}
+.sub-hint{font-size:.8em;color:#b0a898;margin-top:8px}
+@media(max-width:580px){.ot{table-layout:auto}.ot thead{display:none}.ot tr{display:block;margin-bottom:8px;border:1px solid #e8e4dc;border-radius:8px;overflow:hidden}.ot td{display:block;padding:7px 11px;border-bottom:1px solid #f0ece4}.ot td::before{content:attr(data-l);font-weight:700;color:var(--navy);display:block;font-size:.72em;letter-spacing:.05em;text-transform:uppercase;margin-bottom:2px}.hd-title{font-size:1.25em}.hd::after{font-size:4em}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="sc" id="scoreCard"></div>
+<div class="hd">
+  <div class="hd-title">商務英語練習 · 自選題組 · 第 05 組</div>
+  <div class="hd-sub">共 11 題 · 完成後統一提交查看結果</div>
+  <div class="prog-wrap">
+    <div class="prog-label"><span id="progText">已作答 0 / 11 題</span><span id="progPct">0%</span></div>
+    <div class="prog-bar"><div class="prog-fill" id="progFill"></div></div>
+  </div>
+</div>
+<div class="sec-hdr sec-p5">✦ 企業通知</div>
+<div class="qc" id="qc_P5_E_R19_Q003"><div class="qh"><div class="qn">Q1</div><div class="qt"><div class="qe"><span class="bk">＿＿</span> that the budget had been finalized, the department heads proceeded to assign tasks to their teams.</div><div class="qz" id="zh_P5_E_R19_Q003">【中譯】由於預算已確定，各部門主管開始為各自的團隊分派任務。</div></div><div class="qh-right"><div class="status-dot" id="dot_P5_E_R19_Q003"></div></div></div><div class="opts" id="opts_P5_E_R19_Q003"><div class="opt" id="opt_P5_E_R19_Q003_0" ontouchstart="" onclick="pickOpt('P5_E_R19_Q003',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">Having confirmed</span></div></div><div class="opt" id="opt_P5_E_R19_Q003_1" ontouchstart="" onclick="pickOpt('P5_E_R19_Q003',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">Confirmed</span></div></div><div class="opt" id="opt_P5_E_R19_Q003_2" ontouchstart="" onclick="pickOpt('P5_E_R19_Q003',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">To confirm</span></div></div><div class="opt" id="opt_P5_E_R19_Q003_3" ontouchstart="" onclick="pickOpt('P5_E_R19_Q003',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">Confirming</span></div></div></div><div class="analysis" id="ana_P5_E_R19_Q003"><div class="ana-block ana-key"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1e6b45" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#1e6b45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>解題關鍵</div>分詞構句中，完成式分詞 Having + pp 表示「先於主句動作完成的主動行為」；確認預算在前，分派任務在後，且主詞 department heads 主動確認，故選 Having confirmed。</div><div class="ana-block ana-trap"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 13H2L8 2z" stroke="#a05c10" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6v3M8 11v.5" stroke="#a05c10" stroke-width="1.5" stroke-linecap="round"/></svg>陷阱提示</div>Confirmed 為過去分詞，表被動，主詞不是被確認的對象；Confirming 表同步，時間順序不符。需注意完成式分詞 Having + pp 與一般現在分詞 -ing 的差異。</div><div class="ana-block ana-gram"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="#1a2e5a" stroke-width="1.5"/><path d="M5 6h6M5 8.5h4M5 11h5" stroke="#1a2e5a" stroke-width="1.5" stroke-linecap="round"/></svg>文法補充</div>完成式分詞構句 Having + p.p. 表主動且先於主句：Having finished the report, she left the office.</div></div><div class="dt" id="dt_P5_E_R19_Q003"><button class="dt-btn" onclick="toggleDetail('P5_E_R19_Q003')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析</button></div><div class="dw" id="dw_P5_E_R19_Q003"><table class="ot"><thead><tr><th>單字/片語</th><th>詞性</th><th>音標</th><th>主要意思</th><th>搭配用法</th></tr></thead><tbody><tr class="cor"><td data-l="單字"><strong>Having confirmed</strong></td><td data-l="詞性">v-ing(完成式分詞)</td><td data-l="音標"><span class="ipa">/ˈhævɪŋ kənˈfɜːrmd/</span></td><td data-l="意思">（已）確認後</td><td data-l="搭配">完成式分詞構句，表示主動且動作先於主句</td></tr><tr><td data-l="單字">Confirmed</td><td data-l="詞性">v-pp(過去分詞)</td><td data-l="音標"><span class="ipa">/kənˈfɜːrmd/</span></td><td data-l="意思">被確認</td><td data-l="搭配">過去分詞構句表被動，但主詞 department heads 是主動確認者，故不適用</td></tr><tr><td data-l="單字">To confirm</td><td data-l="詞性">to-inf</td><td data-l="音標"><span class="ipa">/tə kənˈfɜːrm/</span></td><td data-l="意思">為了確認</td><td data-l="搭配">不定詞表目的，但後句 proceeded 說明動作已在確認後發生，非目的關係</td></tr><tr><td data-l="單字">Confirming</td><td data-l="詞性">v-ing(現在分詞)</td><td data-l="音標"><span class="ipa">/kənˈfɜːrmɪŋ/</span></td><td data-l="意思">正在確認</td><td data-l="搭配">現在分詞表同時進行或伴隨，但確認預算發生於分派任務之前，時間順序不符</td></tr></tbody></table></div></div>
+<div class="sec-hdr sec-p34">◈ 商品促銷廣播</div>
+<div class="conv-card"><div class="conv-hdr"><div class="conv-topic">商品促銷廣播</div></div><div class="conv-script"><div class="conv-line"><span class="conv-role role-N">N</span><span>Attention, shoppers! Welcome to Maple Grove Shopping Center, where today's savings are bigger than ever.</span></div><div class="conv-line"><span class="conv-role role-N">N</span><span>From now until six o'clock this evening, all kitchen appliances on the second floor are marked down by thirty percent.</span></div><div class="conv-line"><span class="conv-role role-N">N</span><span>That includes blenders, rice cookers, and our best-selling air fryers — all available at unbeatable prices.</span></div><div class="conv-line"><span class="conv-role role-N">N</span><span>If you spend over two hundred dollars in a single purchase today, you will also receive a complimentary store gift card worth twenty dollars.</span></div><div class="conv-line"><span class="conv-role role-N">N</span><span>To take advantage of this limited-time offer, please head to the second floor and speak with one of our friendly sales associates.</span></div><div class="conv-line"><span class="conv-role role-N">N</span><span>Remember, this promotion ends at six p.m. today, so don't miss your chance to save big at Maple Grove Shopping Center.</span></div></div><div class="conv-qs"><div class="qc qc-sub" id="qc_P34_P4_E_R17_G001_0"><div class="qh"><div class="qn">Q2</div><div class="qt"><div class="qe">What is the announcement mainly about?</div><div class="qz" id="zh_P34_P4_E_R17_G001_0">💡 廣播開頭說明 'all kitchen appliances on the second floor are marked down by thirty percent'，主旨為廚房家電特賣活動，答案為 B。</div></div><div class="qh-right"><div class="status-dot" id="dot_P34_P4_E_R17_G001_0"></div></div></div><div class="opts"><div class="opt" id="opt_P34_P4_E_R17_G001_0_0" ontouchstart="" onclick="pickOpt('P34_P4_E_R17_G001_0',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">A new store opening on the second floor</span></div></div><div class="opt" id="opt_P34_P4_E_R17_G001_0_1" ontouchstart="" onclick="pickOpt('P34_P4_E_R17_G001_0',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">A one-day sale on kitchen appliances</span></div></div><div class="opt" id="opt_P34_P4_E_R17_G001_0_2" ontouchstart="" onclick="pickOpt('P34_P4_E_R17_G001_0',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">A loyalty program for frequent shoppers</span></div></div><div class="opt" id="opt_P34_P4_E_R17_G001_0_3" ontouchstart="" onclick="pickOpt('P34_P4_E_R17_G001_0',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">A product recall affecting kitchen equipment</span></div></div></div></div><div class="qc qc-sub" id="qc_P34_P4_E_R17_G001_1"><div class="qh"><div class="qn">Q3</div><div class="qt"><div class="qe">What will customers receive if they spend more than two hundred dollars?</div><div class="qz" id="zh_P34_P4_E_R17_G001_1">💡 廣播說 'If you spend over two hundred dollars … you will also receive a complimentary store gift card worth twenty dollars'，答案為 C。</div></div><div class="qh-right"><div class="status-dot" id="dot_P34_P4_E_R17_G001_1"></div></div></div><div class="opts"><div class="opt" id="opt_P34_P4_E_R17_G001_1_0" ontouchstart="" onclick="pickOpt('P34_P4_E_R17_G001_1',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">A thirty percent discount on their next visit</span></div></div><div class="opt" id="opt_P34_P4_E_R17_G001_1_1" ontouchstart="" onclick="pickOpt('P34_P4_E_R17_G001_1',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">Free delivery to their home address</span></div></div><div class="opt" id="opt_P34_P4_E_R17_G001_1_2" ontouchstart="" onclick="pickOpt('P34_P4_E_R17_G001_1',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">A complimentary twenty-dollar gift card</span></div></div><div class="opt" id="opt_P34_P4_E_R17_G001_1_3" ontouchstart="" onclick="pickOpt('P34_P4_E_R17_G001_1',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">A sample pack of new kitchen products</span></div></div></div></div><div class="qc qc-sub" id="qc_P34_P4_E_R17_G001_2"><div class="qh"><div class="qn">Q4</div><div class="qt"><div class="qe">When does the promotion end?</div><div class="qz" id="zh_P34_P4_E_R17_G001_2">💡 廣播最後說 'this promotion ends at six p.m. today'，促銷截止時間為今日下午六點，答案為 D。</div></div><div class="qh-right"><div class="status-dot" id="dot_P34_P4_E_R17_G001_2"></div></div></div><div class="opts"><div class="opt" id="opt_P34_P4_E_R17_G001_2_0" ontouchstart="" onclick="pickOpt('P34_P4_E_R17_G001_2',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">At noon today</span></div></div><div class="opt" id="opt_P34_P4_E_R17_G001_2_1" ontouchstart="" onclick="pickOpt('P34_P4_E_R17_G001_2',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">Tomorrow morning</span></div></div><div class="opt" id="opt_P34_P4_E_R17_G001_2_2" ontouchstart="" onclick="pickOpt('P34_P4_E_R17_G001_2',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">At five o'clock this evening</span></div></div><div class="opt" id="opt_P34_P4_E_R17_G001_2_3" ontouchstart="" onclick="pickOpt('P34_P4_E_R17_G001_2',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">At six o'clock this evening</span></div></div></div></div></div></div><div class="conv-card"><div class="conv-hdr"><div class="conv-topic">醫療預約提醒電話</div></div><div class="conv-script"><div class="conv-line"><span class="conv-role role-N">N</span><span>Hello. This is an automated reminder call from Greenfield Medical Center.</span></div><div class="conv-line"><span class="conv-role role-N">N</span><span>You have an appointment scheduled with Dr. Patricia Huang on Friday, May 31st, at two-thirty in the afternoon.</span></div><div class="conv-line"><span class="conv-role role-N">N</span><span>Please arrive at least fifteen minutes before your appointment time to complete the check-in process.</span></div><div class="conv-line"><span class="conv-role role-N">N</span><span>If you need to cancel or reschedule, please call our office at five-five-five, oh-two-four-four before noon on the day prior to your appointment.</span></div><div class="conv-line"><span class="conv-role role-N">N</span><span>Failure to cancel in advance may result in a missed-appointment fee being applied to your account.</span></div><div class="conv-line"><span class="conv-role role-N">N</span><span>Please bring your insurance card and a valid photo identification to your visit.</span></div><div class="conv-line"><span class="conv-role role-N">N</span><span>Thank you for choosing Greenfield Medical Center. We look forward to seeing you soon. Goodbye.</span></div></div><div class="conv-qs"><div class="qc qc-sub" id="qc_P34_P4_E_R23_G001_0"><div class="qh"><div class="qn">Q5</div><div class="qt"><div class="qe">What is the purpose of this call?</div><div class="qz" id="zh_P34_P4_E_R23_G001_0">💡 錄音開頭明確說明 'This is an automated reminder call'，目的是提醒病患即將到來的預約，故選 (B)。</div></div><div class="qh-right"><div class="status-dot" id="dot_P34_P4_E_R23_G001_0"></div></div></div><div class="opts"><div class="opt" id="opt_P34_P4_E_R23_G001_0_0" ontouchstart="" onclick="pickOpt('P34_P4_E_R23_G001_0',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">(A) To confirm that a medical test has been completed</span></div></div><div class="opt" id="opt_P34_P4_E_R23_G001_0_1" ontouchstart="" onclick="pickOpt('P34_P4_E_R23_G001_0',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">(B) To remind a patient about an upcoming appointment</span></div></div><div class="opt" id="opt_P34_P4_E_R23_G001_0_2" ontouchstart="" onclick="pickOpt('P34_P4_E_R23_G001_0',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">(C) To inform a patient that a doctor is unavailable</span></div></div><div class="opt" id="opt_P34_P4_E_R23_G001_0_3" ontouchstart="" onclick="pickOpt('P34_P4_E_R23_G001_0',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">(D) To collect outstanding payment from a patient</span></div></div></div></div><div class="qc qc-sub" id="qc_P34_P4_E_R23_G001_1"><div class="qh"><div class="qn">Q6</div><div class="qt"><div class="qe">What is the listener advised to do when arriving at the clinic?</div><div class="qz" id="zh_P34_P4_E_R23_G001_1">💡 錄音說 'Please arrive at least fifteen minutes before your appointment time to complete the check-in process'，故選 (C)。</div></div><div class="qh-right"><div class="status-dot" id="dot_P34_P4_E_R23_G001_1"></div></div></div><div class="opts"><div class="opt" id="opt_P34_P4_E_R23_G001_1_0" ontouchstart="" onclick="pickOpt('P34_P4_E_R23_G001_1',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">(A) Call ahead to confirm the appointment</span></div></div><div class="opt" id="opt_P34_P4_E_R23_G001_1_1" ontouchstart="" onclick="pickOpt('P34_P4_E_R23_G001_1',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">(B) Bring a completed medical form</span></div></div><div class="opt" id="opt_P34_P4_E_R23_G001_1_2" ontouchstart="" onclick="pickOpt('P34_P4_E_R23_G001_1',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">(C) Come at least fifteen minutes early</span></div></div><div class="opt" id="opt_P34_P4_E_R23_G001_1_3" ontouchstart="" onclick="pickOpt('P34_P4_E_R23_G001_1',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">(D) Wait in the parking area until called</span></div></div></div></div><div class="qc qc-sub" id="qc_P34_P4_E_R23_G001_2"><div class="qh"><div class="qn">Q7</div><div class="qt"><div class="qe">What will happen if the listener does not cancel in advance?</div><div class="qz" id="zh_P34_P4_E_R23_G001_2">💡 錄音說 'Failure to cancel in advance may result in a missed-appointment fee being applied to your account'，故選 (D)。</div></div><div class="qh-right"><div class="status-dot" id="dot_P34_P4_E_R23_G001_2"></div></div></div><div class="opts"><div class="opt" id="opt_P34_P4_E_R23_G001_2_0" ontouchstart="" onclick="pickOpt('P34_P4_E_R23_G001_2',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">(A) The appointment will be automatically rescheduled</span></div></div><div class="opt" id="opt_P34_P4_E_R23_G001_2_1" ontouchstart="" onclick="pickOpt('P34_P4_E_R23_G001_2',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">(B) A follow-up call will be made the following day</span></div></div><div class="opt" id="opt_P34_P4_E_R23_G001_2_2" ontouchstart="" onclick="pickOpt('P34_P4_E_R23_G001_2',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">(C) The patient's insurance coverage will be suspended</span></div></div><div class="opt" id="opt_P34_P4_E_R23_G001_2_3" ontouchstart="" onclick="pickOpt('P34_P4_E_R23_G001_2',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">(D) A missed-appointment fee will be charged</span></div></div></div></div></div></div>
+
+
+<div class="sec-hdr sec-p7">◉ 人才招募/求職申請</div>
+<div class="read-card"><div class="read-hdr"><div class="read-topic">人才招募/求職申請</div><div class="read-sub">TOEIC</div></div><div class="read-text read-multi"><div class="read-passage"><div class="read-passage-lbl">文章 1 · notice</div><div class="read-passage-body">Position: Senior Content Strategist<br>Department: Marketing<br>Reporting to: Head of Digital Marketing<br><br>We are seeking a creative and data-driven Senior Content Strategist to join our expanding marketing team. The successful candidate will be responsible for developing and executing content strategies across multiple digital platforms, managing a team of two content writers, and collaborating with the SEO and design teams.<br><br>Requirements:<br>- Minimum 5 years of experience in content marketing or a related field<br>- Proven track record of increasing organic traffic and audience engagement<br>- Proficiency in content management systems (CMS) and analytics tools<br>- Excellent written and verbal communication skills<br><br>This is a full-time, on-site position based at our headquarters in Taipei. A competitive compensation package, including performance bonuses and health insurance, is offered. Applications close on June 15th.</div></div><div class="read-passage"><div class="read-passage-lbl">文章 2 · email</div><div class="read-passage-body">Subject: Application — Senior Content Strategist<br><br>Dear Hiring Manager,<br><br>I am writing to express my interest in the Senior Content Strategist position listed on your company's website. With seven years of experience in content marketing and a demonstrated ability to grow audience engagement across social media and SEO-driven platforms, I believe I am well positioned to contribute to your marketing team.<br><br>In my current role at a regional digital agency, I led a team of three writers and increased organic traffic for our key client by 42% over 18 months. I am also proficient in WordPress, HubSpot, and Google Analytics.<br><br>Please find my resume and portfolio attached for your review. I am available for an interview at your earliest convenience and look forward to discussing how my background aligns with your team's goals.<br><br>Sincerely,<br>David Lin</div></div></div><div class="read-qs"><div class="qc qc-sub" id="qc_P7_P7_E_R30_RD001_0"><div class="qh"><div class="qn">Q8</div><div class="qt"><div class="qe">What is listed as one of the requirements in the job posting?</div><div class="qz" id="zh_P7_P7_E_R30_RD001_0">🔑 職缺要求中明確列出：'Proven track record of increasing organic traffic and audience engagement'，(D) 正確；(A)(B)(C) 均未列於要求欄；管理寫手為職責描述，非要求。</div></div><div class="qh-right"><div class="status-dot" id="dot_P7_P7_E_R30_RD001_0"></div></div></div><div class="opts"><div class="opt" id="opt_P7_P7_E_R30_RD001_0_0" ontouchstart="" onclick="pickOpt('P7_P7_E_R30_RD001_0',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">Fluency in at least two foreign languages</span></div></div><div class="opt" id="opt_P7_P7_E_R30_RD001_0_1" ontouchstart="" onclick="pickOpt('P7_P7_E_R30_RD001_0',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">A degree in marketing or communications</span></div></div><div class="opt" id="opt_P7_P7_E_R30_RD001_0_2" ontouchstart="" onclick="pickOpt('P7_P7_E_R30_RD001_0',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">Experience managing a team of at least five people</span></div></div><div class="opt" id="opt_P7_P7_E_R30_RD001_0_3" ontouchstart="" onclick="pickOpt('P7_P7_E_R30_RD001_0',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">A proven track record of increasing organic traffic</span></div></div></div></div><div class="qc qc-sub" id="qc_P7_P7_E_R30_RD001_1"><div class="qh"><div class="qn">Q9</div><div class="qt"><div class="qe">What does David Lin state about his experience in his current role?</div><div class="qz" id="zh_P7_P7_E_R30_RD001_1">🔑 申請信第二段：'I led a team of three writers and increased organic traffic for our key client by 42% over 18 months'，(C) 正確；(A) 錯誤（三名非兩名）；(B)(D) 文中未提及。</div></div><div class="qh-right"><div class="status-dot" id="dot_P7_P7_E_R30_RD001_1"></div></div></div><div class="opts"><div class="opt" id="opt_P7_P7_E_R30_RD001_1_0" ontouchstart="" onclick="pickOpt('P7_P7_E_R30_RD001_1',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">He managed a team of two content writers</span></div></div><div class="opt" id="opt_P7_P7_E_R30_RD001_1_1" ontouchstart="" onclick="pickOpt('P7_P7_E_R30_RD001_1',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">He worked remotely for an international digital agency</span></div></div><div class="opt" id="opt_P7_P7_E_R30_RD001_1_2" ontouchstart="" onclick="pickOpt('P7_P7_E_R30_RD001_1',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">He led a writing team and significantly grew a client's organic traffic</span></div></div><div class="opt" id="opt_P7_P7_E_R30_RD001_1_3" ontouchstart="" onclick="pickOpt('P7_P7_E_R30_RD001_1',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">He developed a new CMS platform for content management</span></div></div></div></div><div class="qc qc-sub" id="qc_P7_P7_E_R30_RD001_2"><div class="qh"><div class="qn">Q10</div><div class="qt"><div class="qe">When is the deadline for submitting applications?</div><div class="qz" id="zh_P7_P7_E_R30_RD001_2">🔑 職缺公告末尾：'Applications close on June 15th'，(C) 正確。</div></div><div class="qh-right"><div class="status-dot" id="dot_P7_P7_E_R30_RD001_2"></div></div></div><div class="opts"><div class="opt" id="opt_P7_P7_E_R30_RD001_2_0" ontouchstart="" onclick="pickOpt('P7_P7_E_R30_RD001_2',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">May 15th</span></div></div><div class="opt" id="opt_P7_P7_E_R30_RD001_2_1" ontouchstart="" onclick="pickOpt('P7_P7_E_R30_RD001_2',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">June 1st</span></div></div><div class="opt" id="opt_P7_P7_E_R30_RD001_2_2" ontouchstart="" onclick="pickOpt('P7_P7_E_R30_RD001_2',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">June 15th</span></div></div><div class="opt" id="opt_P7_P7_E_R30_RD001_2_3" ontouchstart="" onclick="pickOpt('P7_P7_E_R30_RD001_2',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">July 15th</span></div></div></div></div><div class="qc qc-sub" id="qc_P7_P7_E_R30_RD001_3"><div class="qh"><div class="qn">Q11</div><div class="qt"><div class="qe">Based on both documents, how does David Lin's qualifications compare to the job requirements?</div><div class="qz" id="zh_P7_P7_E_R30_RD001_3">🔑 職缺要求最少 5 年，David 有 7 年（超過門檻）；他亦提及 WordPress、HubSpot、Google Analytics，符合 CMS 與分析工具要求，(B) 最完整；(A)(C)(D) 均與文意不符。</div></div><div class="qh-right"><div class="status-dot" id="dot_P7_P7_E_R30_RD001_3"></div></div></div><div class="opts"><div class="opt" id="opt_P7_P7_E_R30_RD001_3_0" ontouchstart="" onclick="pickOpt('P7_P7_E_R30_RD001_3',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">He meets the experience requirement but lacks the required CMS skills</span></div></div><div class="opt" id="opt_P7_P7_E_R30_RD001_3_1" ontouchstart="" onclick="pickOpt('P7_P7_E_R30_RD001_3',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">He exceeds the minimum experience and mentions relevant tools used in the role</span></div></div><div class="opt" id="opt_P7_P7_E_R30_RD001_3_2" ontouchstart="" onclick="pickOpt('P7_P7_E_R30_RD001_3',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">He does not meet the minimum years of experience required</span></div></div><div class="opt" id="opt_P7_P7_E_R30_RD001_3_3" ontouchstart="" onclick="pickOpt('P7_P7_E_R30_RD001_3',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">He has the required tools experience but did not mention managing a team</span></div></div></div></div></div></div>
+<div class="sub-wrap">
+  <button class="sub-btn" id="submitBtn" onclick="submitAll()"><span>提交所有答案</span></button>
+  <div class="sub-hint" id="subHint">請完成所有 11 題後提交</div>
+</div>
+
+
+<div style="margin-top:32px;padding:18px 20px;border-top:1px solid #e8e4dc;text-align:center;font-size:.75em;color:#b0a898;line-height:1.8">
+  <div style="font-weight:700;color:#8a9ab0;letter-spacing:.08em;margin-bottom:4px">ZENTAX</div>
+  本題組為 Zentax 原創自製練習教材，內容均為獨立創作。<br>
+  與 ETS 或任何官方測驗機構無任何關聯。<br>
+  TOEIC® 為 ETS 之註冊商標，本品牌不隸屬於 ETS。<br>
+  適合欲加強商務英語能力之學習者使用。
+</div>
+</div>
+<script>
+var Q=[{"id":"P5_E_R19_Q003","exam":"TOEIC","part":5,"type":"grammar","topic":"企業通知","difficulty":"B2","level":null,"genre":null,"focus":"grammar","ctx":"__ that the budget had been finalized, the department heads proceeded to assign tasks to their teams.","zh":"由於預算已確定，各部門主管開始為各自的團隊分派任務。","ans":0,"opts":[["Having confirmed","v-ing(完成式分詞)","/ˈhævɪŋ kənˈfɜːrmd/","（已）確認後","完成式分詞構句，表示主動且動作先於主句"],["Confirmed","v-pp(過去分詞)","/kənˈfɜːrmd/","被確認","過去分詞構句表被動，但主詞 department heads 是主動確認者，故不適用"],["To confirm","to-inf","/tə kənˈfɜːrm/","為了確認","不定詞表目的，但後句 proceeded 說明動作已在確認後發生，非目的關係"],["Confirming","v-ing(現在分詞)","/kənˈfɜːrmɪŋ/","正在確認","現在分詞表同時進行或伴隨，但確認預算發生於分派任務之前，時間順序不符"]],"key":"分詞構句中，完成式分詞 Having + pp 表示「先於主句動作完成的主動行為」；確認預算在前，分派任務在後，且主詞 department heads 主動確認，故選 Having confirmed。","trap":"Confirmed 為過去分詞，表被動，主詞不是被確認的對象；Confirming 表同步，時間順序不符。需注意完成式分詞 Having + pp 與一般現在分詞 -ing 的差異。","gram":"完成式分詞構句 Having + p.p. 表主動且先於主句：Having finished the report, she left the office.","tone_cue":[],"fam":[],"tags":[],"createdAt":"2026-05-29"}];
+var CONV=[{"id":"P4_E_R17_G001","exam":"TOEIC","part":4,"type":"conv","topic":"商品促銷廣播","difficulty":"B2","level":null,"genre":null,"label":"Q71-73","script":[["N","Attention, shoppers! Welcome to Maple Grove Shopping Center, where today's savings are bigger than ever."],["N","From now until six o'clock this evening, all kitchen appliances on the second floor are marked down by thirty percent."],["N","That includes blenders, rice cookers, and our best-selling air fryers — all available at unbeatable prices."],["N","If you spend over two hundred dollars in a single purchase today, you will also receive a complimentary store gift card worth twenty dollars."],["N","To take advantage of this limited-time offer, please head to the second floor and speak with one of our friendly sales associates."],["N","Remember, this promotion ends at six p.m. today, so don't miss your chance to save big at Maple Grove Shopping Center."]],"qs":[{"q":"What is the announcement mainly about?","ans":1,"opts":["A new store opening on the second floor","A one-day sale on kitchen appliances","A loyalty program for frequent shoppers","A product recall affecting kitchen equipment"],"exp":"廣播開頭說明 'all kitchen appliances on the second floor are marked down by thirty percent'，主旨為廚房家電特賣活動，答案為 B。"},{"q":"What will customers receive if they spend more than two hundred dollars?","ans":2,"opts":["A thirty percent discount on their next visit","Free delivery to their home address","A complimentary twenty-dollar gift card","A sample pack of new kitchen products"],"exp":"廣播說 'If you spend over two hundred dollars … you will also receive a complimentary store gift card worth twenty dollars'，答案為 C。"},{"q":"When does the promotion end?","ans":3,"opts":["At noon today","Tomorrow morning","At five o'clock this evening","At six o'clock this evening"],"exp":"廣播最後說 'this promotion ends at six p.m. today'，促銷截止時間為今日下午六點，答案為 D。"}],"tags":["促銷廣播","購物中心","家電特賣"],"createdAt":"2026-05-29"},{"id":"P4_E_R23_G001","exam":"TOEIC","part":4,"type":"conv","topic":"醫療預約提醒電話","difficulty":"B2","level":null,"label":"Q71-73","script":[["N","Hello. This is an automated reminder call from Greenfield Medical Center."],["N","You have an appointment scheduled with Dr. Patricia Huang on Friday, May 31st, at two-thirty in the afternoon."],["N","Please arrive at least fifteen minutes before your appointment time to complete the check-in process."],["N","If you need to cancel or reschedule, please call our office at five-five-five, oh-two-four-four before noon on the day prior to your appointment."],["N","Failure to cancel in advance may result in a missed-appointment fee being applied to your account."],["N","Please bring your insurance card and a valid photo identification to your visit."],["N","Thank you for choosing Greenfield Medical Center. We look forward to seeing you soon. Goodbye."]],"qs":[{"q":"What is the purpose of this call?","ans":1,"opts":["(A) To confirm that a medical test has been completed","(B) To remind a patient about an upcoming appointment","(C) To inform a patient that a doctor is unavailable","(D) To collect outstanding payment from a patient"],"exp":"錄音開頭明確說明 'This is an automated reminder call'，目的是提醒病患即將到來的預約，故選 (B)。"},{"q":"What is the listener advised to do when arriving at the clinic?","ans":2,"opts":["(A) Call ahead to confirm the appointment","(B) Bring a completed medical form","(C) Come at least fifteen minutes early","(D) Wait in the parking area until called"],"exp":"錄音說 'Please arrive at least fifteen minutes before your appointment time to complete the check-in process'，故選 (C)。"},{"q":"What will happen if the listener does not cancel in advance?","ans":3,"opts":["(A) The appointment will be automatically rescheduled","(B) A follow-up call will be made the following day","(C) The patient's insurance coverage will be suspended","(D) A missed-appointment fee will be charged"],"exp":"錄音說 'Failure to cancel in advance may result in a missed-appointment fee being applied to your account'，故選 (D)。"}],"tags":[],"createdAt":"2026-05-29"}];
+var PASS=[];
+var READ=[{"id":"P7_E_R30_RD001","exam":"TOEIC","part":7,"type":"reading","topic":"人才招募/求職申請","difficulty":"B2","level":null,"genre":["notice","email"],"passage":["Position: Senior Content Strategist\nDepartment: Marketing\nReporting to: Head of Digital Marketing\n\nWe are seeking a creative and data-driven Senior Content Strategist to join our expanding marketing team. The successful candidate will be responsible for developing and executing content strategies across multiple digital platforms, managing a team of two content writers, and collaborating with the SEO and design teams.\n\nRequirements:\n- Minimum 5 years of experience in content marketing or a related field\n- Proven track record of increasing organic traffic and audience engagement\n- Proficiency in content management systems (CMS) and analytics tools\n- Excellent written and verbal communication skills\n\nThis is a full-time, on-site position based at our headquarters in Taipei. A competitive compensation package, including performance bonuses and health insurance, is offered. Applications close on June 15th.","Subject: Application — Senior Content Strategist\n\nDear Hiring Manager,\n\nI am writing to express my interest in the Senior Content Strategist position listed on your company's website. With seven years of experience in content marketing and a demonstrated ability to grow audience engagement across social media and SEO-driven platforms, I believe I am well positioned to contribute to your marketing team.\n\nIn my current role at a regional digital agency, I led a team of three writers and increased organic traffic for our key client by 42% over 18 months. I am also proficient in WordPress, HubSpot, and Google Analytics.\n\nPlease find my resume and portfolio attached for your review. I am available for an interview at your earliest convenience and look forward to discussing how my background aligns with your team's goals.\n\nSincerely,\nDavid Lin"],"qs":[{"q":"What is listed as one of the requirements in the job posting?","type":"detail","ans":3,"opts":["Fluency in at least two foreign languages","A degree in marketing or communications","Experience managing a team of at least five people","A proven track record of increasing organic traffic"],"exp":"職缺要求中明確列出：'Proven track record of increasing organic traffic and audience engagement'，(D) 正確；(A)(B)(C) 均未列於要求欄；管理寫手為職責描述，非要求。"},{"q":"What does David Lin state about his experience in his current role?","type":"detail","ans":2,"opts":["He managed a team of two content writers","He worked remotely for an international digital agency","He led a writing team and significantly grew a client's organic traffic","He developed a new CMS platform for content management"],"exp":"申請信第二段：'I led a team of three writers and increased organic traffic for our key client by 42% over 18 months'，(C) 正確；(A) 錯誤（三名非兩名）；(B)(D) 文中未提及。"},{"q":"When is the deadline for submitting applications?","type":"detail","ans":2,"opts":["May 15th","June 1st","June 15th","July 15th"],"exp":"職缺公告末尾：'Applications close on June 15th'，(C) 正確。"},{"q":"Based on both documents, how does David Lin's qualifications compare to the job requirements?","type":"cross","ans":1,"opts":["He meets the experience requirement but lacks the required CMS skills","He exceeds the minimum experience and mentions relevant tools used in the role","He does not meet the minimum years of experience required","He has the required tools experience but did not mention managing a team"],"exp":"職缺要求最少 5 年，David 有 7 年（超過門檻）；他亦提及 WordPress、HubSpot、Google Analytics，符合 CMS 與分析工具要求，(B) 最完整；(A)(C)(D) 均與文意不符。"}],"tags":[],"createdAt":"2026-05-30"}];
+var immediate=false;
+var totalQ=11;
+var userAns={},submitted=false,showZh=false;
+function allQids(){
+  var ids=[];
+  Q.forEach(function(q){ids.push(q.id);});
+  CONV.forEach(function(g){(g.qs||[]).forEach(function(_,i){ids.push('P34_'+g.id+'_'+i);});});
+  PASS.forEach(function(p){(p.qs||[]).forEach(function(_,i){ids.push('P6_'+p.id+'_'+i);});});
+  READ.forEach(function(r){(r.qs||[]).forEach(function(_,i){ids.push('P7_'+r.id+'_'+i);});});
+  return ids;
+}
+function getAns(qid){
+  var r=Q.find(function(q){return q.id===qid;}); if(r) return r.ans;
+  for(var gi=0;gi<CONV.length;gi++){var g=CONV[gi];for(var qi=0;qi<(g.qs||[]).length;qi++){if('P34_'+g.id+'_'+qi===qid)return g.qs[qi].ans;}}
+  for(var pi=0;pi<PASS.length;pi++){var pg=PASS[pi];for(var qi=0;qi<(pg.qs||[]).length;qi++){if('P6_'+pg.id+'_'+qi===qid)return pg.qs[qi].ans;}}
+  for(var ri=0;ri<READ.length;ri++){var rp=READ[ri];for(var qi=0;qi<(rp.qs||[]).length;qi++){if('P7_'+rp.id+'_'+qi===qid)return rp.qs[qi].ans;}}
+  return -1;
+}
+function updateProgress(){
+  var done=Object.keys(userAns).length,pct=totalQ?Math.round(done/totalQ*100):0;
+  var pt=document.getElementById('progText'),pp=document.getElementById('progPct'),pf=document.getElementById('progFill');
+  if(pt)pt.textContent='已作答 '+done+' / '+totalQ+' 題';
+  if(pp)pp.textContent=pct+'%';
+  if(pf)pf.style.width=pct+'%';
+  var h=document.getElementById('subHint');
+  if(h)h.textContent=done<totalQ?'請完成所有 '+totalQ+' 題後提交':'所有題目已作答，可以提交';
+}
+function toggleZh(){
+  showZh=!showZh;
+  var btn=document.getElementById('zhToggle');
+  if(btn){btn.classList.toggle('on',showZh);btn.innerHTML='<span class="dot"></span>'+(showZh?'隱藏中文翻譯':'顯示中文翻譯');}
+  allQids().forEach(function(qid){var el=document.getElementById('zh_'+qid);if(el&&!submitted)el.style.display=showZh?'block':'none';});
+}
+function pickOpt(qid,i){
+  if(submitted)return;
+  userAns[qid]=i;
+  for(var j=0;j<4;j++){var el=document.getElementById('opt_'+qid+'_'+j);if(el)el.classList.toggle('selected',j===i);}
+  var dot=document.getElementById('dot_'+qid);
+  if(dot){dot.classList.remove('wrong','correct');dot.classList.add('answered');}
+  if(immediate){
+    var ans=getAns(qid);
+    for(var k=0;k<4;k++){var e2=document.getElementById('opt_'+qid+'_'+k);if(!e2)continue;e2.classList.remove('selected');e2.classList.add('disabled');if(k===ans)e2.classList.add('correct');else if(k===i)e2.classList.add('wrong');}
+    var zh=document.getElementById('zh_'+qid),ana=document.getElementById('ana_'+qid),dt=document.getElementById('dt_'+qid);
+    if(zh)zh.style.display='block';if(ana)ana.style.display='block';if(dt)dt.style.display='block';
+    if(dot){dot.classList.remove('answered');dot.classList.add(i===ans?'correct':'wrong');}
+  }
+  updateProgress();
+}
+function submitAll(){
+  if(submitted)return;
+  var all=allQids(),unanswered=all.filter(function(id){return userAns[id]===undefined;});
+  if(unanswered.length){if(!confirm('還有 '+unanswered.length+' 題未作答，確定提交？'))return;}
+  submitted=true;
+  var correct=0;
+  all.forEach(function(qid){
+    var ans=getAns(qid),ua=userAns[qid];
+    if(ua===ans)correct++;
+    for(var i=0;i<4;i++){var el=document.getElementById('opt_'+qid+'_'+i);if(!el)continue;el.classList.remove('selected');el.classList.add('disabled');if(i===ans)el.classList.add('correct');else if(i===ua)el.classList.add('wrong');}
+    var zh=document.getElementById('zh_'+qid),ana=document.getElementById('ana_'+qid),dt=document.getElementById('dt_'+qid);
+    if(zh)zh.style.display='block';if(ana)ana.style.display='block';if(dt)dt.style.display='block';
+    var dot=document.getElementById('dot_'+qid);
+    if(dot){dot.classList.remove('answered');dot.classList.add(ua===ans?'correct':'wrong');}
+  });
+  var pct=Math.round(correct/all.length*100);
+  var msg=pct>=80?'🎉 表現優異！':pct>=60?'👍 答得不錯！':'💪 繼續加油！';
+  var sc=document.getElementById('scoreCard');
+  sc.innerHTML='<div class="sc-ring"><div class="sc-num">'+correct+'</div><div class="sc-den">/ '+all.length+'</div></div>'
+    +'<div class="sc-msg">'+msg+'</div><div class="sc-rate">正確率 '+pct+'%</div>'
+    +'<div class="sc-bar-wrap"><div class="sc-bar"><div class="sc-bar-fill" id="scBarFill"></div></div></div>';
+  sc.style.display='block';
+  setTimeout(function(){var f=document.getElementById('scBarFill');if(f)f.style.width=pct+'%';},100);
+  var btn=document.getElementById('submitBtn');
+  if(btn){btn.disabled=true;var sp=btn.querySelector('span');if(sp)sp.textContent='已提交';}
+  var h=document.getElementById('subHint');if(h)h.textContent='共答對 '+correct+' 題，正確率 '+pct+'%';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function toggleDetail(qid){
+  var dw=document.getElementById('dw_'+qid),dt=document.getElementById('dt_'+qid);
+  if(!dw||!dt)return;
+  var btn=dt.querySelector('.dt-btn'),open=dw.style.display==='block';
+  dw.style.display=open?'none':'block';
+  if(btn)btn.innerHTML=open
+    ?'<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析'
+    :'<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>收起分析';
+}
+updateProgress();
+</script>
+</body></html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>商務英語練習 · 自選題組 · 第 01 組</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0f1c3f;--navy2:#1a2e5a;--gold:#c9922a;--gold2:#f0b940;--cream:#fdf9f2;--cream2:#f5efe3;--green:#1e6b45;--green-bg:#e8f5ed;--red:#b03030;--red-bg:#fdf0f0;--amber:#a05c10;--amber-bg:#fef8ee;--text:#1a1a2e;--sub:#5a607a;--border:#ddd8ce;--shadow:0 4px 24px rgba(15,28,63,.10)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans TC',sans-serif;background:var(--cream);color:var(--text);font-size:15px;line-height:1.75;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse 80% 50% at 10% 0%,rgba(201,146,42,.08) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 90% 100%,rgba(15,28,63,.06) 0%,transparent 60%),var(--cream)}
+.wrap{max-width:720px;margin:0 auto;padding:24px 16px 60px}
+.hd{background:var(--navy);border-radius:18px;padding:28px 28px 24px;margin-bottom:20px;position:relative;overflow:hidden}
+.hd::after{content:'ZENTAX';position:absolute;right:-8px;top:50%;transform:translateY(-50%);font-family:'DM Serif Display',serif;font-size:6.5em;color:rgba(255,255,255,.04);pointer-events:none;white-space:nowrap;letter-spacing:.08em}
+.hd-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(201,146,42,.18);border:1px solid rgba(201,146,42,.4);color:var(--gold2);border-radius:20px;padding:3px 12px;font-size:.78em;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px}
+.hd-title{font-family:'DM Serif Display',serif;font-size:1.55em;color:#fff;line-height:1.25;margin-bottom:6px}
+.hd-sub{color:rgba(255,255,255,.5);font-size:.84em}
+.prog-wrap{margin-top:18px}
+.prog-label{display:flex;justify-content:space-between;font-size:.78em;color:rgba(255,255,255,.45);margin-bottom:6px}
+.prog-bar{height:4px;background:rgba(255,255,255,.12);border-radius:2px;overflow:hidden}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:2px;transition:width .4s ease;width:0%}
+.zh-toggle-wrap{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.zh-toggle-btn{display:flex;align-items:center;gap:7px;background:#fff;border:1.5px solid var(--border);border-radius:20px;padding:5px 14px;font-size:.82em;color:var(--sub);cursor:pointer;font-family:inherit;transition:all .18s;font-weight:500}
+.zh-toggle-btn:hover{border-color:var(--navy);color:var(--navy)}
+.zh-toggle-btn .dot{width:8px;height:8px;border-radius:50%;background:var(--border);transition:background .2s}
+.zh-toggle-btn.on .dot{background:var(--gold)}
+.zh-toggle-btn.on{border-color:var(--gold);color:var(--amber)}
+.sc{background:var(--navy);border-radius:18px;padding:30px 24px;margin-bottom:20px;text-align:center;display:none;animation:fadeSlide .5s ease}
+@keyframes fadeSlide{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+.sc-ring{width:96px;height:96px;border-radius:50%;border:4px solid rgba(201,146,42,.3);background:rgba(201,146,42,.1);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 14px}
+.sc-num{font-size:2.2em;font-weight:700;color:var(--gold2);line-height:1}
+.sc-den{font-size:.78em;color:rgba(255,255,255,.4)}
+.sc-msg{font-size:1em;font-weight:600;color:#fff;margin-bottom:4px}
+.sc-rate{font-size:.84em;color:rgba(255,255,255,.45)}
+.sc-bar-wrap{margin-top:18px}
+.sc-bar{height:6px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
+.sc-bar-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:3px;transition:width 1s cubic-bezier(.4,0,.2,1) .3s;width:0%}
+.sec-hdr{font-size:.8em;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:8px 4px;margin:24px 0 12px;border-bottom:2px solid;display:flex;align-items:center;gap:8px}
+.sec-p5{color:var(--navy);border-color:var(--gold)}
+.sec-p34{color:#6a1b9a;border-color:#9c4dcc}
+.sec-p6{color:var(--green);border-color:#4caf7a}
+.sec-p7{color:#7c2d12;border-color:#c2410c}
+.qc{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:16px;overflow:hidden;transition:box-shadow .2s}
+.qc:hover{box-shadow:0 6px 32px rgba(15,28,63,.13)}
+.qc-sub{border-radius:10px;margin-bottom:10px;box-shadow:none;border:1.5px solid #e8e4dc}
+.qh{padding:18px 20px 14px;border-bottom:1px solid #f0ece4;display:flex;gap:12px;align-items:flex-start}
+.qn{background:var(--navy);color:var(--gold2);padding:4px 0;width:36px;text-align:center;border-radius:8px;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.82em;flex-shrink:0;margin-top:2px;letter-spacing:.02em}
+.qt{flex:1}
+.qe{font-size:.97em;color:var(--text);font-weight:500;line-height:1.7}
+.qz{font-size:.84em;color:var(--sub);margin-top:7px;padding-top:7px;border-top:1px dashed #e0dbd0;display:none;line-height:1.65}
+.bk{display:inline-block;color:var(--gold);font-weight:700;border-bottom:2px solid var(--gold);padding:0 3px;min-width:40px;text-align:center}
+.qh-right{display:flex;align-items:flex-start}
+.status-dot{width:8px;height:8px;border-radius:50%;background:#ddd;margin-top:10px;transition:background .2s;flex-shrink:0}
+.status-dot.answered{background:var(--gold2)}
+.status-dot.correct{background:#3aaa6a}
+.status-dot.wrong{background:var(--red)}
+.opts{padding:12px 16px 16px;display:flex;flex-direction:column;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;padding:11px 14px;border:1.5px solid #e8e4dc;border-radius:10px;cursor:pointer;transition:border-color .15s,background .15s,transform .1s;background:#fdfcfa;user-select:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.opt:hover:not(.disabled){border-color:var(--navy2);background:#f5f3ef;transform:translateX(2px)}
+.opt.selected{border-color:var(--navy);background:#f0f3fa}
+.opt-lbl{width:28px;height:28px;border-radius:7px;border:1.5px solid #d0ccc2;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.82em;color:#888;flex-shrink:0;transition:all .15s}
+.opt.selected .opt-lbl{border-color:var(--navy);background:var(--navy);color:var(--gold2)}
+.opt.correct .opt-lbl{border-color:var(--green);background:var(--green);color:#fff}
+.opt.wrong .opt-lbl{border-color:var(--red);background:var(--red);color:#fff}
+.opt.correct{border-color:#6dc492;background:var(--green-bg);cursor:default}
+.opt.wrong{border-color:#e08080;background:var(--red-bg);cursor:default}
+.opt.disabled{cursor:default}
+.opt-body{flex:1}
+.opt-word{font-size:.93em;font-weight:600;color:var(--text)}
+.opt.correct .opt-word{color:var(--green)}
+.opt.wrong .opt-word{color:var(--red)}
+.opt-pos{display:inline-block;font-size:.72em;font-family:'JetBrains Mono',monospace;color:#aaa;background:#f0ece4;border-radius:4px;padding:1px 6px;margin-left:7px;font-weight:400;vertical-align:middle}
+.opt.correct .opt-pos{color:#5a9a70;background:#d6f0e0}
+.opt.wrong .opt-pos{color:#c08080;background:#fde8e8}
+.opt-zh{font-size:.8em;color:var(--sub);display:block;margin-top:2px}
+.analysis{display:none;padding:0 16px 4px}
+.ana-block{border-radius:10px;padding:11px 14px;margin-bottom:8px;font-size:.875em;line-height:1.7}
+.ana-label{font-size:.75em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;display:flex;align-items:center;gap:6px;margin-bottom:5px}
+.ana-key{background:var(--green-bg);border:1px solid #b0d8be}
+.ana-key .ana-label{color:var(--green)}
+.ana-trap{background:var(--amber-bg);border:1px solid #e8c880}
+.ana-trap .ana-label{color:var(--amber)}
+.ana-gram{background:#f0f3fa;border:1px solid #c8cfea}
+.ana-gram .ana-label{color:var(--navy2)}
+.ana-icon{width:16px;height:16px}
+.dt{display:none;padding:0 16px 8px}
+.dt-btn{width:100%;background:#faf8f4;border:1px solid #e0dbd0;border-radius:8px;padding:8px 14px;font-size:.81em;color:var(--sub);cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:6px;transition:all .15s;font-weight:500}
+.dt-btn:hover{background:var(--cream2);color:var(--navy);border-color:#c8c0b0}
+.dw{display:none;padding:0 16px 16px}
+.ot{width:100%;border-collapse:collapse;font-size:.82em;table-layout:fixed;border-radius:10px;overflow:hidden}
+.ot thead tr{background:var(--navy)}
+.ot th{color:rgba(255,255,255,.7);padding:8px 10px;text-align:left;font-size:.78em;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.ot td{padding:8px 10px;border-bottom:1px solid #f0ece4;vertical-align:top;word-break:break-word}
+.ot tr.cor td{background:#edf7f1;color:var(--green);font-weight:600}
+.ot tr:not(.cor):hover td{background:#faf8f4}
+.ipa{font-family:'JetBrains Mono',monospace;color:var(--navy2);font-size:.95em;letter-spacing:.01em}
+.ot tr.cor .ipa{color:var(--green)}
+.fam-title{font-size:.78em;font-weight:700;color:var(--sub);letter-spacing:.06em;text-transform:uppercase;margin:12px 0 7px}
+.wg{display:flex;flex-wrap:wrap;gap:7px}
+.wc{border:1px solid #e0dbd0;background:#fdfcfa;border-radius:8px;padding:7px 11px;min-width:110px}
+.ww{font-weight:700;font-size:.88em;color:var(--navy);font-family:'JetBrains Mono',monospace}
+.wz{font-size:.78em;color:var(--sub);margin-top:2px}
+.conv-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:20px;overflow:hidden}
+.conv-hdr{background:var(--navy);padding:16px 20px}
+.conv-topic{font-family:'DM Serif Display',serif;color:var(--gold2);font-size:1.05em}
+.conv-sub{font-size:.8em;color:rgba(255,255,255,.45);margin-top:2px}
+.conv-script{padding:14px 20px;background:#faf8f4;border-bottom:1px solid #eee8de}
+.conv-line{display:flex;gap:10px;padding:4px 0;font-size:.9em;line-height:1.7}
+.conv-role{font-weight:700;min-width:28px;flex-shrink:0}
+.role-W{color:#c94070}.role-M{color:#1a5ea0}.role-ANR{color:#6a1b9a}
+.conv-qs{padding:14px 16px}
+.pass-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:20px;overflow:hidden}
+.pass-hdr{background:linear-gradient(135deg,#1e6b45,#2e8b57);padding:16px 20px}
+.pass-topic{font-family:'DM Serif Display',serif;color:#fff;font-size:1.05em}
+.pass-sub{font-size:.8em;color:rgba(255,255,255,.5);margin-top:2px}
+.pass-text{padding:16px 20px;font-size:.91em;line-height:2;border-bottom:1px solid #eee8de;white-space:pre-wrap}
+.pass-blank{display:inline-block;border:1.5px solid var(--green);border-radius:4px;padding:0 8px;min-width:36px;text-align:center;color:var(--green);font-weight:700}
+.pass-qs{padding:14px 16px}
+.read-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:20px;overflow:hidden}
+.read-hdr{background:linear-gradient(135deg,#7c2d12,#9a3412);padding:16px 20px}
+.read-topic{font-family:'DM Serif Display',serif;color:#fff;font-size:1.05em}
+.read-sub{font-size:.8em;color:rgba(255,255,255,.5);margin-top:2px}
+.read-text{padding:16px 20px;font-size:.91em;line-height:2;border-bottom:1px solid #eee8de}
+.read-multi{padding:0;display:flex;flex-direction:column;gap:0}
+.read-passage{padding:14px 20px;border-bottom:1px solid #eee8de;font-size:.91em;line-height:2}
+.read-passage-lbl{font-size:.72em;font-weight:700;color:#7c2d12;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.read-passage-body{color:var(--text)}
+.read-qs{padding:14px 16px}
+.tone-cue{font-size:.78em;padding:4px 16px 0;color:#a05c10;font-style:italic}
+.sub-wrap{text-align:center;padding:10px 0 28px}
+.sub-btn{background:var(--navy);color:#fff;border:none;border-radius:30px;padding:14px 50px;font-size:1em;font-weight:700;cursor:pointer;font-family:inherit;letter-spacing:.06em;position:relative;overflow:hidden;transition:opacity .2s,transform .15s}
+.sub-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--gold),var(--gold2));opacity:0;transition:opacity .2s}
+.sub-btn:hover:not(:disabled)::before{opacity:1}
+.sub-btn:hover:not(:disabled){transform:translateY(-1px)}
+.sub-btn span{position:relative}
+.sub-btn:disabled{background:#c8c4bc;cursor:default;transform:none}
+.sub-btn:disabled::before{display:none}
+.sub-hint{font-size:.8em;color:#b0a898;margin-top:8px}
+@media(max-width:580px){.ot{table-layout:auto}.ot thead{display:none}.ot tr{display:block;margin-bottom:8px;border:1px solid #e8e4dc;border-radius:8px;overflow:hidden}.ot td{display:block;padding:7px 11px;border-bottom:1px solid #f0ece4}.ot td::before{content:attr(data-l);font-weight:700;color:var(--navy);display:block;font-size:.72em;letter-spacing:.05em;text-transform:uppercase;margin-bottom:2px}.hd-title{font-size:1.25em}.hd::after{font-size:4em}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="sc" id="scoreCard"></div>
+<div class="hd">
+  <div class="hd-title">商務英語練習 · 自選題組 · 第 01 組</div>
+  <div class="hd-sub">共 4 題 · 完成後統一提交查看結果</div>
+  <div class="prog-wrap">
+    <div class="prog-label"><span id="progText">已作答 0 / 4 題</span><span id="progPct">0%</span></div>
+    <div class="prog-bar"><div class="prog-fill" id="progFill"></div></div>
+  </div>
+</div>
+<div class="sec-hdr sec-p5">✦ 企業公告</div>
+<div class="qc" id="qc_P5_E_R23_Q004"><div class="qh"><div class="qn">Q1</div><div class="qt"><div class="qe">The new overtime policy, <span class="bk">＿＿</span> was introduced last month, has been welcomed by most employees.</div><div class="qz" id="zh_P5_E_R23_Q004">【中譯】上個月推出的新加班政策，__受到大多數員工的歡迎。</div></div><div class="qh-right"><div class="status-dot" id="dot_P5_E_R23_Q004"></div></div></div><div class="opts" id="opts_P5_E_R23_Q004"><div class="opt" id="opt_P5_E_R23_Q004_0" ontouchstart="" onclick="pickOpt('P5_E_R23_Q004',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">that</span></div></div><div class="opt" id="opt_P5_E_R23_Q004_1" ontouchstart="" onclick="pickOpt('P5_E_R23_Q004',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">what</span></div></div><div class="opt" id="opt_P5_E_R23_Q004_2" ontouchstart="" onclick="pickOpt('P5_E_R23_Q004',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">it</span></div></div><div class="opt" id="opt_P5_E_R23_Q004_3" ontouchstart="" onclick="pickOpt('P5_E_R23_Q004',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">which</span></div></div></div><div class="analysis" id="ana_P5_E_R23_Q004"><div class="ana-block ana-key"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1e6b45" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#1e6b45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>解題關鍵</div>先行詞 'The new overtime policy' 為物，且子句前有逗號（非限定性關係子句），必須用 which，不可用 that。</div><div class="ana-block ana-trap"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 13H2L8 2z" stroke="#a05c10" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6v3M8 11v.5" stroke="#a05c10" stroke-width="1.5" stroke-linecap="round"/></svg>陷阱提示</div>that 不可用在前後有逗號的非限定性關係子句中；what 引導名詞子句而非形容詞子句。</div><div class="ana-block ana-gram"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="#1a2e5a" stroke-width="1.5"/><path d="M5 6h6M5 8.5h4M5 11h5" stroke="#1a2e5a" stroke-width="1.5" stroke-linecap="round"/></svg>文法補充</div>非限定性關係子句（non-defining relative clause）用逗號隔開，引導詞必須用 which（物）或 who（人），不可用 that。</div></div><div class="dt" id="dt_P5_E_R23_Q004"><button class="dt-btn" onclick="toggleDetail('P5_E_R23_Q004')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析</button></div><div class="dw" id="dw_P5_E_R23_Q004"><table class="ot"><thead><tr><th>單字/片語</th><th>詞性</th><th>音標</th><th>主要意思</th><th>搭配用法</th></tr></thead><tbody><tr><td data-l="單字">that</td><td data-l="詞性">rel. pron.</td><td data-l="音標"><span class="ipa">/ðæt/</span></td><td data-l="意思">關係代名詞 that</td><td data-l="搭配">that 不可用於非限定性（逗號）關係子句</td></tr><tr><td data-l="單字">what</td><td data-l="詞性">rel. pron.</td><td data-l="音標"><span class="ipa">/wɒt/</span></td><td data-l="意思">關係代名詞 what</td><td data-l="搭配">what 引導名詞子句，不引導形容詞子句</td></tr><tr><td data-l="單字">it</td><td data-l="詞性">pron.</td><td data-l="音標"><span class="ipa">/ɪt/</span></td><td data-l="意思">代名詞 it</td><td data-l="搭配">it 不作關係子句的引導詞</td></tr><tr class="cor"><td data-l="單字"><strong>which</strong></td><td data-l="詞性">rel. pron.</td><td data-l="音標"><span class="ipa">/wɪtʃ/</span></td><td data-l="意思">關係代名詞 which</td><td data-l="搭配">which 可用於非限定性關係子句（先行詞為物）✓</td></tr></tbody></table></div></div><div class="qc" id="qc_P5_E_R15_Q004"><div class="qh"><div class="qn">Q2</div><div class="qt"><div class="qe">The project director had the legal team ------- all vendor contracts before the partnership agreement was signed.</div><div class="qz" id="zh_P5_E_R15_Q004">【中譯】專案總監讓法務團隊在合夥協議簽署前審查了所有供應商合約。</div></div><div class="qh-right"><div class="status-dot" id="dot_P5_E_R15_Q004"></div></div></div><div class="opts" id="opts_P5_E_R15_Q004"><div class="opt" id="opt_P5_E_R15_Q004_0" ontouchstart="" onclick="pickOpt('P5_E_R15_Q004',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">to review</span></div></div><div class="opt" id="opt_P5_E_R15_Q004_1" ontouchstart="" onclick="pickOpt('P5_E_R15_Q004',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">reviewing</span></div></div><div class="opt" id="opt_P5_E_R15_Q004_2" ontouchstart="" onclick="pickOpt('P5_E_R15_Q004',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">reviewed</span></div></div><div class="opt" id="opt_P5_E_R15_Q004_3" ontouchstart="" onclick="pickOpt('P5_E_R15_Q004',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">review</span></div></div></div><div class="analysis" id="ana_P5_E_R15_Q004"><div class="ana-block ana-key"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1e6b45" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#1e6b45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>解題關鍵</div>使役動詞 have 的結構：have + 受詞（人）+ 原形動詞（V bare）。本句受詞為 the legal team（人），其後需接原形動詞 review，表示「讓法務團隊審查」。to review 為不定詞，用於 ask/want/expect 等非使役動詞；reviewing 為進行分詞，不用於此結構；reviewed 為過去分詞，用於 have + 物 + pp 的被動使役結構（如 had the contracts reviewed）。</div><div class="ana-block ana-trap"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 13H2L8 2z" stroke="#a05c10" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6v3M8 11v.5" stroke="#a05c10" stroke-width="1.5" stroke-linecap="round"/></svg>陷阱提示</div>reviewed 容易混淆：had + 物（contracts）+ pp 表被動使役（合約被審查）；但本句受詞為人（the legal team），應接原形動詞 review，兩種結構需分辨清楚。</div><div class="ana-block ana-gram"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="#1a2e5a" stroke-width="1.5"/><path d="M5 6h6M5 8.5h4M5 11h5" stroke="#1a2e5a" stroke-width="1.5" stroke-linecap="round"/></svg>文法補充</div>使役動詞 have 的兩種結構：① have + 人 + V（原形）→ 主動，表示讓某人做某事；② have + 物 + pp（過去分詞）→ 被動，表示讓某物被處理。</div></div><div class="dt" id="dt_P5_E_R15_Q004"><button class="dt-btn" onclick="toggleDetail('P5_E_R15_Q004')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析</button></div><div class="dw" id="dw_P5_E_R15_Q004"><table class="ot"><thead><tr><th>單字/片語</th><th>詞性</th><th>音標</th><th>主要意思</th><th>搭配用法</th></tr></thead><tbody><tr><td data-l="單字">to review</td><td data-l="詞性">不定詞</td><td data-l="音標"><span class="ipa">/tuː rɪˈvjuː/</span></td><td data-l="意思">審查（to V）</td><td data-l="搭配">asked someone to review</td></tr><tr><td data-l="單字">reviewing</td><td data-l="詞性">現在分詞</td><td data-l="音標"><span class="ipa">/rɪˈvjuːɪŋ/</span></td><td data-l="意思">審查（進行中）</td><td data-l="搭配">is reviewing</td></tr><tr><td data-l="單字">reviewed</td><td data-l="詞性">過去分詞</td><td data-l="音標"><span class="ipa">/rɪˈvjuːd/</span></td><td data-l="意思">被審查（被動）</td><td data-l="搭配">had contracts reviewed</td></tr><tr class="cor"><td data-l="單字"><strong>review</strong></td><td data-l="詞性">原形動詞</td><td data-l="音標"><span class="ipa">/rɪˈvjuː/</span></td><td data-l="意思">審查（原形）</td><td data-l="搭配">had the team review</td></tr></tbody></table></div></div><div class="qc" id="qc_P5_E_R10_Q001"><div class="qh"><div class="qn">Q3</div><div class="qt"><div class="qe">The project manager was asked to <span class="bk">＿＿</span> the efforts of three departments to ensure the product launch went smoothly.</div><div class="qz" id="zh_P5_E_R10_Q001">【中譯】專案經理被要求 __ 三個部門的工作，以確保產品上市順利進行。</div></div><div class="qh-right"><div class="status-dot" id="dot_P5_E_R10_Q001"></div></div></div><div class="opts" id="opts_P5_E_R10_Q001"><div class="opt" id="opt_P5_E_R10_Q001_0" ontouchstart="" onclick="pickOpt('P5_E_R10_Q001',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">coordinate</span></div></div><div class="opt" id="opt_P5_E_R10_Q001_1" ontouchstart="" onclick="pickOpt('P5_E_R10_Q001',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">facilitate</span></div></div><div class="opt" id="opt_P5_E_R10_Q001_2" ontouchstart="" onclick="pickOpt('P5_E_R10_Q001',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">mediate</span></div></div><div class="opt" id="opt_P5_E_R10_Q001_3" ontouchstart="" onclick="pickOpt('P5_E_R10_Q001',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">oversee</span></div></div></div><div class="analysis" id="ana_P5_E_R10_Q001"><div class="ana-block ana-key"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1e6b45" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#1e6b45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>解題關鍵</div>空格後接「efforts of three departments」，需要能描述「整合多方工作使其朝同一目標前進」的動詞。coordinate 強調「統籌協調不同單位共同合作」，與句意完全吻合，答案為 A。</div><div class="ana-block ana-trap"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 13H2L8 2z" stroke="#a05c10" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6v3M8 11v.5" stroke="#a05c10" stroke-width="1.5" stroke-linecap="round"/></svg>陷阱提示</div>facilitate（促進某過程發生）偏重去除障礙；oversee（監督）偏重管理與監控，而非整合；mediate（調解）用於處理衝突雙方，均不符合「統籌多部門工作」的語境。</div></div><div class="dt" id="dt_P5_E_R10_Q001"><button class="dt-btn" onclick="toggleDetail('P5_E_R10_Q001')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析</button></div><div class="dw" id="dw_P5_E_R10_Q001"><table class="ot"><thead><tr><th>單字/片語</th><th>詞性</th><th>音標</th><th>主要意思</th><th>搭配用法</th></tr></thead><tbody><tr class="cor"><td data-l="單字"><strong>coordinate</strong></td><td data-l="詞性">v.</td><td data-l="音標"><span class="ipa">/koʊˈɔːrdɪneɪt/</span></td><td data-l="意思">協調；統籌</td><td data-l="搭配">coordinate efforts / tasks / activities</td></tr><tr><td data-l="單字">facilitate</td><td data-l="詞性">v.</td><td data-l="音標"><span class="ipa">/fəˈsɪlɪteɪt/</span></td><td data-l="意思">促進；使便利</td><td data-l="搭配">facilitate discussion / process / change</td></tr><tr><td data-l="單字">mediate</td><td data-l="詞性">v.</td><td data-l="音標"><span class="ipa">/ˈmiːdieɪt/</span></td><td data-l="意思">調解；斡旋</td><td data-l="搭配">mediate a dispute / conflict / negotiation</td></tr><tr><td data-l="單字">oversee</td><td data-l="詞性">v.</td><td data-l="音標"><span class="ipa">/ˌoʊvərˈsiː/</span></td><td data-l="意思">監督；監管</td><td data-l="搭配">oversee operations / staff / project</td></tr></tbody></table><div class="fam-title">字詞家族</div><div class="wg"><div class="wc"><div class="ww">coordinate</div><div class="wz">v. 協調 → coordination n. / coordinator n.</div></div><div class="wc"><div class="ww">facilitate</div><div class="wz">v. 促進 → facilitator n. / facilitation n.</div></div><div class="wc"><div class="ww">mediate</div><div class="wz">v. 調解 → mediator n. / mediation n.</div></div><div class="wc"><div class="ww">oversee</div><div class="wz">v. 監督 → oversight n. / overseer n.</div></div></div></div></div><div class="qc" id="qc_P5_E_R24_Q004"><div class="qh"><div class="qn">Q4</div><div class="qt"><div class="qe"><span class="bk">＿＿</span> notified of the security breach, the IT team immediately launched a full system audit.</div><div class="qz" id="zh_P5_E_R24_Q004">【中譯】__接獲安全漏洞通知後，資訊科技團隊立即啟動完整系統稽核。</div></div><div class="qh-right"><div class="status-dot" id="dot_P5_E_R24_Q004"></div></div></div><div class="opts" id="opts_P5_E_R24_Q004"><div class="opt" id="opt_P5_E_R24_Q004_0" ontouchstart="" onclick="pickOpt('P5_E_R24_Q004',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">Having been</span></div></div><div class="opt" id="opt_P5_E_R24_Q004_1" ontouchstart="" onclick="pickOpt('P5_E_R24_Q004',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">Being</span></div></div><div class="opt" id="opt_P5_E_R24_Q004_2" ontouchstart="" onclick="pickOpt('P5_E_R24_Q004',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">After being</span></div></div><div class="opt" id="opt_P5_E_R24_Q004_3" ontouchstart="" onclick="pickOpt('P5_E_R24_Q004',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">To be</span></div></div></div><div class="analysis" id="ana_P5_E_R24_Q004"><div class="ana-block ana-key"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1e6b45" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#1e6b45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>解題關鍵</div>IT team 是被通知的對象（被動），且通知動作先於稽核（先行）→ 完成被動分詞 Having been notified；Being notified 只表同時；After being 保留連接詞不省略；To be 表目的不表先行完成。</div><div class="ana-block ana-trap"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 13H2L8 2z" stroke="#a05c10" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6v3M8 11v.5" stroke="#a05c10" stroke-width="1.5" stroke-linecap="round"/></svg>陷阱提示</div>Being notified（同時）vs. Having been notified（先行）：稽核在通知之後發生，需強調時序先後 → Having been。After being 雖語義正確但不構成省略連接詞的分詞構句形式。</div><div class="ana-block ana-gram"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="#1a2e5a" stroke-width="1.5"/><path d="M5 6h6M5 8.5h4M5 11h5" stroke="#1a2e5a" stroke-width="1.5" stroke-linecap="round"/></svg>文法補充</div>Having been + p.p.（完成被動分詞構句）= After the subject had been + p.p.；主句主語必須是被動動作的接受者</div></div><div class="dt" id="dt_P5_E_R24_Q004"><button class="dt-btn" onclick="toggleDetail('P5_E_R24_Q004')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析</button></div><div class="dw" id="dw_P5_E_R24_Q004"><table class="ot"><thead><tr><th>單字/片語</th><th>詞性</th><th>音標</th><th>主要意思</th><th>搭配用法</th></tr></thead><tbody><tr class="cor"><td data-l="單字"><strong>Having been</strong></td><td data-l="詞性">ph</td><td data-l="音標"><span class="ipa">/ˈhævɪŋ biːn/</span></td><td data-l="意思">完成被動分詞（先行被動）</td><td data-l="搭配">Having been + p.p. → 主語先被動 ✓</td></tr><tr><td data-l="單字">Being</td><td data-l="詞性">v-ing</td><td data-l="音標"><span class="ipa">/ˈbiːɪŋ/</span></td><td data-l="意思">現在被動分詞（同時被動）</td><td data-l="搭配">Being + p.p. → 動作與主句同時</td></tr><tr><td data-l="單字">After being</td><td data-l="詞性">ph</td><td data-l="音標"><span class="ipa">/ˈæftər ˈbiːɪŋ/</span></td><td data-l="意思">在被...後（保留介詞 after）</td><td data-l="搭配">明確標示時序但不省略 after</td></tr><tr><td data-l="單字">To be</td><td data-l="詞性">ph</td><td data-l="音標"><span class="ipa">/tuː biː/</span></td><td data-l="意思">不定詞被動（目的/未來）</td><td data-l="搭配">To be + p.p. → 表目的或未來</td></tr></tbody></table></div></div>
+
+
+
+
+
+
+<div class="sub-wrap">
+  <button class="sub-btn" id="submitBtn" onclick="submitAll()"><span>提交所有答案</span></button>
+  <div class="sub-hint" id="subHint">請完成所有 4 題後提交</div>
+</div>
+
+
+<div style="margin-top:32px;padding:18px 20px;border-top:1px solid #e8e4dc;text-align:center;font-size:.75em;color:#b0a898;line-height:1.8">
+  <div style="font-weight:700;color:#8a9ab0;letter-spacing:.08em;margin-bottom:4px">ZENTAX</div>
+  本題組為 Zentax 原創自製練習教材，內容均為獨立創作。<br>
+  與 ETS 或任何官方測驗機構無任何關聯。<br>
+  TOEIC® 為 ETS 之註冊商標，本品牌不隸屬於 ETS。<br>
+  適合欲加強商務英語能力之學習者使用。
+</div>
+</div>
+<script>
+var Q=[{"id":"P5_E_R23_Q004","exam":"TOEIC","part":5,"type":"grammar","topic":"企業公告","difficulty":"C1","level":null,"genre":null,"focus":"grammar","ctx":"The new overtime policy, __ was introduced last month, has been welcomed by most employees.","zh":"上個月推出的新加班政策，__受到大多數員工的歡迎。","ans":3,"opts":[["that","rel. pron.","/ðæt/","關係代名詞 that","that 不可用於非限定性（逗號）關係子句"],["what","rel. pron.","/wɒt/","關係代名詞 what","what 引導名詞子句，不引導形容詞子句"],["it","pron.","/ɪt/","代名詞 it","it 不作關係子句的引導詞"],["which","rel. pron.","/wɪtʃ/","關係代名詞 which","which 可用於非限定性關係子句（先行詞為物）✓"]],"key":"先行詞 'The new overtime policy' 為物，且子句前有逗號（非限定性關係子句），必須用 which，不可用 that。","trap":"that 不可用在前後有逗號的非限定性關係子句中；what 引導名詞子句而非形容詞子句。","gram":"非限定性關係子句（non-defining relative clause）用逗號隔開，引導詞必須用 which（物）或 who（人），不可用 that。","tone_cue":[],"fam":[],"tags":[],"createdAt":"2026-05-29"},{"id":"P5_E_R15_Q004","exam":"TOEIC","part":5,"type":"grammar","topic":"使役動詞","difficulty":"B2","level":null,"genre":null,"focus":"grammar","ctx":"The project director had the legal team ------- all vendor contracts before the partnership agreement was signed.","zh":"專案總監讓法務團隊在合夥協議簽署前審查了所有供應商合約。","ans":3,"opts":[["to review","不定詞","/tuː rɪˈvjuː/","審查（to V）","asked someone to review"],["reviewing","現在分詞","/rɪˈvjuːɪŋ/","審查（進行中）","is reviewing"],["reviewed","過去分詞","/rɪˈvjuːd/","被審查（被動）","had contracts reviewed"],["review","原形動詞","/rɪˈvjuː/","審查（原形）","had the team review"]],"key":"使役動詞 have 的結構：have + 受詞（人）+ 原形動詞（V bare）。本句受詞為 the legal team（人），其後需接原形動詞 review，表示「讓法務團隊審查」。to review 為不定詞，用於 ask/want/expect 等非使役動詞；reviewing 為進行分詞，不用於此結構；reviewed 為過去分詞，用於 have + 物 + pp 的被動使役結構（如 had the contracts reviewed）。","trap":"reviewed 容易混淆：had + 物（contracts）+ pp 表被動使役（合約被審查）；但本句受詞為人（the legal team），應接原形動詞 review，兩種結構需分辨清楚。","gram":"使役動詞 have 的兩種結構：① have + 人 + V（原形）→ 主動，表示讓某人做某事；② have + 物 + pp（過去分詞）→ 被動，表示讓某物被處理。","tone_cue":[],"fam":[],"tags":[],"createdAt":"2026-05-29"},{"id":"P5_E_R10_Q001","exam":"TOEIC","part":5,"type":"vocab","topic":"專案管理","difficulty":"B2","level":null,"genre":null,"focus":"vocab","ctx":"The project manager was asked to __ the efforts of three departments to ensure the product launch went smoothly.","zh":"專案經理被要求 __ 三個部門的工作，以確保產品上市順利進行。","ans":0,"opts":[["coordinate","v.","/koʊˈɔːrdɪneɪt/","協調；統籌","coordinate efforts / tasks / activities"],["facilitate","v.","/fəˈsɪlɪteɪt/","促進；使便利","facilitate discussion / process / change"],["mediate","v.","/ˈmiːdieɪt/","調解；斡旋","mediate a dispute / conflict / negotiation"],["oversee","v.","/ˌoʊvərˈsiː/","監督；監管","oversee operations / staff / project"]],"key":"空格後接「efforts of three departments」，需要能描述「整合多方工作使其朝同一目標前進」的動詞。coordinate 強調「統籌協調不同單位共同合作」，與句意完全吻合，答案為 A。","trap":"facilitate（促進某過程發生）偏重去除障礙；oversee（監督）偏重管理與監控，而非整合；mediate（調解）用於處理衝突雙方，均不符合「統籌多部門工作」的語境。","gram":null,"tone_cue":[],"fam":[["coordinate","v. 協調 → coordination n. / coordinator n."],["facilitate","v. 促進 → facilitator n. / facilitation n."],["mediate","v. 調解 → mediator n. / mediation n."],["oversee","v. 監督 → oversight n. / overseer n."]],"tags":["專案管理","動詞辨析","職場英語"],"createdAt":"2026-05-29"},{"id":"P5_E_R24_Q004","exam":"TOEIC","part":5,"type":"grammar","topic":"完成被動分詞構句","difficulty":"C1","level":null,"genre":null,"focus":"grammar","ctx":"__ notified of the security breach, the IT team immediately launched a full system audit.","zh":"__接獲安全漏洞通知後，資訊科技團隊立即啟動完整系統稽核。","ans":0,"opts":[["Having been","ph","/ˈhævɪŋ biːn/","完成被動分詞（先行被動）","Having been + p.p. → 主語先被動 ✓"],["Being","v-ing","/ˈbiːɪŋ/","現在被動分詞（同時被動）","Being + p.p. → 動作與主句同時"],["After being","ph","/ˈæftər ˈbiːɪŋ/","在被...後（保留介詞 after）","明確標示時序但不省略 after"],["To be","ph","/tuː biː/","不定詞被動（目的/未來）","To be + p.p. → 表目的或未來"]],"key":"IT team 是被通知的對象（被動），且通知動作先於稽核（先行）→ 完成被動分詞 Having been notified；Being notified 只表同時；After being 保留連接詞不省略；To be 表目的不表先行完成。","trap":"Being notified（同時）vs. Having been notified（先行）：稽核在通知之後發生，需強調時序先後 → Having been。After being 雖語義正確但不構成省略連接詞的分詞構句形式。","gram":"Having been + p.p.（完成被動分詞構句）= After the subject had been + p.p.；主句主語必須是被動動作的接受者","tone_cue":[],"fam":[],"tags":[],"createdAt":"2026-05-30"}];
+var CONV=[];
+var PASS=[];
+var READ=[];
+var immediate=false;
+var totalQ=4;
+var userAns={},submitted=false,showZh=false;
+function allQids(){
+  var ids=[];
+  Q.forEach(function(q){ids.push(q.id);});
+  CONV.forEach(function(g){(g.qs||[]).forEach(function(_,i){ids.push('P34_'+g.id+'_'+i);});});
+  PASS.forEach(function(p){(p.qs||[]).forEach(function(_,i){ids.push('P6_'+p.id+'_'+i);});});
+  READ.forEach(function(r){(r.qs||[]).forEach(function(_,i){ids.push('P7_'+r.id+'_'+i);});});
+  return ids;
+}
+function getAns(qid){
+  var r=Q.find(function(q){return q.id===qid;}); if(r) return r.ans;
+  for(var gi=0;gi<CONV.length;gi++){var g=CONV[gi];for(var qi=0;qi<(g.qs||[]).length;qi++){if('P34_'+g.id+'_'+qi===qid)return g.qs[qi].ans;}}
+  for(var pi=0;pi<PASS.length;pi++){var pg=PASS[pi];for(var qi=0;qi<(pg.qs||[]).length;qi++){if('P6_'+pg.id+'_'+qi===qid)return pg.qs[qi].ans;}}
+  for(var ri=0;ri<READ.length;ri++){var rp=READ[ri];for(var qi=0;qi<(rp.qs||[]).length;qi++){if('P7_'+rp.id+'_'+qi===qid)return rp.qs[qi].ans;}}
+  return -1;
+}
+function updateProgress(){
+  var done=Object.keys(userAns).length,pct=totalQ?Math.round(done/totalQ*100):0;
+  var pt=document.getElementById('progText'),pp=document.getElementById('progPct'),pf=document.getElementById('progFill');
+  if(pt)pt.textContent='已作答 '+done+' / '+totalQ+' 題';
+  if(pp)pp.textContent=pct+'%';
+  if(pf)pf.style.width=pct+'%';
+  var h=document.getElementById('subHint');
+  if(h)h.textContent=done<totalQ?'請完成所有 '+totalQ+' 題後提交':'所有題目已作答，可以提交';
+}
+function toggleZh(){
+  showZh=!showZh;
+  var btn=document.getElementById('zhToggle');
+  if(btn){btn.classList.toggle('on',showZh);btn.innerHTML='<span class="dot"></span>'+(showZh?'隱藏中文翻譯':'顯示中文翻譯');}
+  allQids().forEach(function(qid){var el=document.getElementById('zh_'+qid);if(el&&!submitted)el.style.display=showZh?'block':'none';});
+}
+function pickOpt(qid,i){
+  if(submitted)return;
+  userAns[qid]=i;
+  for(var j=0;j<4;j++){var el=document.getElementById('opt_'+qid+'_'+j);if(el)el.classList.toggle('selected',j===i);}
+  var dot=document.getElementById('dot_'+qid);
+  if(dot){dot.classList.remove('wrong','correct');dot.classList.add('answered');}
+  if(immediate){
+    var ans=getAns(qid);
+    for(var k=0;k<4;k++){var e2=document.getElementById('opt_'+qid+'_'+k);if(!e2)continue;e2.classList.remove('selected');e2.classList.add('disabled');if(k===ans)e2.classList.add('correct');else if(k===i)e2.classList.add('wrong');}
+    var zh=document.getElementById('zh_'+qid),ana=document.getElementById('ana_'+qid),dt=document.getElementById('dt_'+qid);
+    if(zh)zh.style.display='block';if(ana)ana.style.display='block';if(dt)dt.style.display='block';
+    if(dot){dot.classList.remove('answered');dot.classList.add(i===ans?'correct':'wrong');}
+  }
+  updateProgress();
+}
+function submitAll(){
+  if(submitted)return;
+  var all=allQids(),unanswered=all.filter(function(id){return userAns[id]===undefined;});
+  if(unanswered.length){if(!confirm('還有 '+unanswered.length+' 題未作答，確定提交？'))return;}
+  submitted=true;
+  var correct=0;
+  all.forEach(function(qid){
+    var ans=getAns(qid),ua=userAns[qid];
+    if(ua===ans)correct++;
+    for(var i=0;i<4;i++){var el=document.getElementById('opt_'+qid+'_'+i);if(!el)continue;el.classList.remove('selected');el.classList.add('disabled');if(i===ans)el.classList.add('correct');else if(i===ua)el.classList.add('wrong');}
+    var zh=document.getElementById('zh_'+qid),ana=document.getElementById('ana_'+qid),dt=document.getElementById('dt_'+qid);
+    if(zh)zh.style.display='block';if(ana)ana.style.display='block';if(dt)dt.style.display='block';
+    var dot=document.getElementById('dot_'+qid);
+    if(dot){dot.classList.remove('answered');dot.classList.add(ua===ans?'correct':'wrong');}
+  });
+  var pct=Math.round(correct/all.length*100);
+  var msg=pct>=80?'🎉 表現優異！':pct>=60?'👍 答得不錯！':'💪 繼續加油！';
+  var sc=document.getElementById('scoreCard');
+  sc.innerHTML='<div class="sc-ring"><div class="sc-num">'+correct+'</div><div class="sc-den">/ '+all.length+'</div></div>'
+    +'<div class="sc-msg">'+msg+'</div><div class="sc-rate">正確率 '+pct+'%</div>'
+    +'<div class="sc-bar-wrap"><div class="sc-bar"><div class="sc-bar-fill" id="scBarFill"></div></div></div>';
+  sc.style.display='block';
+  setTimeout(function(){var f=document.getElementById('scBarFill');if(f)f.style.width=pct+'%';},100);
+  var btn=document.getElementById('submitBtn');
+  if(btn){btn.disabled=true;var sp=btn.querySelector('span');if(sp)sp.textContent='已提交';}
+  var h=document.getElementById('subHint');if(h)h.textContent='共答對 '+correct+' 題，正確率 '+pct+'%';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function toggleDetail(qid){
+  var dw=document.getElementById('dw_'+qid),dt=document.getElementById('dt_'+qid);
+  if(!dw||!dt)return;
+  var btn=dt.querySelector('.dt-btn'),open=dw.style.display==='block';
+  dw.style.display=open?'none':'block';
+  if(btn)btn.innerHTML=open
+    ?'<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析'
+    :'<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>收起分析';
+}
+updateProgress();
+</script>
+</body></html>

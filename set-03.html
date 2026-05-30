@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>商務英語練習 · 自選題組 · 第 03 組</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0f1c3f;--navy2:#1a2e5a;--gold:#c9922a;--gold2:#f0b940;--cream:#fdf9f2;--cream2:#f5efe3;--green:#1e6b45;--green-bg:#e8f5ed;--red:#b03030;--red-bg:#fdf0f0;--amber:#a05c10;--amber-bg:#fef8ee;--text:#1a1a2e;--sub:#5a607a;--border:#ddd8ce;--shadow:0 4px 24px rgba(15,28,63,.10)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans TC',sans-serif;background:var(--cream);color:var(--text);font-size:15px;line-height:1.75;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse 80% 50% at 10% 0%,rgba(201,146,42,.08) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 90% 100%,rgba(15,28,63,.06) 0%,transparent 60%),var(--cream)}
+.wrap{max-width:720px;margin:0 auto;padding:24px 16px 60px}
+.hd{background:var(--navy);border-radius:18px;padding:28px 28px 24px;margin-bottom:20px;position:relative;overflow:hidden}
+.hd::after{content:'ZENTAX';position:absolute;right:-8px;top:50%;transform:translateY(-50%);font-family:'DM Serif Display',serif;font-size:6.5em;color:rgba(255,255,255,.04);pointer-events:none;white-space:nowrap;letter-spacing:.08em}
+.hd-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(201,146,42,.18);border:1px solid rgba(201,146,42,.4);color:var(--gold2);border-radius:20px;padding:3px 12px;font-size:.78em;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px}
+.hd-title{font-family:'DM Serif Display',serif;font-size:1.55em;color:#fff;line-height:1.25;margin-bottom:6px}
+.hd-sub{color:rgba(255,255,255,.5);font-size:.84em}
+.prog-wrap{margin-top:18px}
+.prog-label{display:flex;justify-content:space-between;font-size:.78em;color:rgba(255,255,255,.45);margin-bottom:6px}
+.prog-bar{height:4px;background:rgba(255,255,255,.12);border-radius:2px;overflow:hidden}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:2px;transition:width .4s ease;width:0%}
+.zh-toggle-wrap{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.zh-toggle-btn{display:flex;align-items:center;gap:7px;background:#fff;border:1.5px solid var(--border);border-radius:20px;padding:5px 14px;font-size:.82em;color:var(--sub);cursor:pointer;font-family:inherit;transition:all .18s;font-weight:500}
+.zh-toggle-btn:hover{border-color:var(--navy);color:var(--navy)}
+.zh-toggle-btn .dot{width:8px;height:8px;border-radius:50%;background:var(--border);transition:background .2s}
+.zh-toggle-btn.on .dot{background:var(--gold)}
+.zh-toggle-btn.on{border-color:var(--gold);color:var(--amber)}
+.sc{background:var(--navy);border-radius:18px;padding:30px 24px;margin-bottom:20px;text-align:center;display:none;animation:fadeSlide .5s ease}
+@keyframes fadeSlide{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+.sc-ring{width:96px;height:96px;border-radius:50%;border:4px solid rgba(201,146,42,.3);background:rgba(201,146,42,.1);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 14px}
+.sc-num{font-size:2.2em;font-weight:700;color:var(--gold2);line-height:1}
+.sc-den{font-size:.78em;color:rgba(255,255,255,.4)}
+.sc-msg{font-size:1em;font-weight:600;color:#fff;margin-bottom:4px}
+.sc-rate{font-size:.84em;color:rgba(255,255,255,.45)}
+.sc-bar-wrap{margin-top:18px}
+.sc-bar{height:6px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
+.sc-bar-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:3px;transition:width 1s cubic-bezier(.4,0,.2,1) .3s;width:0%}
+.sec-hdr{font-size:.8em;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:8px 4px;margin:24px 0 12px;border-bottom:2px solid;display:flex;align-items:center;gap:8px}
+.sec-p5{color:var(--navy);border-color:var(--gold)}
+.sec-p34{color:#6a1b9a;border-color:#9c4dcc}
+.sec-p6{color:var(--green);border-color:#4caf7a}
+.sec-p7{color:#7c2d12;border-color:#c2410c}
+.qc{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:16px;overflow:hidden;transition:box-shadow .2s}
+.qc:hover{box-shadow:0 6px 32px rgba(15,28,63,.13)}
+.qc-sub{border-radius:10px;margin-bottom:10px;box-shadow:none;border:1.5px solid #e8e4dc}
+.qh{padding:18px 20px 14px;border-bottom:1px solid #f0ece4;display:flex;gap:12px;align-items:flex-start}
+.qn{background:var(--navy);color:var(--gold2);padding:4px 0;width:36px;text-align:center;border-radius:8px;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.82em;flex-shrink:0;margin-top:2px;letter-spacing:.02em}
+.qt{flex:1}
+.qe{font-size:.97em;color:var(--text);font-weight:500;line-height:1.7}
+.qz{font-size:.84em;color:var(--sub);margin-top:7px;padding-top:7px;border-top:1px dashed #e0dbd0;display:none;line-height:1.65}
+.bk{display:inline-block;color:var(--gold);font-weight:700;border-bottom:2px solid var(--gold);padding:0 3px;min-width:40px;text-align:center}
+.qh-right{display:flex;align-items:flex-start}
+.status-dot{width:8px;height:8px;border-radius:50%;background:#ddd;margin-top:10px;transition:background .2s;flex-shrink:0}
+.status-dot.answered{background:var(--gold2)}
+.status-dot.correct{background:#3aaa6a}
+.status-dot.wrong{background:var(--red)}
+.opts{padding:12px 16px 16px;display:flex;flex-direction:column;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;padding:11px 14px;border:1.5px solid #e8e4dc;border-radius:10px;cursor:pointer;transition:border-color .15s,background .15s,transform .1s;background:#fdfcfa;user-select:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.opt:hover:not(.disabled){border-color:var(--navy2);background:#f5f3ef;transform:translateX(2px)}
+.opt.selected{border-color:var(--navy);background:#f0f3fa}
+.opt-lbl{width:28px;height:28px;border-radius:7px;border:1.5px solid #d0ccc2;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.82em;color:#888;flex-shrink:0;transition:all .15s}
+.opt.selected .opt-lbl{border-color:var(--navy);background:var(--navy);color:var(--gold2)}
+.opt.correct .opt-lbl{border-color:var(--green);background:var(--green);color:#fff}
+.opt.wrong .opt-lbl{border-color:var(--red);background:var(--red);color:#fff}
+.opt.correct{border-color:#6dc492;background:var(--green-bg);cursor:default}
+.opt.wrong{border-color:#e08080;background:var(--red-bg);cursor:default}
+.opt.disabled{cursor:default}
+.opt-body{flex:1}
+.opt-word{font-size:.93em;font-weight:600;color:var(--text)}
+.opt.correct .opt-word{color:var(--green)}
+.opt.wrong .opt-word{color:var(--red)}
+.opt-pos{display:inline-block;font-size:.72em;font-family:'JetBrains Mono',monospace;color:#aaa;background:#f0ece4;border-radius:4px;padding:1px 6px;margin-left:7px;font-weight:400;vertical-align:middle}
+.opt.correct .opt-pos{color:#5a9a70;background:#d6f0e0}
+.opt.wrong .opt-pos{color:#c08080;background:#fde8e8}
+.opt-zh{font-size:.8em;color:var(--sub);display:block;margin-top:2px}
+.analysis{display:none;padding:0 16px 4px}
+.ana-block{border-radius:10px;padding:11px 14px;margin-bottom:8px;font-size:.875em;line-height:1.7}
+.ana-label{font-size:.75em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;display:flex;align-items:center;gap:6px;margin-bottom:5px}
+.ana-key{background:var(--green-bg);border:1px solid #b0d8be}
+.ana-key .ana-label{color:var(--green)}
+.ana-trap{background:var(--amber-bg);border:1px solid #e8c880}
+.ana-trap .ana-label{color:var(--amber)}
+.ana-gram{background:#f0f3fa;border:1px solid #c8cfea}
+.ana-gram .ana-label{color:var(--navy2)}
+.ana-icon{width:16px;height:16px}
+.dt{display:none;padding:0 16px 8px}
+.dt-btn{width:100%;background:#faf8f4;border:1px solid #e0dbd0;border-radius:8px;padding:8px 14px;font-size:.81em;color:var(--sub);cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:6px;transition:all .15s;font-weight:500}
+.dt-btn:hover{background:var(--cream2);color:var(--navy);border-color:#c8c0b0}
+.dw{display:none;padding:0 16px 16px}
+.ot{width:100%;border-collapse:collapse;font-size:.82em;table-layout:fixed;border-radius:10px;overflow:hidden}
+.ot thead tr{background:var(--navy)}
+.ot th{color:rgba(255,255,255,.7);padding:8px 10px;text-align:left;font-size:.78em;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.ot td{padding:8px 10px;border-bottom:1px solid #f0ece4;vertical-align:top;word-break:break-word}
+.ot tr.cor td{background:#edf7f1;color:var(--green);font-weight:600}
+.ot tr:not(.cor):hover td{background:#faf8f4}
+.ipa{font-family:'JetBrains Mono',monospace;color:var(--navy2);font-size:.95em;letter-spacing:.01em}
+.ot tr.cor .ipa{color:var(--green)}
+.fam-title{font-size:.78em;font-weight:700;color:var(--sub);letter-spacing:.06em;text-transform:uppercase;margin:12px 0 7px}
+.wg{display:flex;flex-wrap:wrap;gap:7px}
+.wc{border:1px solid #e0dbd0;background:#fdfcfa;border-radius:8px;padding:7px 11px;min-width:110px}
+.ww{font-weight:700;font-size:.88em;color:var(--navy);font-family:'JetBrains Mono',monospace}
+.wz{font-size:.78em;color:var(--sub);margin-top:2px}
+.conv-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:20px;overflow:hidden}
+.conv-hdr{background:var(--navy);padding:16px 20px}
+.conv-topic{font-family:'DM Serif Display',serif;color:var(--gold2);font-size:1.05em}
+.conv-sub{font-size:.8em;color:rgba(255,255,255,.45);margin-top:2px}
+.conv-script{padding:14px 20px;background:#faf8f4;border-bottom:1px solid #eee8de}
+.conv-line{display:flex;gap:10px;padding:4px 0;font-size:.9em;line-height:1.7}
+.conv-role{font-weight:700;min-width:28px;flex-shrink:0}
+.role-W{color:#c94070}.role-M{color:#1a5ea0}.role-ANR{color:#6a1b9a}
+.conv-qs{padding:14px 16px}
+.pass-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:20px;overflow:hidden}
+.pass-hdr{background:linear-gradient(135deg,#1e6b45,#2e8b57);padding:16px 20px}
+.pass-topic{font-family:'DM Serif Display',serif;color:#fff;font-size:1.05em}
+.pass-sub{font-size:.8em;color:rgba(255,255,255,.5);margin-top:2px}
+.pass-text{padding:16px 20px;font-size:.91em;line-height:2;border-bottom:1px solid #eee8de;white-space:pre-wrap}
+.pass-blank{display:inline-block;border:1.5px solid var(--green);border-radius:4px;padding:0 8px;min-width:36px;text-align:center;color:var(--green);font-weight:700}
+.pass-qs{padding:14px 16px}
+.read-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:20px;overflow:hidden}
+.read-hdr{background:linear-gradient(135deg,#7c2d12,#9a3412);padding:16px 20px}
+.read-topic{font-family:'DM Serif Display',serif;color:#fff;font-size:1.05em}
+.read-sub{font-size:.8em;color:rgba(255,255,255,.5);margin-top:2px}
+.read-text{padding:16px 20px;font-size:.91em;line-height:2;border-bottom:1px solid #eee8de}
+.read-multi{padding:0;display:flex;flex-direction:column;gap:0}
+.read-passage{padding:14px 20px;border-bottom:1px solid #eee8de;font-size:.91em;line-height:2}
+.read-passage-lbl{font-size:.72em;font-weight:700;color:#7c2d12;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.read-passage-body{color:var(--text)}
+.read-qs{padding:14px 16px}
+.tone-cue{font-size:.78em;padding:4px 16px 0;color:#a05c10;font-style:italic}
+.sub-wrap{text-align:center;padding:10px 0 28px}
+.sub-btn{background:var(--navy);color:#fff;border:none;border-radius:30px;padding:14px 50px;font-size:1em;font-weight:700;cursor:pointer;font-family:inherit;letter-spacing:.06em;position:relative;overflow:hidden;transition:opacity .2s,transform .15s}
+.sub-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--gold),var(--gold2));opacity:0;transition:opacity .2s}
+.sub-btn:hover:not(:disabled)::before{opacity:1}
+.sub-btn:hover:not(:disabled){transform:translateY(-1px)}
+.sub-btn span{position:relative}
+.sub-btn:disabled{background:#c8c4bc;cursor:default;transform:none}
+.sub-btn:disabled::before{display:none}
+.sub-hint{font-size:.8em;color:#b0a898;margin-top:8px}
+@media(max-width:580px){.ot{table-layout:auto}.ot thead{display:none}.ot tr{display:block;margin-bottom:8px;border:1px solid #e8e4dc;border-radius:8px;overflow:hidden}.ot td{display:block;padding:7px 11px;border-bottom:1px solid #f0ece4}.ot td::before{content:attr(data-l);font-weight:700;color:var(--navy);display:block;font-size:.72em;letter-spacing:.05em;text-transform:uppercase;margin-bottom:2px}.hd-title{font-size:1.25em}.hd::after{font-size:4em}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="sc" id="scoreCard"></div>
+<div class="hd">
+  <div class="hd-title">商務英語練習 · 自選題組 · 第 03 組</div>
+  <div class="hd-sub">共 4 題 · 完成後統一提交查看結果</div>
+  <div class="prog-wrap">
+    <div class="prog-label"><span id="progText">已作答 0 / 4 題</span><span id="progPct">0%</span></div>
+    <div class="prog-bar"><div class="prog-fill" id="progFill"></div></div>
+  </div>
+</div>
+<div class="sec-hdr sec-p5">✦ 客戶服務</div>
+<div class="qc" id="qc_P5_E_R15_Q001"><div class="qh"><div class="qn">Q1</div><div class="qt"><div class="qe">Our customer service team worked overtime to ------- all outstanding complaints before the end of the quarter.</div><div class="qz" id="zh_P5_E_R15_Q001">【中譯】我們的客戶服務團隊加班工作，以便在季末前處理所有待處理的投訴。</div></div><div class="qh-right"><div class="status-dot" id="dot_P5_E_R15_Q001"></div></div></div><div class="opts" id="opts_P5_E_R15_Q001"><div class="opt" id="opt_P5_E_R15_Q001_0" ontouchstart="" onclick="pickOpt('P5_E_R15_Q001',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">resolve</span></div></div><div class="opt" id="opt_P5_E_R15_Q001_1" ontouchstart="" onclick="pickOpt('P5_E_R15_Q001',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">address</span></div></div><div class="opt" id="opt_P5_E_R15_Q001_2" ontouchstart="" onclick="pickOpt('P5_E_R15_Q001',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">handle</span></div></div><div class="opt" id="opt_P5_E_R15_Q001_3" ontouchstart="" onclick="pickOpt('P5_E_R15_Q001',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">tackle</span></div></div></div><div class="analysis" id="ana_P5_E_R15_Q001"><div class="ana-block ana-key"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1e6b45" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#1e6b45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>解題關鍵</div>address complaints 為客服情境最標準的搭配，表示「針對性地回應並處理投訴」。resolve 強調最終解決，不一定含回應之意；handle 較口語，且搭配 complaints 不如 address 正式；tackle 多用於面對複雜挑戰，不是 complaints 的慣用搭配。</div><div class="ana-block ana-trap"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 13H2L8 2z" stroke="#a05c10" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6v3M8 11v.5" stroke="#a05c10" stroke-width="1.5" stroke-linecap="round"/></svg>陷阱提示</div>resolve 看似最合適，但 resolve complaints 強調問題被徹底解決，而題目重點在於「處理」動作本身；address complaints 才是正式商業書面中的慣用語。</div></div><div class="dt" id="dt_P5_E_R15_Q001"><button class="dt-btn" onclick="toggleDetail('P5_E_R15_Q001')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析</button></div><div class="dw" id="dw_P5_E_R15_Q001"><table class="ot"><thead><tr><th>單字/片語</th><th>詞性</th><th>音標</th><th>主要意思</th><th>搭配用法</th></tr></thead><tbody><tr><td data-l="單字">resolve</td><td data-l="詞性">動詞</td><td data-l="音標"><span class="ipa">/rɪˈzɒlv/</span></td><td data-l="意思">解決（問題）</td><td data-l="搭配">resolve a dispute</td></tr><tr class="cor"><td data-l="單字"><strong>address</strong></td><td data-l="詞性">動詞</td><td data-l="音標"><span class="ipa">/əˈdrɛs/</span></td><td data-l="意思">處理；應對</td><td data-l="搭配">address complaints</td></tr><tr><td data-l="單字">handle</td><td data-l="詞性">動詞</td><td data-l="音標"><span class="ipa">/ˈhændl/</span></td><td data-l="意思">處置；管理</td><td data-l="搭配">handle a situation</td></tr><tr><td data-l="單字">tackle</td><td data-l="詞性">動詞</td><td data-l="音標"><span class="ipa">/ˈtækl/</span></td><td data-l="意思">應對（困難任務）</td><td data-l="搭配">tackle challenges</td></tr></tbody></table><div class="fam-title">字詞家族</div><div class="wg"><div class="wc"><div class="ww">address</div><div class="wz">動詞・處理、應對（正式）</div></div><div class="wc"><div class="ww">address concerns</div><div class="wz">片語・回應顧慮</div></div><div class="wc"><div class="ww">address an issue</div><div class="wz">片語・處理某項問題</div></div><div class="wc"><div class="ww">address the audience</div><div class="wz">片語・向聽眾致詞</div></div></div></div></div><div class="qc" id="qc_GEPT_高_R27_Q001"><div class="qh"><div class="qn">Q2</div><div class="qt"><div class="qe">Repeating the same hiring patterns tends to <span class="bk">＿＿</span> existing biases within the organization.</div><div class="qz" id="zh_GEPT_高_R27_Q001">【中譯】重複相同的招募模式往往會__組織內既有的偏見。</div></div><div class="qh-right"><div class="status-dot" id="dot_GEPT_高_R27_Q001"></div></div></div><div class="opts" id="opts_GEPT_高_R27_Q001"><div class="opt" id="opt_GEPT_高_R27_Q001_0" ontouchstart="" onclick="pickOpt('GEPT_高_R27_Q001',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">sustain</span></div></div><div class="opt" id="opt_GEPT_高_R27_Q001_1" ontouchstart="" onclick="pickOpt('GEPT_高_R27_Q001',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">perpetuate</span></div></div><div class="opt" id="opt_GEPT_高_R27_Q001_2" ontouchstart="" onclick="pickOpt('GEPT_高_R27_Q001',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">reinforce</span></div></div><div class="opt" id="opt_GEPT_高_R27_Q001_3" ontouchstart="" onclick="pickOpt('GEPT_高_R27_Q001',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">maintain</span></div></div></div><div class="analysis" id="ana_GEPT_高_R27_Q001"><div class="ana-block ana-key"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1e6b45" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#1e6b45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>解題關鍵</div>perpetuate 特指使（負面循環、偏見、迷思等）長久延續，是描述系統性問題根深蒂固的精確用詞；reinforce 強調強化某信念；sustain 與 maintain 較中性，不帶「使不良狀況持續」的語義。</div><div class="ana-block ana-trap"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 13H2L8 2z" stroke="#a05c10" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6v3M8 11v.5" stroke="#a05c10" stroke-width="1.5" stroke-linecap="round"/></svg>陷阱提示</div>perpetuate vs. reinforce：兩者均可搭配偏見，但 perpetuate 強調「使其在時間上持續存在」，reinforce 強調「使其更強固」；招募模式導致偏見延續 → perpetuate。</div></div><div class="dt" id="dt_GEPT_高_R27_Q001"><button class="dt-btn" onclick="toggleDetail('GEPT_高_R27_Q001')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析</button></div><div class="dw" id="dw_GEPT_高_R27_Q001"><table class="ot"><thead><tr><th>單字/片語</th><th>詞性</th><th>音標</th><th>主要意思</th><th>搭配用法</th></tr></thead><tbody><tr><td data-l="單字">sustain</td><td data-l="詞性">v</td><td data-l="音標"><span class="ipa">/səˈsteɪn/</span></td><td data-l="意思">維持、支撐（長期）</td><td data-l="搭配">sustain growth / momentum</td></tr><tr class="cor"><td data-l="單字"><strong>perpetuate</strong></td><td data-l="詞性">v</td><td data-l="音標"><span class="ipa">/pərˈpetʃueɪt/</span></td><td data-l="意思">使長久延續（尤指不良狀況）</td><td data-l="搭配">perpetuate a myth / bias ✓</td></tr><tr><td data-l="單字">reinforce</td><td data-l="詞性">v</td><td data-l="音標"><span class="ipa">/ˌriːɪnˈfɔːrs/</span></td><td data-l="意思">強化、加強</td><td data-l="搭配">reinforce a stereotype / belief</td></tr><tr><td data-l="單字">maintain</td><td data-l="詞性">v</td><td data-l="音標"><span class="ipa">/meɪnˈteɪn/</span></td><td data-l="意思">維持、保持（一般）</td><td data-l="搭配">maintain standards / order</td></tr></tbody></table><div class="fam-title">字詞家族</div><div class="wg"><div class="wc"><div class="ww">perpetuate</div><div class="wz">v. 使長久延續</div></div><div class="wc"><div class="ww">perpetuation</div><div class="wz">n. 延續、使永久化</div></div><div class="wc"><div class="ww">perpetual</div><div class="wz">adj. 持續不斷的</div></div><div class="wc"><div class="ww">ingrained bias</div><div class="wz">ph. 根深蒂固的偏見</div></div></div></div></div><div class="qc" id="qc_GEPT_中高_R25_Q004"><div class="qh"><div class="qn">Q3</div><div class="qt"><div class="qe">After joining the night shift, Jenny gradually <span class="bk">＿＿</span> working late hours and now finds it manageable.</div><div class="qz" id="zh_GEPT_中高_R25_Q004">【中譯】加入夜班後，Jenny 逐漸__晚工時，現在覺得尚能應對。</div></div><div class="qh-right"><div class="status-dot" id="dot_GEPT_中高_R25_Q004"></div></div></div><div class="opts" id="opts_GEPT_中高_R25_Q004"><div class="opt" id="opt_GEPT_中高_R25_Q004_0" ontouchstart="" onclick="pickOpt('GEPT_中高_R25_Q004',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">used to</span></div></div><div class="opt" id="opt_GEPT_中高_R25_Q004_1" ontouchstart="" onclick="pickOpt('GEPT_中高_R25_Q004',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">got used to</span></div></div><div class="opt" id="opt_GEPT_中高_R25_Q004_2" ontouchstart="" onclick="pickOpt('GEPT_中高_R25_Q004',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">was used to</span></div></div><div class="opt" id="opt_GEPT_中高_R25_Q004_3" ontouchstart="" onclick="pickOpt('GEPT_中高_R25_Q004',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">would use to</span></div></div></div><div class="analysis" id="ana_GEPT_中高_R25_Q004"><div class="ana-block ana-key"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1e6b45" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#1e6b45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>解題關鍵</div>get used to + V-ing = 漸漸習慣（強調從陌生到適應的動態過程）；句中 gradually 強調過程 → got used to working；used to + V 表過去習慣（現已停止）；was used to + V-ing 表過去的靜態習慣狀態。</div><div class="ana-block ana-trap"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 13H2L8 2z" stroke="#a05c10" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6v3M8 11v.5" stroke="#a05c10" stroke-width="1.5" stroke-linecap="round"/></svg>陷阱提示</div>used to + V（過去習慣，現已停止）vs. be/get used to + V-ing（習慣某事）：三者結構不同；get 強調動態轉變過程，be 強調已達到的靜態狀態。</div><div class="ana-block ana-gram"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="#1a2e5a" stroke-width="1.5"/><path d="M5 6h6M5 8.5h4M5 11h5" stroke="#1a2e5a" stroke-width="1.5" stroke-linecap="round"/></svg>文法補充</div>used to + V（過去習慣）/ be used to + V-ing（習慣某事，靜態）/ get used to + V-ing（漸漸習慣，動態）</div></div><div class="dt" id="dt_GEPT_中高_R25_Q004"><button class="dt-btn" onclick="toggleDetail('GEPT_中高_R25_Q004')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析</button></div><div class="dw" id="dw_GEPT_中高_R25_Q004"><table class="ot"><thead><tr><th>單字/片語</th><th>詞性</th><th>音標</th><th>主要意思</th><th>搭配用法</th></tr></thead><tbody><tr><td data-l="單字">used to</td><td data-l="詞性">ph</td><td data-l="音標"><span class="ipa">/juːst tuː/</span></td><td data-l="意思">過去習慣（現已停止）</td><td data-l="搭配">used to + V → 過去曾經（現不再）</td></tr><tr class="cor"><td data-l="單字"><strong>got used to</strong></td><td data-l="詞性">ph</td><td data-l="音標"><span class="ipa">/ɡɒt juːst tuː/</span></td><td data-l="意思">漸漸習慣了（動態過程）</td><td data-l="搭配">get used to + V-ing ✓</td></tr><tr><td data-l="單字">was used to</td><td data-l="詞性">ph</td><td data-l="音標"><span class="ipa">/wɒz juːst tuː/</span></td><td data-l="意思">過去已習慣（靜態狀態）</td><td data-l="搭配">was used to + V-ing → 過去的習慣狀態</td></tr><tr><td data-l="單字">would use to</td><td data-l="詞性">ph</td><td data-l="音標"><span class="ipa">/wʊd juːs tuː/</span></td><td data-l="意思">×（不存在的錯誤結構）</td><td data-l="搭配">would use to 為非標準錯誤用法</td></tr></tbody></table><div class="fam-title">字詞家族</div><div class="wg"><div class="wc"><div class="ww">used to V</div><div class="wz">ph. 過去習慣（現已停止）</div></div><div class="wc"><div class="ww">be used to V-ing</div><div class="wz">ph. 習慣於某事（靜態）</div></div><div class="wc"><div class="ww">get used to V-ing</div><div class="wz">ph. 漸漸習慣（動態）</div></div><div class="wc"><div class="ww">manageable</div><div class="wz">adj. 可應對的、可管理的</div></div></div></div></div><div class="qc" id="qc_GEPT_中高_R17_Q004"><div class="qh"><div class="qn">Q4</div><div class="qt"><div class="qe">Not until the lights went out <span class="bk">＿＿</span> they realize that the power outage affected the entire neighborhood.</div><div class="qz" id="zh_GEPT_中高_R17_Q004">【中譯】直到燈光熄滅，他們才__意識到這次停電影響了整個社區。</div></div><div class="qh-right"><div class="status-dot" id="dot_GEPT_中高_R17_Q004"></div></div></div><div class="opts" id="opts_GEPT_中高_R17_Q004"><div class="opt" id="opt_GEPT_中高_R17_Q004_0" ontouchstart="" onclick="pickOpt('GEPT_中高_R17_Q004',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">did</span></div></div><div class="opt" id="opt_GEPT_中高_R17_Q004_1" ontouchstart="" onclick="pickOpt('GEPT_中高_R17_Q004',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">had</span></div></div><div class="opt" id="opt_GEPT_中高_R17_Q004_2" ontouchstart="" onclick="pickOpt('GEPT_中高_R17_Q004',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">would</span></div></div><div class="opt" id="opt_GEPT_中高_R17_Q004_3" ontouchstart="" onclick="pickOpt('GEPT_中高_R17_Q004',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">could</span></div></div></div><div class="analysis" id="ana_GEPT_中高_R17_Q004"><div class="ana-block ana-key"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1e6b45" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#1e6b45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>解題關鍵</div>否定副詞片語 Not until... 置於句首時，主句須做倒裝：did + S + V，此為英文倒裝語法的標準結構。</div><div class="ana-block ana-trap"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 13H2L8 2z" stroke="#a05c10" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6v3M8 11v.5" stroke="#a05c10" stroke-width="1.5" stroke-linecap="round"/></svg>陷阱提示</div>had 雖為過去式助動詞，但此句並非過去完成時態；would/could 為情態動詞，不適用於倒裝否定副詞句型中的陳述事實。</div><div class="ana-block ana-gram"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="#1a2e5a" stroke-width="1.5"/><path d="M5 6h6M5 8.5h4M5 11h5" stroke="#1a2e5a" stroke-width="1.5" stroke-linecap="round"/></svg>文法補充</div>否定副詞倒裝：Not until + 時間子句，did/does/do + S + V（主句語序翻轉，助動詞前移至主詞之前）</div></div><div class="dt" id="dt_GEPT_中高_R17_Q004"><button class="dt-btn" onclick="toggleDetail('GEPT_中高_R17_Q004')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析</button></div><div class="dw" id="dw_GEPT_中高_R17_Q004"><table class="ot"><thead><tr><th>單字/片語</th><th>詞性</th><th>音標</th><th>主要意思</th><th>搭配用法</th></tr></thead><tbody><tr class="cor"><td data-l="單字"><strong>did</strong></td><td data-l="詞性">aux. (inverted)</td><td data-l="音標"><span class="ipa">/dɪd/</span></td><td data-l="意思">（助動詞，倒裝語序）</td><td data-l="搭配">Not until... did + S + V → 否定副詞倒裝，助動詞 did 前移 ✓</td></tr><tr><td data-l="單字">had</td><td data-l="詞性">aux. (past perfect)</td><td data-l="音標"><span class="ipa">/hæd/</span></td><td data-l="意思">（過去完成式助動詞）</td><td data-l="搭配">過去完成式 had 不符合本句時態（went out 為過去簡單式，無需完成式）</td></tr><tr><td data-l="單字">would</td><td data-l="詞性">aux. (conditional)</td><td data-l="音標"><span class="ipa">/wʊd/</span></td><td data-l="意思">（情態動詞，條件語氣）</td><td data-l="搭配">would 用於假設或意願，此句為陳述事實，語氣不符</td></tr><tr><td data-l="單字">could</td><td data-l="詞性">aux. (ability/permission)</td><td data-l="音標"><span class="ipa">/kʊd/</span></td><td data-l="意思">（情態動詞，能力或允許）</td><td data-l="搭配">could 表能力或許可，與 realize（意識到）搭配語意不自然</td></tr></tbody></table></div></div>
+
+
+
+
+
+
+<div class="sub-wrap">
+  <button class="sub-btn" id="submitBtn" onclick="submitAll()"><span>提交所有答案</span></button>
+  <div class="sub-hint" id="subHint">請完成所有 4 題後提交</div>
+</div>
+
+
+<div style="margin-top:32px;padding:18px 20px;border-top:1px solid #e8e4dc;text-align:center;font-size:.75em;color:#b0a898;line-height:1.8">
+  <div style="font-weight:700;color:#8a9ab0;letter-spacing:.08em;margin-bottom:4px">ZENTAX</div>
+  本題組為 Zentax 原創自製練習教材，內容均為獨立創作。<br>
+  與 ETS、財團法人語言訓練測驗中心（LTTC）或任何官方測驗機構無任何關聯。<br>
+  TOEIC® 為 ETS 之註冊商標；全民英檢® 為 LTTC 之註冊商標。本品牌不隸屬於上述任何機構。<br>
+  適合欲加強商務英語及英語分級能力之學習者使用。
+</div>
+</div>
+<script>
+var Q=[{"id":"P5_E_R15_Q001","exam":"TOEIC","part":5,"type":"vocab","topic":"客戶服務","difficulty":"B2","level":null,"genre":null,"focus":"vocab","ctx":"Our customer service team worked overtime to ------- all outstanding complaints before the end of the quarter.","zh":"我們的客戶服務團隊加班工作，以便在季末前處理所有待處理的投訴。","ans":1,"opts":[["resolve","動詞","/rɪˈzɒlv/","解決（問題）","resolve a dispute"],["address","動詞","/əˈdrɛs/","處理；應對","address complaints"],["handle","動詞","/ˈhændl/","處置；管理","handle a situation"],["tackle","動詞","/ˈtækl/","應對（困難任務）","tackle challenges"]],"key":"address complaints 為客服情境最標準的搭配，表示「針對性地回應並處理投訴」。resolve 強調最終解決，不一定含回應之意；handle 較口語，且搭配 complaints 不如 address 正式；tackle 多用於面對複雜挑戰，不是 complaints 的慣用搭配。","trap":"resolve 看似最合適，但 resolve complaints 強調問題被徹底解決，而題目重點在於「處理」動作本身；address complaints 才是正式商業書面中的慣用語。","gram":null,"tone_cue":[],"fam":[["address","動詞・處理、應對（正式）"],["address concerns","片語・回應顧慮"],["address an issue","片語・處理某項問題"],["address the audience","片語・向聽眾致詞"]],"tags":[],"createdAt":"2026-05-29"},{"id":"GEPT_高_R27_Q001","exam":"GEPT","part":5,"type":"vocab","topic":"組織管理/偏見","level":"高級","difficulty":"C1","focus":"vocab","ctx":"Repeating the same hiring patterns tends to __ existing biases within the organization.","zh":"重複相同的招募模式往往會__組織內既有的偏見。","ans":1,"opts":[["sustain","v","/səˈsteɪn/","維持、支撐（長期）","sustain growth / momentum"],["perpetuate","v","/pərˈpetʃueɪt/","使長久延續（尤指不良狀況）","perpetuate a myth / bias ✓"],["reinforce","v","/ˌriːɪnˈfɔːrs/","強化、加強","reinforce a stereotype / belief"],["maintain","v","/meɪnˈteɪn/","維持、保持（一般）","maintain standards / order"]],"key":"perpetuate 特指使（負面循環、偏見、迷思等）長久延續，是描述系統性問題根深蒂固的精確用詞；reinforce 強調強化某信念；sustain 與 maintain 較中性，不帶「使不良狀況持續」的語義。","trap":"perpetuate vs. reinforce：兩者均可搭配偏見，但 perpetuate 強調「使其在時間上持續存在」，reinforce 強調「使其更強固」；招募模式導致偏見延續 → perpetuate。","gram":null,"tone_cue":[],"fam":[["perpetuate","v. 使長久延續"],["perpetuation","n. 延續、使永久化"],["perpetual","adj. 持續不斷的"],["ingrained bias","ph. 根深蒂固的偏見"]],"tags":[],"createdAt":"2026-05-30"},{"id":"GEPT_中高_R25_Q004","exam":"GEPT","part":5,"type":"grammar","topic":"used to / get used to 辨析","level":"中高級","difficulty":"B2","focus":"grammar","ctx":"After joining the night shift, Jenny gradually __ working late hours and now finds it manageable.","zh":"加入夜班後，Jenny 逐漸__晚工時，現在覺得尚能應對。","ans":1,"opts":[["used to","ph","/juːst tuː/","過去習慣（現已停止）","used to + V → 過去曾經（現不再）"],["got used to","ph","/ɡɒt juːst tuː/","漸漸習慣了（動態過程）","get used to + V-ing ✓"],["was used to","ph","/wɒz juːst tuː/","過去已習慣（靜態狀態）","was used to + V-ing → 過去的習慣狀態"],["would use to","ph","/wʊd juːs tuː/","×（不存在的錯誤結構）","would use to 為非標準錯誤用法"]],"key":"get used to + V-ing = 漸漸習慣（強調從陌生到適應的動態過程）；句中 gradually 強調過程 → got used to working；used to + V 表過去習慣（現已停止）；was used to + V-ing 表過去的靜態習慣狀態。","trap":"used to + V（過去習慣，現已停止）vs. be/get used to + V-ing（習慣某事）：三者結構不同；get 強調動態轉變過程，be 強調已達到的靜態狀態。","gram":"used to + V（過去習慣）/ be used to + V-ing（習慣某事，靜態）/ get used to + V-ing（漸漸習慣，動態）","tone_cue":[],"fam":[["used to V","ph. 過去習慣（現已停止）"],["be used to V-ing","ph. 習慣於某事（靜態）"],["get used to V-ing","ph. 漸漸習慣（動態）"],["manageable","adj. 可應對的、可管理的"]],"tags":[],"createdAt":"2026-05-30"},{"id":"GEPT_中高_R17_Q004","exam":"GEPT","part":5,"type":"grammar","topic":"日常生活","level":"中高級","difficulty":"B2","focus":"grammar","ctx":"Not until the lights went out __ they realize that the power outage affected the entire neighborhood.","zh":"直到燈光熄滅，他們才__意識到這次停電影響了整個社區。","ans":0,"opts":[["did","aux. (inverted)","/dɪd/","（助動詞，倒裝語序）","Not until... did + S + V → 否定副詞倒裝，助動詞 did 前移 ✓"],["had","aux. (past perfect)","/hæd/","（過去完成式助動詞）","過去完成式 had 不符合本句時態（went out 為過去簡單式，無需完成式）"],["would","aux. (conditional)","/wʊd/","（情態動詞，條件語氣）","would 用於假設或意願，此句為陳述事實，語氣不符"],["could","aux. (ability/permission)","/kʊd/","（情態動詞，能力或允許）","could 表能力或許可，與 realize（意識到）搭配語意不自然"]],"key":"否定副詞片語 Not until... 置於句首時，主句須做倒裝：did + S + V，此為英文倒裝語法的標準結構。","trap":"had 雖為過去式助動詞，但此句並非過去完成時態；would/could 為情態動詞，不適用於倒裝否定副詞句型中的陳述事實。","gram":"否定副詞倒裝：Not until + 時間子句，did/does/do + S + V（主句語序翻轉，助動詞前移至主詞之前）","tone_cue":[],"fam":[],"tags":[],"createdAt":"2026-05-29"}];
+var CONV=[];
+var PASS=[];
+var READ=[];
+var immediate=false;
+var totalQ=4;
+var userAns={},submitted=false,showZh=false;
+function allQids(){
+  var ids=[];
+  Q.forEach(function(q){ids.push(q.id);});
+  CONV.forEach(function(g){(g.qs||[]).forEach(function(_,i){ids.push('P34_'+g.id+'_'+i);});});
+  PASS.forEach(function(p){(p.qs||[]).forEach(function(_,i){ids.push('P6_'+p.id+'_'+i);});});
+  READ.forEach(function(r){(r.qs||[]).forEach(function(_,i){ids.push('P7_'+r.id+'_'+i);});});
+  return ids;
+}
+function getAns(qid){
+  var r=Q.find(function(q){return q.id===qid;}); if(r) return r.ans;
+  for(var gi=0;gi<CONV.length;gi++){var g=CONV[gi];for(var qi=0;qi<(g.qs||[]).length;qi++){if('P34_'+g.id+'_'+qi===qid)return g.qs[qi].ans;}}
+  for(var pi=0;pi<PASS.length;pi++){var pg=PASS[pi];for(var qi=0;qi<(pg.qs||[]).length;qi++){if('P6_'+pg.id+'_'+qi===qid)return pg.qs[qi].ans;}}
+  for(var ri=0;ri<READ.length;ri++){var rp=READ[ri];for(var qi=0;qi<(rp.qs||[]).length;qi++){if('P7_'+rp.id+'_'+qi===qid)return rp.qs[qi].ans;}}
+  return -1;
+}
+function updateProgress(){
+  var done=Object.keys(userAns).length,pct=totalQ?Math.round(done/totalQ*100):0;
+  var pt=document.getElementById('progText'),pp=document.getElementById('progPct'),pf=document.getElementById('progFill');
+  if(pt)pt.textContent='已作答 '+done+' / '+totalQ+' 題';
+  if(pp)pp.textContent=pct+'%';
+  if(pf)pf.style.width=pct+'%';
+  var h=document.getElementById('subHint');
+  if(h)h.textContent=done<totalQ?'請完成所有 '+totalQ+' 題後提交':'所有題目已作答，可以提交';
+}
+function toggleZh(){
+  showZh=!showZh;
+  var btn=document.getElementById('zhToggle');
+  if(btn){btn.classList.toggle('on',showZh);btn.innerHTML='<span class="dot"></span>'+(showZh?'隱藏中文翻譯':'顯示中文翻譯');}
+  allQids().forEach(function(qid){var el=document.getElementById('zh_'+qid);if(el&&!submitted)el.style.display=showZh?'block':'none';});
+}
+function pickOpt(qid,i){
+  if(submitted)return;
+  userAns[qid]=i;
+  for(var j=0;j<4;j++){var el=document.getElementById('opt_'+qid+'_'+j);if(el)el.classList.toggle('selected',j===i);}
+  var dot=document.getElementById('dot_'+qid);
+  if(dot){dot.classList.remove('wrong','correct');dot.classList.add('answered');}
+  if(immediate){
+    var ans=getAns(qid);
+    for(var k=0;k<4;k++){var e2=document.getElementById('opt_'+qid+'_'+k);if(!e2)continue;e2.classList.remove('selected');e2.classList.add('disabled');if(k===ans)e2.classList.add('correct');else if(k===i)e2.classList.add('wrong');}
+    var zh=document.getElementById('zh_'+qid),ana=document.getElementById('ana_'+qid),dt=document.getElementById('dt_'+qid);
+    if(zh)zh.style.display='block';if(ana)ana.style.display='block';if(dt)dt.style.display='block';
+    if(dot){dot.classList.remove('answered');dot.classList.add(i===ans?'correct':'wrong');}
+  }
+  updateProgress();
+}
+function submitAll(){
+  if(submitted)return;
+  var all=allQids(),unanswered=all.filter(function(id){return userAns[id]===undefined;});
+  if(unanswered.length){if(!confirm('還有 '+unanswered.length+' 題未作答，確定提交？'))return;}
+  submitted=true;
+  var correct=0;
+  all.forEach(function(qid){
+    var ans=getAns(qid),ua=userAns[qid];
+    if(ua===ans)correct++;
+    for(var i=0;i<4;i++){var el=document.getElementById('opt_'+qid+'_'+i);if(!el)continue;el.classList.remove('selected');el.classList.add('disabled');if(i===ans)el.classList.add('correct');else if(i===ua)el.classList.add('wrong');}
+    var zh=document.getElementById('zh_'+qid),ana=document.getElementById('ana_'+qid),dt=document.getElementById('dt_'+qid);
+    if(zh)zh.style.display='block';if(ana)ana.style.display='block';if(dt)dt.style.display='block';
+    var dot=document.getElementById('dot_'+qid);
+    if(dot){dot.classList.remove('answered');dot.classList.add(ua===ans?'correct':'wrong');}
+  });
+  var pct=Math.round(correct/all.length*100);
+  var msg=pct>=80?'🎉 表現優異！':pct>=60?'👍 答得不錯！':'💪 繼續加油！';
+  var sc=document.getElementById('scoreCard');
+  sc.innerHTML='<div class="sc-ring"><div class="sc-num">'+correct+'</div><div class="sc-den">/ '+all.length+'</div></div>'
+    +'<div class="sc-msg">'+msg+'</div><div class="sc-rate">正確率 '+pct+'%</div>'
+    +'<div class="sc-bar-wrap"><div class="sc-bar"><div class="sc-bar-fill" id="scBarFill"></div></div></div>';
+  sc.style.display='block';
+  setTimeout(function(){var f=document.getElementById('scBarFill');if(f)f.style.width=pct+'%';},100);
+  var btn=document.getElementById('submitBtn');
+  if(btn){btn.disabled=true;var sp=btn.querySelector('span');if(sp)sp.textContent='已提交';}
+  var h=document.getElementById('subHint');if(h)h.textContent='共答對 '+correct+' 題，正確率 '+pct+'%';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function toggleDetail(qid){
+  var dw=document.getElementById('dw_'+qid),dt=document.getElementById('dt_'+qid);
+  if(!dw||!dt)return;
+  var btn=dt.querySelector('.dt-btn'),open=dw.style.display==='block';
+  dw.style.display=open?'none':'block';
+  if(btn)btn.innerHTML=open
+    ?'<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析'
+    :'<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>收起分析';
+}
+updateProgress();
+</script>
+</body></html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>商務英語練習 · 自選題組 · 第 04 組</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0f1c3f;--navy2:#1a2e5a;--gold:#c9922a;--gold2:#f0b940;--cream:#fdf9f2;--cream2:#f5efe3;--green:#1e6b45;--green-bg:#e8f5ed;--red:#b03030;--red-bg:#fdf0f0;--amber:#a05c10;--amber-bg:#fef8ee;--text:#1a1a2e;--sub:#5a607a;--border:#ddd8ce;--shadow:0 4px 24px rgba(15,28,63,.10)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans TC',sans-serif;background:var(--cream);color:var(--text);font-size:15px;line-height:1.75;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse 80% 50% at 10% 0%,rgba(201,146,42,.08) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 90% 100%,rgba(15,28,63,.06) 0%,transparent 60%),var(--cream)}
+.wrap{max-width:720px;margin:0 auto;padding:24px 16px 60px}
+.hd{background:var(--navy);border-radius:18px;padding:28px 28px 24px;margin-bottom:20px;position:relative;overflow:hidden}
+.hd::after{content:'ZENTAX';position:absolute;right:-8px;top:50%;transform:translateY(-50%);font-family:'DM Serif Display',serif;font-size:6.5em;color:rgba(255,255,255,.04);pointer-events:none;white-space:nowrap;letter-spacing:.08em}
+.hd-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(201,146,42,.18);border:1px solid rgba(201,146,42,.4);color:var(--gold2);border-radius:20px;padding:3px 12px;font-size:.78em;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px}
+.hd-title{font-family:'DM Serif Display',serif;font-size:1.55em;color:#fff;line-height:1.25;margin-bottom:6px}
+.hd-sub{color:rgba(255,255,255,.5);font-size:.84em}
+.prog-wrap{margin-top:18px}
+.prog-label{display:flex;justify-content:space-between;font-size:.78em;color:rgba(255,255,255,.45);margin-bottom:6px}
+.prog-bar{height:4px;background:rgba(255,255,255,.12);border-radius:2px;overflow:hidden}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:2px;transition:width .4s ease;width:0%}
+.zh-toggle-wrap{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.zh-toggle-btn{display:flex;align-items:center;gap:7px;background:#fff;border:1.5px solid var(--border);border-radius:20px;padding:5px 14px;font-size:.82em;color:var(--sub);cursor:pointer;font-family:inherit;transition:all .18s;font-weight:500}
+.zh-toggle-btn:hover{border-color:var(--navy);color:var(--navy)}
+.zh-toggle-btn .dot{width:8px;height:8px;border-radius:50%;background:var(--border);transition:background .2s}
+.zh-toggle-btn.on .dot{background:var(--gold)}
+.zh-toggle-btn.on{border-color:var(--gold);color:var(--amber)}
+.sc{background:var(--navy);border-radius:18px;padding:30px 24px;margin-bottom:20px;text-align:center;display:none;animation:fadeSlide .5s ease}
+@keyframes fadeSlide{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+.sc-ring{width:96px;height:96px;border-radius:50%;border:4px solid rgba(201,146,42,.3);background:rgba(201,146,42,.1);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 14px}
+.sc-num{font-size:2.2em;font-weight:700;color:var(--gold2);line-height:1}
+.sc-den{font-size:.78em;color:rgba(255,255,255,.4)}
+.sc-msg{font-size:1em;font-weight:600;color:#fff;margin-bottom:4px}
+.sc-rate{font-size:.84em;color:rgba(255,255,255,.45)}
+.sc-bar-wrap{margin-top:18px}
+.sc-bar{height:6px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden}
+.sc-bar-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:3px;transition:width 1s cubic-bezier(.4,0,.2,1) .3s;width:0%}
+.sec-hdr{font-size:.8em;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:8px 4px;margin:24px 0 12px;border-bottom:2px solid;display:flex;align-items:center;gap:8px}
+.sec-p5{color:var(--navy);border-color:var(--gold)}
+.sec-p34{color:#6a1b9a;border-color:#9c4dcc}
+.sec-p6{color:var(--green);border-color:#4caf7a}
+.sec-p7{color:#7c2d12;border-color:#c2410c}
+.qc{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:16px;overflow:hidden;transition:box-shadow .2s}
+.qc:hover{box-shadow:0 6px 32px rgba(15,28,63,.13)}
+.qc-sub{border-radius:10px;margin-bottom:10px;box-shadow:none;border:1.5px solid #e8e4dc}
+.qh{padding:18px 20px 14px;border-bottom:1px solid #f0ece4;display:flex;gap:12px;align-items:flex-start}
+.qn{background:var(--navy);color:var(--gold2);padding:4px 0;width:36px;text-align:center;border-radius:8px;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.82em;flex-shrink:0;margin-top:2px;letter-spacing:.02em}
+.qt{flex:1}
+.qe{font-size:.97em;color:var(--text);font-weight:500;line-height:1.7}
+.qz{font-size:.84em;color:var(--sub);margin-top:7px;padding-top:7px;border-top:1px dashed #e0dbd0;display:none;line-height:1.65}
+.bk{display:inline-block;color:var(--gold);font-weight:700;border-bottom:2px solid var(--gold);padding:0 3px;min-width:40px;text-align:center}
+.qh-right{display:flex;align-items:flex-start}
+.status-dot{width:8px;height:8px;border-radius:50%;background:#ddd;margin-top:10px;transition:background .2s;flex-shrink:0}
+.status-dot.answered{background:var(--gold2)}
+.status-dot.correct{background:#3aaa6a}
+.status-dot.wrong{background:var(--red)}
+.opts{padding:12px 16px 16px;display:flex;flex-direction:column;gap:8px}
+.opt{display:flex;align-items:center;gap:12px;padding:11px 14px;border:1.5px solid #e8e4dc;border-radius:10px;cursor:pointer;transition:border-color .15s,background .15s,transform .1s;background:#fdfcfa;user-select:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.opt:hover:not(.disabled){border-color:var(--navy2);background:#f5f3ef;transform:translateX(2px)}
+.opt.selected{border-color:var(--navy);background:#f0f3fa}
+.opt-lbl{width:28px;height:28px;border-radius:7px;border:1.5px solid #d0ccc2;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.82em;color:#888;flex-shrink:0;transition:all .15s}
+.opt.selected .opt-lbl{border-color:var(--navy);background:var(--navy);color:var(--gold2)}
+.opt.correct .opt-lbl{border-color:var(--green);background:var(--green);color:#fff}
+.opt.wrong .opt-lbl{border-color:var(--red);background:var(--red);color:#fff}
+.opt.correct{border-color:#6dc492;background:var(--green-bg);cursor:default}
+.opt.wrong{border-color:#e08080;background:var(--red-bg);cursor:default}
+.opt.disabled{cursor:default}
+.opt-body{flex:1}
+.opt-word{font-size:.93em;font-weight:600;color:var(--text)}
+.opt.correct .opt-word{color:var(--green)}
+.opt.wrong .opt-word{color:var(--red)}
+.opt-pos{display:inline-block;font-size:.72em;font-family:'JetBrains Mono',monospace;color:#aaa;background:#f0ece4;border-radius:4px;padding:1px 6px;margin-left:7px;font-weight:400;vertical-align:middle}
+.opt.correct .opt-pos{color:#5a9a70;background:#d6f0e0}
+.opt.wrong .opt-pos{color:#c08080;background:#fde8e8}
+.opt-zh{font-size:.8em;color:var(--sub);display:block;margin-top:2px}
+.analysis{display:none;padding:0 16px 4px}
+.ana-block{border-radius:10px;padding:11px 14px;margin-bottom:8px;font-size:.875em;line-height:1.7}
+.ana-label{font-size:.75em;font-weight:700;letter-spacing:.07em;text-transform:uppercase;display:flex;align-items:center;gap:6px;margin-bottom:5px}
+.ana-key{background:var(--green-bg);border:1px solid #b0d8be}
+.ana-key .ana-label{color:var(--green)}
+.ana-trap{background:var(--amber-bg);border:1px solid #e8c880}
+.ana-trap .ana-label{color:var(--amber)}
+.ana-gram{background:#f0f3fa;border:1px solid #c8cfea}
+.ana-gram .ana-label{color:var(--navy2)}
+.ana-icon{width:16px;height:16px}
+.dt{display:none;padding:0 16px 8px}
+.dt-btn{width:100%;background:#faf8f4;border:1px solid #e0dbd0;border-radius:8px;padding:8px 14px;font-size:.81em;color:var(--sub);cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:6px;transition:all .15s;font-weight:500}
+.dt-btn:hover{background:var(--cream2);color:var(--navy);border-color:#c8c0b0}
+.dw{display:none;padding:0 16px 16px}
+.ot{width:100%;border-collapse:collapse;font-size:.82em;table-layout:fixed;border-radius:10px;overflow:hidden}
+.ot thead tr{background:var(--navy)}
+.ot th{color:rgba(255,255,255,.7);padding:8px 10px;text-align:left;font-size:.78em;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.ot td{padding:8px 10px;border-bottom:1px solid #f0ece4;vertical-align:top;word-break:break-word}
+.ot tr.cor td{background:#edf7f1;color:var(--green);font-weight:600}
+.ot tr:not(.cor):hover td{background:#faf8f4}
+.ipa{font-family:'JetBrains Mono',monospace;color:var(--navy2);font-size:.95em;letter-spacing:.01em}
+.ot tr.cor .ipa{color:var(--green)}
+.fam-title{font-size:.78em;font-weight:700;color:var(--sub);letter-spacing:.06em;text-transform:uppercase;margin:12px 0 7px}
+.wg{display:flex;flex-wrap:wrap;gap:7px}
+.wc{border:1px solid #e0dbd0;background:#fdfcfa;border-radius:8px;padding:7px 11px;min-width:110px}
+.ww{font-weight:700;font-size:.88em;color:var(--navy);font-family:'JetBrains Mono',monospace}
+.wz{font-size:.78em;color:var(--sub);margin-top:2px}
+.conv-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:20px;overflow:hidden}
+.conv-hdr{background:var(--navy);padding:16px 20px}
+.conv-topic{font-family:'DM Serif Display',serif;color:var(--gold2);font-size:1.05em}
+.conv-sub{font-size:.8em;color:rgba(255,255,255,.45);margin-top:2px}
+.conv-script{padding:14px 20px;background:#faf8f4;border-bottom:1px solid #eee8de}
+.conv-line{display:flex;gap:10px;padding:4px 0;font-size:.9em;line-height:1.7}
+.conv-role{font-weight:700;min-width:28px;flex-shrink:0}
+.role-W{color:#c94070}.role-M{color:#1a5ea0}.role-ANR{color:#6a1b9a}
+.conv-qs{padding:14px 16px}
+.pass-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:20px;overflow:hidden}
+.pass-hdr{background:linear-gradient(135deg,#1e6b45,#2e8b57);padding:16px 20px}
+.pass-topic{font-family:'DM Serif Display',serif;color:#fff;font-size:1.05em}
+.pass-sub{font-size:.8em;color:rgba(255,255,255,.5);margin-top:2px}
+.pass-text{padding:16px 20px;font-size:.91em;line-height:2;border-bottom:1px solid #eee8de;white-space:pre-wrap}
+.pass-blank{display:inline-block;border:1.5px solid var(--green);border-radius:4px;padding:0 8px;min-width:36px;text-align:center;color:var(--green);font-weight:700}
+.pass-qs{padding:14px 16px}
+.read-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);border:1px solid rgba(200,196,186,.5);margin-bottom:20px;overflow:hidden}
+.read-hdr{background:linear-gradient(135deg,#7c2d12,#9a3412);padding:16px 20px}
+.read-topic{font-family:'DM Serif Display',serif;color:#fff;font-size:1.05em}
+.read-sub{font-size:.8em;color:rgba(255,255,255,.5);margin-top:2px}
+.read-text{padding:16px 20px;font-size:.91em;line-height:2;border-bottom:1px solid #eee8de}
+.read-multi{padding:0;display:flex;flex-direction:column;gap:0}
+.read-passage{padding:14px 20px;border-bottom:1px solid #eee8de;font-size:.91em;line-height:2}
+.read-passage-lbl{font-size:.72em;font-weight:700;color:#7c2d12;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.read-passage-body{color:var(--text)}
+.read-qs{padding:14px 16px}
+.tone-cue{font-size:.78em;padding:4px 16px 0;color:#a05c10;font-style:italic}
+.sub-wrap{text-align:center;padding:10px 0 28px}
+.sub-btn{background:var(--navy);color:#fff;border:none;border-radius:30px;padding:14px 50px;font-size:1em;font-weight:700;cursor:pointer;font-family:inherit;letter-spacing:.06em;position:relative;overflow:hidden;transition:opacity .2s,transform .15s}
+.sub-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--gold),var(--gold2));opacity:0;transition:opacity .2s}
+.sub-btn:hover:not(:disabled)::before{opacity:1}
+.sub-btn:hover:not(:disabled){transform:translateY(-1px)}
+.sub-btn span{position:relative}
+.sub-btn:disabled{background:#c8c4bc;cursor:default;transform:none}
+.sub-btn:disabled::before{display:none}
+.sub-hint{font-size:.8em;color:#b0a898;margin-top:8px}
+@media(max-width:580px){.ot{table-layout:auto}.ot thead{display:none}.ot tr{display:block;margin-bottom:8px;border:1px solid #e8e4dc;border-radius:8px;overflow:hidden}.ot td{display:block;padding:7px 11px;border-bottom:1px solid #f0ece4}.ot td::before{content:attr(data-l);font-weight:700;color:var(--navy);display:block;font-size:.72em;letter-spacing:.05em;text-transform:uppercase;margin-bottom:2px}.hd-title{font-size:1.25em}.hd::after{font-size:4em}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="sc" id="scoreCard"></div>
+<div class="hd">
+  <div class="hd-title">商務英語練習 · 自選題組 · 第 04 組</div>
+  <div class="hd-sub">共 8 題 · 完成後統一提交查看結果</div>
+  <div class="prog-wrap">
+    <div class="prog-label"><span id="progText">已作答 0 / 8 題</span><span id="progPct">0%</span></div>
+    <div class="prog-bar"><div class="prog-fill" id="progFill"></div></div>
+  </div>
+</div>
+<div class="sec-hdr sec-p5">✦ 商務書信</div>
+<div class="qc" id="qc_P5_E_R16_Q003"><div class="qh"><div class="qn">Q1</div><div class="qt"><div class="qe">The new software update will be installed <span class="bk">＿＿</span> all company computers over the weekend to minimize disruption to daily operations.</div><div class="qz" id="zh_P5_E_R16_Q003">【中譯】新的軟體更新將在週末 __ 所有公司電腦上安裝，以盡量減少對日常運營的干擾。</div></div><div class="qh-right"><div class="status-dot" id="dot_P5_E_R16_Q003"></div></div></div><div class="opts" id="opts_P5_E_R16_Q003"><div class="opt" id="opt_P5_E_R16_Q003_0" ontouchstart="" onclick="pickOpt('P5_E_R16_Q003',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">for</span></div></div><div class="opt" id="opt_P5_E_R16_Q003_1" ontouchstart="" onclick="pickOpt('P5_E_R16_Q003',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">by</span></div></div><div class="opt" id="opt_P5_E_R16_Q003_2" ontouchstart="" onclick="pickOpt('P5_E_R16_Q003',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">on</span></div></div><div class="opt" id="opt_P5_E_R16_Q003_3" ontouchstart="" onclick="pickOpt('P5_E_R16_Q003',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">with</span></div></div></div><div class="analysis" id="ana_P5_E_R16_Q003"><div class="ana-block ana-key"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1e6b45" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#1e6b45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>解題關鍵</div>installed 後接裝置或平台時，英文慣用介系詞 on，如 installed on computers / on devices，故選 on。</div><div class="ana-block ana-trap"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 13H2L8 2z" stroke="#a05c10" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6v3M8 11v.5" stroke="#a05c10" stroke-width="1.5" stroke-linecap="round"/></svg>陷阱提示</div>by 常見於被動語態後接執行者，但此處後接 'all company computers' 是安裝的載體而非執行者，不用 by。</div><div class="ana-block ana-gram"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="#1a2e5a" stroke-width="1.5"/><path d="M5 6h6M5 8.5h4M5 11h5" stroke="#1a2e5a" stroke-width="1.5" stroke-linecap="round"/></svg>文法補充</div>介系詞搭配：install on + 裝置/平台（固定搭配）</div></div><div class="dt" id="dt_P5_E_R16_Q003"><button class="dt-btn" onclick="toggleDetail('P5_E_R16_Q003')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析</button></div><div class="dw" id="dw_P5_E_R16_Q003"><table class="ot"><thead><tr><th>單字/片語</th><th>詞性</th><th>音標</th><th>主要意思</th><th>搭配用法</th></tr></thead><tbody><tr><td data-l="單字">for</td><td data-l="詞性">prep</td><td data-l="音標"><span class="ipa">/fɔːr/</span></td><td data-l="意思">為了；對於</td><td data-l="搭配">used to indicate purpose 表目的</td></tr><tr><td data-l="單字">by</td><td data-l="詞性">prep</td><td data-l="音標"><span class="ipa">/baɪ/</span></td><td data-l="意思">由；在…之前</td><td data-l="搭配">used to indicate agent or deadline 表執行者或截止時間</td></tr><tr class="cor"><td data-l="單字"><strong>on</strong></td><td data-l="詞性">prep</td><td data-l="音標"><span class="ipa">/ɒn/</span></td><td data-l="意思">在…上；於</td><td data-l="搭配">used with surfaces or devices 用於表示裝置或平台</td></tr><tr><td data-l="單字">with</td><td data-l="詞性">prep</td><td data-l="音標"><span class="ipa">/wɪð/</span></td><td data-l="意思">與；用</td><td data-l="搭配">used to indicate accompaniment or instrument 表伴隨或工具</td></tr></tbody></table></div></div><div class="qc" id="qc_P5_E_R31_Q004"><div class="qh"><div class="qn">Q2</div><div class="qt"><div class="qe">The audit committee recommended that every acquisition proposal <span class="bk">＿＿</span> thoroughly evaluated by an independent panel before final approval.</div><div class="qz" id="zh_P5_E_R31_Q004">【中譯】審計委員會建議每一項收購提案在最終批准前都應由獨立小組進行徹底__。</div></div><div class="qh-right"><div class="status-dot" id="dot_P5_E_R31_Q004"></div></div></div><div class="opts" id="opts_P5_E_R31_Q004"><div class="opt" id="opt_P5_E_R31_Q004_0" ontouchstart="" onclick="pickOpt('P5_E_R31_Q004',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">be</span></div></div><div class="opt" id="opt_P5_E_R31_Q004_1" ontouchstart="" onclick="pickOpt('P5_E_R31_Q004',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">is</span></div></div><div class="opt" id="opt_P5_E_R31_Q004_2" ontouchstart="" onclick="pickOpt('P5_E_R31_Q004',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">was</span></div></div><div class="opt" id="opt_P5_E_R31_Q004_3" ontouchstart="" onclick="pickOpt('P5_E_R31_Q004',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">being</span></div></div></div><div class="analysis" id="ana_P5_E_R31_Q004"><div class="ana-block ana-key"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1e6b45" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#1e6b45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>解題關鍵</div>建議/要求類動詞（recommend, suggest, insist, propose）後的 that 子句使用虛擬語氣（原形動詞）；被動式為 S + be + p.p.</div><div class="ana-block ana-trap"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 13H2L8 2z" stroke="#a05c10" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6v3M8 11v.5" stroke="#a05c10" stroke-width="1.5" stroke-linecap="round"/></svg>陷阱提示</div>口語中有人用 'is'（直述語氣），但正式書面英語及考試標準答案為虛擬語氣 'be'</div><div class="ana-block ana-gram"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="#1a2e5a" stroke-width="1.5"/><path d="M5 6h6M5 8.5h4M5 11h5" stroke="#1a2e5a" stroke-width="1.5" stroke-linecap="round"/></svg>文法補充</div>虛擬語氣（Subjunctive Mood）：recommend/suggest/propose/insist + that + S + V原形；被動結構 → that + S + be + p.p.</div></div><div class="dt" id="dt_P5_E_R31_Q004"><button class="dt-btn" onclick="toggleDetail('P5_E_R31_Q004')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析</button></div><div class="dw" id="dw_P5_E_R31_Q004"><table class="ot"><thead><tr><th>單字/片語</th><th>詞性</th><th>音標</th><th>主要意思</th><th>搭配用法</th></tr></thead><tbody><tr class="cor"><td data-l="單字"><strong>be</strong></td><td data-l="詞性">v. (subjunctive)</td><td data-l="音標"><span class="ipa">/biː/</span></td><td data-l="意思">（虛擬語氣原形，被動）</td><td data-l="搭配">recommend that + S + be + p.p. ✓</td></tr><tr><td data-l="單字">is</td><td data-l="詞性">v. (indicative)</td><td data-l="音標"><span class="ipa">/ɪz/</span></td><td data-l="意思">（直述語氣現在式）</td><td data-l="搭配">建議類動詞後的 that 子句用虛擬語氣，不用直述語氣</td></tr><tr><td data-l="單字">was</td><td data-l="詞性">v. (past)</td><td data-l="音標"><span class="ipa">/wɒz/</span></td><td data-l="意思">（過去式）</td><td data-l="搭配">虛擬語氣用原形動詞，非過去式 was</td></tr><tr><td data-l="單字">being</td><td data-l="詞性">v. (progressive)</td><td data-l="音標"><span class="ipa">/ˈbiːɪŋ/</span></td><td data-l="意思">（現在進行式）</td><td data-l="搭配">虛擬語氣不用 being；原形 be 才正確</td></tr></tbody></table></div></div><div class="qc" id="qc_P5_E_R25_Q004"><div class="qh"><div class="qn">Q3</div><div class="qt"><div class="qe">All employees are required to submit their timesheets by 5 p.m. on Friday, <span class="bk">＿＿</span> their department or location.</div><div class="qz" id="zh_P5_E_R25_Q004">【中譯】所有員工須在週五下午五點前提交工時表，__其部門或地點。</div></div><div class="qh-right"><div class="status-dot" id="dot_P5_E_R25_Q004"></div></div></div><div class="opts" id="opts_P5_E_R25_Q004"><div class="opt" id="opt_P5_E_R25_Q004_0" ontouchstart="" onclick="pickOpt('P5_E_R25_Q004',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">in spite of</span></div></div><div class="opt" id="opt_P5_E_R25_Q004_1" ontouchstart="" onclick="pickOpt('P5_E_R25_Q004',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">due to</span></div></div><div class="opt" id="opt_P5_E_R25_Q004_2" ontouchstart="" onclick="pickOpt('P5_E_R25_Q004',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">regardless of</span></div></div><div class="opt" id="opt_P5_E_R25_Q004_3" ontouchstart="" onclick="pickOpt('P5_E_R25_Q004',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">according to</span></div></div></div><div class="analysis" id="ana_P5_E_R25_Q004"><div class="ana-block ana-key"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1e6b45" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="#1e6b45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>解題關鍵</div>regardless of 表示『無論...如何，皆不例外』，是公司規定公告中排除所有例外的首選介詞；in spite of 強調讓步（雖然如此）；due to 強調原因；according to 強調依據來源。</div><div class="ana-block ana-trap"><div class="ana-label"><svg class="ana-icon" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 13H2L8 2z" stroke="#a05c10" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6v3M8 11v.5" stroke="#a05c10" stroke-width="1.5" stroke-linecap="round"/></svg>陷阱提示</div>in spite of（雖然如此，但）與 regardless of（無論如何）語義相近，但 regardless of 不帶讓步意味，僅強調排除所有例外條件，更適合公司規定用語。</div></div><div class="dt" id="dt_P5_E_R25_Q004"><button class="dt-btn" onclick="toggleDetail('P5_E_R25_Q004')"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析</button></div><div class="dw" id="dw_P5_E_R25_Q004"><table class="ot"><thead><tr><th>單字/片語</th><th>詞性</th><th>音標</th><th>主要意思</th><th>搭配用法</th></tr></thead><tbody><tr><td data-l="單字">in spite of</td><td data-l="詞性">prep</td><td data-l="音標"><span class="ipa">/ɪn spaɪt/</span></td><td data-l="意思">儘管（讓步）</td><td data-l="搭配">in spite of the difficulty</td></tr><tr><td data-l="單字">due to</td><td data-l="詞性">prep</td><td data-l="音標"><span class="ipa">/djuː tuː/</span></td><td data-l="意思">由於（原因）</td><td data-l="搭配">due to unforeseen circumstances</td></tr><tr class="cor"><td data-l="單字"><strong>regardless of</strong></td><td data-l="詞性">prep</td><td data-l="音標"><span class="ipa">/rɪˈɡɑːrdlɪs/</span></td><td data-l="意思">不論、無論（排除例外）</td><td data-l="搭配">regardless of rank / location ✓</td></tr><tr><td data-l="單字">according to</td><td data-l="詞性">prep</td><td data-l="音標"><span class="ipa">/əˈkɔːrdɪŋ/</span></td><td data-l="意思">根據</td><td data-l="搭配">according to the policy</td></tr></tbody></table></div></div>
+
+
+
+
+<div class="sec-hdr sec-p7">◉ 員工彈性工時福利政策</div>
+<div class="read-card"><div class="read-hdr"><div class="read-topic">員工彈性工時福利政策</div><div class="read-sub">TOEIC</div></div><div class="read-text read-multi"><div class="read-passage"><div class="read-passage-lbl">文章 1 · memo</div><div class="read-passage-body">MEMORANDUM<br><br>TO: All Employees<br>FROM: Sandra Yeh, HR Director<br>DATE: May 15<br>SUBJECT: New Flextime Policy — Effective Q3<br><br>We are pleased to announce that a flexible working hours (flextime) program will take effect beginning July 1. Under this policy, eligible employees may adjust their daily start and end times within a two-hour window, provided that core hours (10:00 a.m. to 3:00 p.m.) are maintained.<br><br>To participate, employees must submit a Flextime Request Form to their direct supervisors no later than June 10. Supervisors are expected to review and approve or deny requests within five business days of receipt. Approved schedules must remain consistent for a minimum of one quarter before any modification may be requested.<br><br>This program currently applies to full-time employees in the Operations and Marketing divisions. Employees with client-facing roles involving fixed schedules are not eligible. Questions may be directed to the HR department at hr@company.com.</div></div><div class="read-passage"><div class="read-passage-lbl">文章 2 · email</div><div class="read-passage-body">FROM: David Lam, Marketing Division Manager<br>TO: Sandra Yeh, HR Director<br>DATE: May 17<br>SUBJECT: RE: New Flextime Policy — Effective Q3<br><br>Dear Sandra,<br><br>Thank you for the memo regarding the upcoming flextime program. The team is generally enthusiastic, and I appreciate the effort HR has put into designing this initiative.<br><br>However, I have a couple of clarifying questions before I circulate the information to my staff. First, the memo states that requests must be submitted by June 10, but it does not specify whether this deadline applies to all shifts or only to the standard daytime schedule. Could you confirm this point?<br><br>Second, I noticed the policy covers the Operations and Marketing divisions. Are contract staff embedded within the Marketing division also covered, or is eligibility limited to direct full-time hires only?<br><br>I look forward to your response so I can relay accurate information to my team.<br><br>Best regards,<br>David Lam</div></div></div><div class="read-qs"><div class="qc qc-sub" id="qc_P7_P7_E_R13_RD001_0"><div class="qh"><div class="qn">Q4</div><div class="qt"><div class="qe">According to the memo, what must employees do to participate in the flextime program?</div><div class="qz" id="zh_P7_P7_E_R13_RD001_0">🔑 Memo 第二段明確指出：'employees must submit a Flextime Request Form to their direct supervisors no later than June 10'，因此答案為 C。</div></div><div class="qh-right"><div class="status-dot" id="dot_P7_P7_E_R13_RD001_0"></div></div></div><div class="opts"><div class="opt" id="opt_P7_P7_E_R13_RD001_0_0" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_0',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">Attend an HR orientation session before June 10</span></div></div><div class="opt" id="opt_P7_P7_E_R13_RD001_0_1" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_0',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">Obtain written approval from the HR Director directly</span></div></div><div class="opt" id="opt_P7_P7_E_R13_RD001_0_2" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_0',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">Submit a Flextime Request Form to their direct supervisors</span></div></div><div class="opt" id="opt_P7_P7_E_R13_RD001_0_3" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_0',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">Agree to maintain a fixed schedule for at least six months</span></div></div></div></div><div class="qc qc-sub" id="qc_P7_P7_E_R13_RD001_1"><div class="qh"><div class="qn">Q5</div><div class="qt"><div class="qe">What is one of the questions David Lam raises in his email?</div><div class="qz" id="zh_P7_P7_E_R13_RD001_1">🔑 Email 第二個問題明確詢問：'Are contract staff embedded within the Marketing division also covered, or is eligibility limited to direct full-time hires only?'，答案為 B。</div></div><div class="qh-right"><div class="status-dot" id="dot_P7_P7_E_R13_RD001_1"></div></div></div><div class="opts"><div class="opt" id="opt_P7_P7_E_R13_RD001_1_0" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_1',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">Whether the flextime program will extend to the Finance division</span></div></div><div class="opt" id="opt_P7_P7_E_R13_RD001_1_1" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_1',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">Whether contract staff in the Marketing division are eligible for the program</span></div></div><div class="opt" id="opt_P7_P7_E_R13_RD001_1_2" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_1',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">Whether employees can modify their schedules more than once per quarter</span></div></div><div class="opt" id="opt_P7_P7_E_R13_RD001_1_3" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_1',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">Whether the core hours requirement can be waived for senior staff</span></div></div></div></div><div class="qc qc-sub" id="qc_P7_P7_E_R13_RD001_2"><div class="qh"><div class="qn">Q6</div><div class="qt"><div class="qe">What can be inferred about David Lam from the email?</div><div class="qz" id="zh_P7_P7_E_R13_RD001_2">🔑 Email 中 David Lam 表示 'I can relay accurate information to my team'，顯示他負責向下屬傳達公司政策。故推論答案為 A。</div></div><div class="qh-right"><div class="status-dot" id="dot_P7_P7_E_R13_RD001_2"></div></div></div><div class="opts"><div class="opt" id="opt_P7_P7_E_R13_RD001_2_0" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_2',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">He is responsible for informing his team members about company policies</span></div></div><div class="opt" id="opt_P7_P7_E_R13_RD001_2_1" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_2',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">He disagrees with the new flextime program and plans to reject it</span></div></div><div class="opt" id="opt_P7_P7_E_R13_RD001_2_2" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_2',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">He submitted his own flextime request before writing the email</span></div></div><div class="opt" id="opt_P7_P7_E_R13_RD001_2_3" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_2',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">He was unaware of the flextime initiative before receiving the memo</span></div></div></div></div><div class="qc qc-sub" id="qc_P7_P7_E_R13_RD001_3"><div class="qh"><div class="qn">Q7</div><div class="qt"><div class="qe">Based on both documents, which group of employees is clearly eligible to participate in the flextime program?</div><div class="qz" id="zh_P7_P7_E_R13_RD001_3">🔑 交叉比對：Memo 說明政策適用於 Operations 和 Marketing 的全職員工，但排除 'client-facing roles involving fixed schedules'；David 的 email 詢問 contract staff 是否適用（尚未確認）。唯一確定符合的群體是 Marketing 的全職、非固定排班員工，答案為 D。</div></div><div class="qh-right"><div class="status-dot" id="dot_P7_P7_E_R13_RD001_3"></div></div></div><div class="opts"><div class="opt" id="opt_P7_P7_E_R13_RD001_3_0" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_3',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">Contract workers assigned to the Operations division</span></div></div><div class="opt" id="opt_P7_P7_E_R13_RD001_3_1" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_3',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">Full-time employees in client-facing roles with fixed schedules</span></div></div><div class="opt" id="opt_P7_P7_E_R13_RD001_3_2" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_3',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">All staff in every division of the company</span></div></div><div class="opt" id="opt_P7_P7_E_R13_RD001_3_3" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_3',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">Full-time employees in the Marketing division without fixed client schedules</span></div></div></div></div><div class="qc qc-sub" id="qc_P7_P7_E_R13_RD001_4"><div class="qh"><div class="qn">Q8</div><div class="qt"><div class="qe">According to the memo, what is the deadline for submitting a Flextime Request Form?</div><div class="qz" id="zh_P7_P7_E_R13_RD001_4">🔑 Memo 第二段明確說明截止日為 'no later than June 10'，答案為 B。</div></div><div class="qh-right"><div class="status-dot" id="dot_P7_P7_E_R13_RD001_4"></div></div></div><div class="opts"><div class="opt" id="opt_P7_P7_E_R13_RD001_4_0" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_4',0)"><div class="opt-lbl">A</div><div class="opt-body"><span class="opt-word">May 15</span></div></div><div class="opt" id="opt_P7_P7_E_R13_RD001_4_1" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_4',1)"><div class="opt-lbl">B</div><div class="opt-body"><span class="opt-word">June 10</span></div></div><div class="opt" id="opt_P7_P7_E_R13_RD001_4_2" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_4',2)"><div class="opt-lbl">C</div><div class="opt-body"><span class="opt-word">July 1</span></div></div><div class="opt" id="opt_P7_P7_E_R13_RD001_4_3" ontouchstart="" onclick="pickOpt('P7_P7_E_R13_RD001_4',3)"><div class="opt-lbl">D</div><div class="opt-body"><span class="opt-word">The last day of Q2</span></div></div></div></div></div></div>
+<div class="sub-wrap">
+  <button class="sub-btn" id="submitBtn" onclick="submitAll()"><span>提交所有答案</span></button>
+  <div class="sub-hint" id="subHint">請完成所有 8 題後提交</div>
+</div>
+
+
+<div style="margin-top:32px;padding:18px 20px;border-top:1px solid #e8e4dc;text-align:center;font-size:.75em;color:#b0a898;line-height:1.8">
+  <div style="font-weight:700;color:#8a9ab0;letter-spacing:.08em;margin-bottom:4px">ZENTAX</div>
+  本題組為 Zentax 原創自製練習教材，內容均為獨立創作。<br>
+  與 ETS 或任何官方測驗機構無任何關聯。<br>
+  TOEIC® 為 ETS 之註冊商標，本品牌不隸屬於 ETS。<br>
+  適合欲加強商務英語能力之學習者使用。
+</div>
+</div>
+<script>
+var Q=[{"id":"P5_E_R16_Q003","exam":"TOEIC","part":5,"type":"grammar","topic":"商務書信","difficulty":"B2","level":null,"genre":null,"focus":"grammar","ctx":"The new software update will be installed __ all company computers over the weekend to minimize disruption to daily operations.","zh":"新的軟體更新將在週末 __ 所有公司電腦上安裝，以盡量減少對日常運營的干擾。","ans":2,"opts":[["for","prep","/fɔːr/","為了；對於","used to indicate purpose 表目的"],["by","prep","/baɪ/","由；在…之前","used to indicate agent or deadline 表執行者或截止時間"],["on","prep","/ɒn/","在…上；於","used with surfaces or devices 用於表示裝置或平台"],["with","prep","/wɪð/","與；用","used to indicate accompaniment or instrument 表伴隨或工具"]],"key":"installed 後接裝置或平台時，英文慣用介系詞 on，如 installed on computers / on devices，故選 on。","trap":"by 常見於被動語態後接執行者，但此處後接 'all company computers' 是安裝的載體而非執行者，不用 by。","gram":"介系詞搭配：install on + 裝置/平台（固定搭配）","tone_cue":[],"fam":[],"tags":["介系詞","IT","install搭配"],"createdAt":"2026-05-29"},{"id":"P5_E_R31_Q004","exam":"TOEIC","part":5,"type":"grammar","topic":"虛擬語氣/建議動詞","difficulty":"C1","level":null,"genre":null,"focus":"grammar","ctx":"The audit committee recommended that every acquisition proposal __ thoroughly evaluated by an independent panel before final approval.","zh":"審計委員會建議每一項收購提案在最終批准前都應由獨立小組進行徹底__。","ans":0,"opts":[["be","v. (subjunctive)","/biː/","（虛擬語氣原形，被動）","recommend that + S + be + p.p. ✓"],["is","v. (indicative)","/ɪz/","（直述語氣現在式）","建議類動詞後的 that 子句用虛擬語氣，不用直述語氣"],["was","v. (past)","/wɒz/","（過去式）","虛擬語氣用原形動詞，非過去式 was"],["being","v. (progressive)","/ˈbiːɪŋ/","（現在進行式）","虛擬語氣不用 being；原形 be 才正確"]],"key":"建議/要求類動詞（recommend, suggest, insist, propose）後的 that 子句使用虛擬語氣（原形動詞）；被動式為 S + be + p.p.","trap":"口語中有人用 'is'（直述語氣），但正式書面英語及考試標準答案為虛擬語氣 'be'","gram":"虛擬語氣（Subjunctive Mood）：recommend/suggest/propose/insist + that + S + V原形；被動結構 → that + S + be + p.p.","tone_cue":[],"fam":[],"tags":[],"createdAt":"2026-05-30"},{"id":"P5_E_R25_Q004","exam":"TOEIC","part":5,"type":"grammar","topic":"介詞片語語義辨析","difficulty":"B2","level":null,"genre":null,"focus":"grammar","ctx":"All employees are required to submit their timesheets by 5 p.m. on Friday, __ their department or location.","zh":"所有員工須在週五下午五點前提交工時表，__其部門或地點。","ans":2,"opts":[["in spite of","prep","/ɪn spaɪt/","儘管（讓步）","in spite of the difficulty"],["due to","prep","/djuː tuː/","由於（原因）","due to unforeseen circumstances"],["regardless of","prep","/rɪˈɡɑːrdlɪs/","不論、無論（排除例外）","regardless of rank / location ✓"],["according to","prep","/əˈkɔːrdɪŋ/","根據","according to the policy"]],"key":"regardless of 表示『無論...如何，皆不例外』，是公司規定公告中排除所有例外的首選介詞；in spite of 強調讓步（雖然如此）；due to 強調原因；according to 強調依據來源。","trap":"in spite of（雖然如此，但）與 regardless of（無論如何）語義相近，但 regardless of 不帶讓步意味，僅強調排除所有例外條件，更適合公司規定用語。","gram":null,"tone_cue":[],"fam":[],"tags":[],"createdAt":"2026-05-30"}];
+var CONV=[];
+var PASS=[];
+var READ=[{"id":"P7_E_R13_RD001","exam":"TOEIC","part":7,"type":"reading","topic":"員工彈性工時福利政策","difficulty":"B2","level":null,"genre":["memo","email"],"passage":["MEMORANDUM\n\nTO: All Employees\nFROM: Sandra Yeh, HR Director\nDATE: May 15\nSUBJECT: New Flextime Policy — Effective Q3\n\nWe are pleased to announce that a flexible working hours (flextime) program will take effect beginning July 1. Under this policy, eligible employees may adjust their daily start and end times within a two-hour window, provided that core hours (10:00 a.m. to 3:00 p.m.) are maintained.\n\nTo participate, employees must submit a Flextime Request Form to their direct supervisors no later than June 10. Supervisors are expected to review and approve or deny requests within five business days of receipt. Approved schedules must remain consistent for a minimum of one quarter before any modification may be requested.\n\nThis program currently applies to full-time employees in the Operations and Marketing divisions. Employees with client-facing roles involving fixed schedules are not eligible. Questions may be directed to the HR department at hr@company.com.","FROM: David Lam, Marketing Division Manager\nTO: Sandra Yeh, HR Director\nDATE: May 17\nSUBJECT: RE: New Flextime Policy — Effective Q3\n\nDear Sandra,\n\nThank you for the memo regarding the upcoming flextime program. The team is generally enthusiastic, and I appreciate the effort HR has put into designing this initiative.\n\nHowever, I have a couple of clarifying questions before I circulate the information to my staff. First, the memo states that requests must be submitted by June 10, but it does not specify whether this deadline applies to all shifts or only to the standard daytime schedule. Could you confirm this point?\n\nSecond, I noticed the policy covers the Operations and Marketing divisions. Are contract staff embedded within the Marketing division also covered, or is eligibility limited to direct full-time hires only?\n\nI look forward to your response so I can relay accurate information to my team.\n\nBest regards,\nDavid Lam"],"qs":[{"q":"According to the memo, what must employees do to participate in the flextime program?","type":"detail","ans":2,"opts":["Attend an HR orientation session before June 10","Obtain written approval from the HR Director directly","Submit a Flextime Request Form to their direct supervisors","Agree to maintain a fixed schedule for at least six months"],"exp":"Memo 第二段明確指出：'employees must submit a Flextime Request Form to their direct supervisors no later than June 10'，因此答案為 C。"},{"q":"What is one of the questions David Lam raises in his email?","type":"detail","ans":1,"opts":["Whether the flextime program will extend to the Finance division","Whether contract staff in the Marketing division are eligible for the program","Whether employees can modify their schedules more than once per quarter","Whether the core hours requirement can be waived for senior staff"],"exp":"Email 第二個問題明確詢問：'Are contract staff embedded within the Marketing division also covered, or is eligibility limited to direct full-time hires only?'，答案為 B。"},{"q":"What can be inferred about David Lam from the email?","type":"inference","ans":0,"opts":["He is responsible for informing his team members about company policies","He disagrees with the new flextime program and plans to reject it","He submitted his own flextime request before writing the email","He was unaware of the flextime initiative before receiving the memo"],"exp":"Email 中 David Lam 表示 'I can relay accurate information to my team'，顯示他負責向下屬傳達公司政策。故推論答案為 A。"},{"q":"Based on both documents, which group of employees is clearly eligible to participate in the flextime program?","type":"cross","ans":3,"opts":["Contract workers assigned to the Operations division","Full-time employees in client-facing roles with fixed schedules","All staff in every division of the company","Full-time employees in the Marketing division without fixed client schedules"],"exp":"交叉比對：Memo 說明政策適用於 Operations 和 Marketing 的全職員工，但排除 'client-facing roles involving fixed schedules'；David 的 email 詢問 contract staff 是否適用（尚未確認）。唯一確定符合的群體是 Marketing 的全職、非固定排班員工，答案為 D。"},{"q":"According to the memo, what is the deadline for submitting a Flextime Request Form?","type":"detail","ans":1,"opts":["May 15","June 10","July 1","The last day of Q2"],"exp":"Memo 第二段明確說明截止日為 'no later than June 10'，答案為 B。"}],"tags":[],"createdAt":"2026-05-29"}];
+var immediate=false;
+var totalQ=8;
+var userAns={},submitted=false,showZh=false;
+function allQids(){
+  var ids=[];
+  Q.forEach(function(q){ids.push(q.id);});
+  CONV.forEach(function(g){(g.qs||[]).forEach(function(_,i){ids.push('P34_'+g.id+'_'+i);});});
+  PASS.forEach(function(p){(p.qs||[]).forEach(function(_,i){ids.push('P6_'+p.id+'_'+i);});});
+  READ.forEach(function(r){(r.qs||[]).forEach(function(_,i){ids.push('P7_'+r.id+'_'+i);});});
+  return ids;
+}
+function getAns(qid){
+  var r=Q.find(function(q){return q.id===qid;}); if(r) return r.ans;
+  for(var gi=0;gi<CONV.length;gi++){var g=CONV[gi];for(var qi=0;qi<(g.qs||[]).length;qi++){if('P34_'+g.id+'_'+qi===qid)return g.qs[qi].ans;}}
+  for(var pi=0;pi<PASS.length;pi++){var pg=PASS[pi];for(var qi=0;qi<(pg.qs||[]).length;qi++){if('P6_'+pg.id+'_'+qi===qid)return pg.qs[qi].ans;}}
+  for(var ri=0;ri<READ.length;ri++){var rp=READ[ri];for(var qi=0;qi<(rp.qs||[]).length;qi++){if('P7_'+rp.id+'_'+qi===qid)return rp.qs[qi].ans;}}
+  return -1;
+}
+function updateProgress(){
+  var done=Object.keys(userAns).length,pct=totalQ?Math.round(done/totalQ*100):0;
+  var pt=document.getElementById('progText'),pp=document.getElementById('progPct'),pf=document.getElementById('progFill');
+  if(pt)pt.textContent='已作答 '+done+' / '+totalQ+' 題';
+  if(pp)pp.textContent=pct+'%';
+  if(pf)pf.style.width=pct+'%';
+  var h=document.getElementById('subHint');
+  if(h)h.textContent=done<totalQ?'請完成所有 '+totalQ+' 題後提交':'所有題目已作答，可以提交';
+}
+function toggleZh(){
+  showZh=!showZh;
+  var btn=document.getElementById('zhToggle');
+  if(btn){btn.classList.toggle('on',showZh);btn.innerHTML='<span class="dot"></span>'+(showZh?'隱藏中文翻譯':'顯示中文翻譯');}
+  allQids().forEach(function(qid){var el=document.getElementById('zh_'+qid);if(el&&!submitted)el.style.display=showZh?'block':'none';});
+}
+function pickOpt(qid,i){
+  if(submitted)return;
+  userAns[qid]=i;
+  for(var j=0;j<4;j++){var el=document.getElementById('opt_'+qid+'_'+j);if(el)el.classList.toggle('selected',j===i);}
+  var dot=document.getElementById('dot_'+qid);
+  if(dot){dot.classList.remove('wrong','correct');dot.classList.add('answered');}
+  if(immediate){
+    var ans=getAns(qid);
+    for(var k=0;k<4;k++){var e2=document.getElementById('opt_'+qid+'_'+k);if(!e2)continue;e2.classList.remove('selected');e2.classList.add('disabled');if(k===ans)e2.classList.add('correct');else if(k===i)e2.classList.add('wrong');}
+    var zh=document.getElementById('zh_'+qid),ana=document.getElementById('ana_'+qid),dt=document.getElementById('dt_'+qid);
+    if(zh)zh.style.display='block';if(ana)ana.style.display='block';if(dt)dt.style.display='block';
+    if(dot){dot.classList.remove('answered');dot.classList.add(i===ans?'correct':'wrong');}
+  }
+  updateProgress();
+}
+function submitAll(){
+  if(submitted)return;
+  var all=allQids(),unanswered=all.filter(function(id){return userAns[id]===undefined;});
+  if(unanswered.length){if(!confirm('還有 '+unanswered.length+' 題未作答，確定提交？'))return;}
+  submitted=true;
+  var correct=0;
+  all.forEach(function(qid){
+    var ans=getAns(qid),ua=userAns[qid];
+    if(ua===ans)correct++;
+    for(var i=0;i<4;i++){var el=document.getElementById('opt_'+qid+'_'+i);if(!el)continue;el.classList.remove('selected');el.classList.add('disabled');if(i===ans)el.classList.add('correct');else if(i===ua)el.classList.add('wrong');}
+    var zh=document.getElementById('zh_'+qid),ana=document.getElementById('ana_'+qid),dt=document.getElementById('dt_'+qid);
+    if(zh)zh.style.display='block';if(ana)ana.style.display='block';if(dt)dt.style.display='block';
+    var dot=document.getElementById('dot_'+qid);
+    if(dot){dot.classList.remove('answered');dot.classList.add(ua===ans?'correct':'wrong');}
+  });
+  var pct=Math.round(correct/all.length*100);
+  var msg=pct>=80?'🎉 表現優異！':pct>=60?'👍 答得不錯！':'💪 繼續加油！';
+  var sc=document.getElementById('scoreCard');
+  sc.innerHTML='<div class="sc-ring"><div class="sc-num">'+correct+'</div><div class="sc-den">/ '+all.length+'</div></div>'
+    +'<div class="sc-msg">'+msg+'</div><div class="sc-rate">正確率 '+pct+'%</div>'
+    +'<div class="sc-bar-wrap"><div class="sc-bar"><div class="sc-bar-fill" id="scBarFill"></div></div></div>';
+  sc.style.display='block';
+  setTimeout(function(){var f=document.getElementById('scBarFill');if(f)f.style.width=pct+'%';},100);
+  var btn=document.getElementById('submitBtn');
+  if(btn){btn.disabled=true;var sp=btn.querySelector('span');if(sp)sp.textContent='已提交';}
+  var h=document.getElementById('subHint');if(h)h.textContent='共答對 '+correct+' 題，正確率 '+pct+'%';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function toggleDetail(qid){
+  var dw=document.getElementById('dw_'+qid),dt=document.getElementById('dt_'+qid);
+  if(!dw||!dt)return;
+  var btn=dt.querySelector('.dt-btn'),open=dw.style.display==='block';
+  dw.style.display=open?'none':'block';
+  if(btn)btn.innerHTML=open
+    ?'<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>展開選項分析'
+    :'<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>收起分析';
+}
+updateProgress();
+</script>
+</body></html>
