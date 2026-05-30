@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zentax Quiz 題庫系統</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #f8fafc;
+    }
+    .subtitle {
+      color: #94a3b8;
+      margin-bottom: 2.5rem;
+      font-size: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+      width: 100%;
+      max-width: 720px;
+    }
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      text-decoration: none;
+      color: #e2e8f0;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .card:hover {
+      background: #2563eb;
+      border-color: #2563eb;
+      transform: translateY(-2px);
+      color: #fff;
+    }
+    .card .icon { font-size: 2rem; margin-bottom: 0.5rem; }
+    .card .label { font-size: 1rem; font-weight: 600; }
+    .manager-link {
+      margin-top: 2rem;
+      color: #64748b;
+      font-size: 0.875rem;
+      text-decoration: none;
+    }
+    .manager-link:hover { color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <h1>📚 Zentax Quiz</h1>
+  <p class="subtitle">選擇題組開始練習</p>
+
+  <div class="grid">
+    <a class="card" href="set-01.html">
+      <div class="icon">📝</div>
+      <div class="label">題組 01</div>
+    </a>
+    <a class="card" href="set-02.html">
+      <div class="icon">📝</div>
+      <div class="label">題組 02</div>
+    </a>
+    <a class="card" href="set-03.html">
+      <div class="icon">📝</div>
+      <div class="label">題組 03</div>
+    </a>
+    <a class="card" href="set-04.html">
+      <div class="icon">📝</div>
+      <div class="label">題組 04</div>
+    </a>
+    <a class="card" href="set-05.html">
+      <div class="icon">📝</div>
+      <div class="label">題組 05</div>
+    </a>
+  </div>
+
+  <a class="manager-link" href="題庫管理器.html">⚙️ 題庫管理器</a>
+</body>
+</html>
