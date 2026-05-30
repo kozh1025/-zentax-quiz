@@ -1,0 +1,37 @@
+[
+  {
+    "file": "set-01.html",
+    "title": "商務英語 第01組",
+    "desc": "日常辦公室用語、會議對話",
+    "count": 20,
+    "price": "NT$99"
+  },
+  {
+    "file": "set-02.html",
+    "title": "商務英語 第02組",
+    "desc": "商務書信、電子郵件寫作",
+    "count": 20,
+    "price": "NT$99"
+  },
+  {
+    "file": "set-03.html",
+    "title": "商務英語 第03組",
+    "desc": "簡報與談判用語",
+    "count": 20,
+    "price": "NT$99"
+  },
+  {
+    "file": "set-04.html",
+    "title": "商務英語 第04組",
+    "desc": "電話與客服應對",
+    "count": 20,
+    "price": "NT$99"
+  },
+  {
+    "file": "set-05.html",
+    "title": "商務英語 第05組",
+    "desc": "出差與接待用語",
+    "count": 20,
+    "price": "NT$99"
+  }
+]
