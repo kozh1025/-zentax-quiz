@@ -13,105 +13,80 @@
       min-height: 100vh;
       padding: 3rem 1.5rem;
     }
-    header {
-      text-align: center;
-      margin-bottom: 2.5rem;
-    }
+    header { text-align: center; margin-bottom: 2.5rem; }
     header h1 { font-size: 2rem; font-weight: 700; color: #f8fafc; }
     header p { color: #94a3b8; margin-top: 0.4rem; font-size: 0.95rem; }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.25rem;
-      max-width: 960px;
+    .list {
+      max-width: 720px;
       margin: 0 auto;
-    }
-
-    .card {
-      background: #1e293b;
-      border: 1px solid #334155;
-      border-radius: 14px;
-      overflow: hidden;
-      text-decoration: none;
-      color: #e2e8f0;
       display: flex;
       flex-direction: column;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 30px rgba(37,99,235,0.3);
-      border-color: #2563eb;
+      gap: 0.75rem;
     }
 
-    .card-preview {
-      background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
-      height: 110px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2.8rem;
-      position: relative;
-    }
-    .card-preview .badge {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: #2563eb;
-      color: #fff;
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 3px 10px;
-      border-radius: 20px;
-    }
-
-    .card-body { padding: 1rem 1.1rem 1.2rem; flex: 1; display: flex; flex-direction: column; gap: 0.4rem; }
-    .card-title { font-size: 1rem; font-weight: 700; color: #f1f5f9; }
-    .card-desc { font-size: 0.85rem; color: #94a3b8; flex: 1; }
-
-    .card-meta {
+    .row {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-top: 0.6rem;
-      padding-top: 0.6rem;
-      border-top: 1px solid #334155;
+      gap: 1rem;
+      text-decoration: none;
+      color: #e2e8f0;
+      transition: background 0.15s, border-color 0.15s;
     }
-    .card-count { font-size: 0.8rem; color: #64748b; }
-    .card-url {
-      font-size: 0.72rem;
-      color: #475569;
-      word-break: break-all;
-      background: #0f172a;
-      border-radius: 6px;
-      padding: 3px 7px;
+    .row:hover {
+      background: #1e3a5f;
+      border-color: #2563eb;
+    }
+
+    .row-title {
+      font-size: 1rem;
+      font-weight: 600;
+      white-space: nowrap;
+      min-width: 160px;
+    }
+
+    .row-url {
       font-family: monospace;
+      font-size: 0.82rem;
+      color: #64748b;
+      flex: 1;
+      text-align: right;
+      word-break: break-all;
+      user-select: all;
     }
-    .card-price {
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: #34d399;
+
+    .copy-btn {
+      background: #334155;
+      border: none;
+      color: #94a3b8;
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.15s;
     }
+    .copy-btn:hover { background: #2563eb; color: #fff; }
+    .copy-btn.copied { background: #16a34a; color: #fff; }
 
     .manager-wrap { text-align: center; margin-top: 2rem; }
-    .manager-link {
-      color: #475569;
-      font-size: 0.85rem;
-      text-decoration: none;
-    }
+    .manager-link { color: #475569; font-size: 0.85rem; text-decoration: none; }
     .manager-link:hover { color: #94a3b8; }
-
     .empty { text-align: center; color: #475569; padding: 3rem; }
   </style>
 </head>
 <body>
   <header>
     <h1>📚 Zentax Quiz</h1>
-    <p>點選題組即可開始練習</p>
+    <p>點選題組開始練習，或複製連結分享</p>
   </header>
 
-  <div class="grid" id="grid"><p class="empty">載入中…</p></div>
+  <div class="list" id="list"><p class="empty">載入中…</p></div>
   <div class="manager-wrap" id="mgr-wrap" style="display:none">
     <a class="manager-link" href="題庫管理器.html">⚙️ 題庫管理器</a>
   </div>
@@ -124,33 +99,31 @@
       catch { return false; }
     }
 
-    function makeCard(set) {
+    function makeRow(set) {
       const url = HOST + set.file;
-      const a = document.createElement('a');
-      a.className = 'card';
-      a.href = set.file;
-      a.innerHTML = `
-        <div class="card-preview">
-          📝
-          ${set.price ? `<span class="badge">${set.price}</span>` : ''}
-        </div>
-        <div class="card-body">
-          <div class="card-title">${set.title || set.file}</div>
-          ${set.desc ? `<div class="card-desc">${set.desc}</div>` : ''}
-          <div class="card-meta">
-            <span class="card-count">${set.count ? `${set.count} 題` : ''}</span>
-            <span class="card-price">${set.price || ''}</span>
-          </div>
-          <div class="card-url">${url}</div>
-        </div>`;
-      return a;
+      const div = document.createElement('div');
+      div.style.display = 'contents';
+      div.innerHTML = `
+        <a class="row" href="${set.file}">
+          <span class="row-title">${set.title || set.file}</span>
+          <span class="row-url">${url}</span>
+          <button class="copy-btn" data-url="${url}">複製連結</button>
+        </a>`;
+      div.querySelector('.copy-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        navigator.clipboard.writeText(this.dataset.url).then(() => {
+          this.textContent = '已複製！';
+          this.classList.add('copied');
+          setTimeout(() => { this.textContent = '複製連結'; this.classList.remove('copied'); }, 2000);
+        });
+      });
+      return div;
     }
 
     async function init() {
-      const grid = document.getElementById('grid');
-      grid.innerHTML = '';
+      const list = document.getElementById('list');
+      list.innerHTML = '';
 
-      // 優先讀 sets.json
       let sets = null;
       try {
         const r = await fetch('sets.json');
@@ -158,25 +131,19 @@
       } catch {}
 
       if (sets) {
-        // 只顯示檔案真實存在的題組
         for (const set of sets) {
-          if (await fileExists(set.file)) {
-            grid.appendChild(makeCard(set));
-          }
+          if (await fileExists(set.file)) list.appendChild(makeRow(set));
         }
       } else {
-        // Fallback：自動偵測 set-01 ~ set-99
         for (let i = 1; i <= 99; i++) {
           const num = String(i).padStart(2, '0');
           const file = `set-${num}.html`;
           if (!(await fileExists(file))) { if (i > 5) break; continue; }
-          grid.appendChild(makeCard({ file, title: `題組 ${num}` }));
+          list.appendChild(makeRow({ file, title: `題組 ${num}` }));
         }
       }
 
-      if (!grid.children.length) {
-        grid.innerHTML = '<p class="empty">尚無題組</p>';
-      }
+      if (!list.children.length) list.innerHTML = '<p class="empty">尚無題組</p>';
 
       if (await fileExists('題庫管理器.html')) {
         document.getElementById('mgr-wrap').style.display = '';
